@@ -66,11 +66,16 @@ h6 {
 
 h1 {
   font-size: 2.4rem;
-  margin-top: 6rem;
+  // margin-top: 6rem;
   text-align: center;
 
   & + p {
     margin-top: 1.2rem;
+  }
+  @media (min-width: 1000px) {
+    font-size: {
+      width: 3.4rem;
+    }
   }
 }
 h2 {
@@ -132,14 +137,14 @@ ul {
   background: #e5e5e5;
 }
 
-main {
+/* main {
   padding: 80px 0;
 
   @media (max-width: 567px) {
     padding: 64px 0;
   }
 }
-
+ */
 // Transitions
 .fade-enter-active {
   animation: acrossIn 0.2s ease-out both;

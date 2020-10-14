@@ -86,4 +86,10 @@ img {
     text-align: center;
   }
 }
+
+@media (min-width: 1000px) {
+  img {
+    width: 650px;
+  }
+}
 </style>
