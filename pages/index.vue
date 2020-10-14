@@ -57,7 +57,7 @@ export default {
 
 <style lang="scss" scoped>
 img {
-  width: 500px;
+  width: 350px;
 }
 .main {
   background: black;
