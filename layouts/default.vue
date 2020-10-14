@@ -42,6 +42,7 @@ body {
 body {
   color: #252525;
   font-family: 'Karla', sans-serif;
+  background: #131313;
 }
 
 *,
@@ -60,11 +61,13 @@ h6 {
   font-family: 'Rubik', sans-serif;
   line-height: 1.2;
   margin-bottom: 0;
+  text-align: center;
 }
 
 h1 {
   font-size: 2.4rem;
   margin-top: 6rem;
+  text-align: center;
 
   & + p {
     margin-top: 1.2rem;

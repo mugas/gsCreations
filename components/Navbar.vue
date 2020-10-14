@@ -2,12 +2,25 @@
   <nav class="navbar" role="navigation">
     <div class="navbar-inner">
       <div class="brand">
-        <nuxt-link to="/" class="nav-link">Blog Name</nuxt-link>
+        <nuxt-link to="/" class="nav-link">Good Stuff Creations</nuxt-link>
       </div>
       <ul class="social-icons">
         <li class="icon">
-          <a href="#" target="_blank" class="nav-link">
+          <a
+            href="https://twitter.com/mugas11"
+            target="_blank"
+            class="nav-link"
+          >
             <font-awesome-icon :icon="['fab', 'twitter']" />
+          </a>
+        </li>
+        <li class="icon">
+          <a
+            href="https://instagram.com/mugas_codes"
+            target="_blank"
+            class="nav-link"
+          >
+            <font-awesome-icon :icon="['fab', 'instagram']" />
           </a>
         </li>
       </ul>
@@ -16,12 +29,17 @@
 </template>
 
 <style lang="scss" scoped>
+.nav-link {
+  color: white;
+}
 .navbar {
   width: 100%;
   font-family: 'Rubik', sans-serif;
+  background: black;
 
   .navbar-inner {
     display: flex;
+    background: black;
     flex-direction: row;
     justify-content: space-between;
     max-width: 1200px;
@@ -58,6 +76,7 @@
           display: inline-block;
           padding: 1.1rem 1rem 1rem 1rem;
           box-shadow: none;
+          color: white;
         }
       }
     }

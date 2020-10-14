@@ -10,69 +10,69 @@ export default {
     title: '<Blog Name>',
     meta: [
       {
-        charset: 'utf-8'
+        charset: 'utf-8',
       },
       {
         name: 'viewport',
-        content: 'width=device-width, initial-scale=1'
+        content: 'width=device-width, initial-scale=1',
       },
       {
         hid: 'og:url',
         property: 'og:url',
-        content: `https://example.com`
+        content: `https://example.com`,
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: '<Blog Name>'
+        content: '<Blog Name>',
       },
       {
         hid: 'description',
         name: 'description',
-        content: '<Blog name> and description'
+        content: '<Blog name> and description',
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: '<Blog name> and description'
+        content: '<Blog name> and description',
       },
       {
         hid: 'og:image:alt',
         property: 'og:image:alt',
-        content: '<Blog Name>'
+        content: '<Blog Name>',
       },
       {
         hid: 'og:article:author',
         property: 'og:article:author',
-        content: 'https://github.com/code-tribe'
+        content: 'https://github.com/code-tribe',
       },
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content: '<Blog Name>'
+        content: '<Blog Name>',
       },
       {
         hid: 'og:type',
         property: 'og:type',
-        content: 'website'
+        content: 'website',
       },
       {
         hid: 'twitter:card',
         name: 'twitter:card',
-        content: 'summary_large_image'
+        content: 'summary_large_image',
       },
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: '<Blog Name>'
+        content: '<Blog Name>',
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: '<Blog name> and description'
-      }
+        content: '<Blog name> and description',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   /*
@@ -94,7 +94,7 @@ export default {
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
     'nuxt-fontawesome',
-    'nuxt-webfontloader'
+    'nuxt-webfontloader',
   ],
 
   /**
@@ -102,8 +102,8 @@ export default {
    */
   webfontloader: {
     google: {
-      families: ['Rubik:400,700', 'Karla:400,700,400i,700i'] // Loads Lato font with weights 400 and 700
-    }
+      families: ['Rubik:400,700', 'Karla:400,700,400i,700i'], // Loads Lato font with weights 400 and 700
+    },
   },
 
   /**
@@ -123,10 +123,10 @@ export default {
           'faDocker',
           'faWordpress',
           'faNodeJs',
-          'faYarn'
-        ]
-      }
-    ]
+          'faYarn',
+        ],
+      },
+    ],
   },
 
   /**
@@ -135,7 +135,7 @@ export default {
   manifest: {
     name: '<Blog Name>',
     short_name: '<Blog Name>',
-    lang: 'en'
+    lang: 'en',
   },
 
   /**
@@ -144,7 +144,7 @@ export default {
   sitemap: {
     hostname: 'https://example.com',
     gzip: true,
-    exclude: ['/admin/']
+    exclude: ['/admin/'],
   },
 
   /**
@@ -152,14 +152,14 @@ export default {
    */
   robots: {
     UserAgent: '*',
-    Disallow: '/admin'
+    Disallow: '/admin',
   },
 
   /**
    * Generate config
    */
   generate: {
-    routes: [].concat(blogs.map(blog => `/blog/${blog.slug}`))
+    routes: [].concat(blogs.map((blog) => `/blog/${blog.slug}`)),
   },
 
   /**
@@ -167,7 +167,7 @@ export default {
    */
   transition: {
     name: 'fade',
-    mode: 'out-in'
+    mode: 'out-in',
   },
 
   /*
@@ -184,7 +184,10 @@ export default {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
+          options: {
+            fix: true
+          }
         })
       }
 
@@ -192,9 +195,9 @@ export default {
         test: /\.md$/,
         loader: 'frontmatter-markdown-loader',
         options: {
-          vue: true
-        }
+          vue: true,
+        },
       })
-    }
-  }
+    },
+  },
 }

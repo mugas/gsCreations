@@ -1,6 +1,8 @@
 <template>
   <footer class="footer">
-    <Container flex>&copy; Blog Name {{ new Date().getFullYear() }}</Container>
+    <Container flex
+      >&copy; Good Stuff Creations {{ new Date().getFullYear() }}</Container
+    >
   </footer>
 </template>
 

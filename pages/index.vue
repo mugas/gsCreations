@@ -1,8 +1,13 @@
 <template>
-  <section>
+  <div class="soon">
+    <img class="image" src="../assets/gscreations_log.png" />
+    <h1 class="line">Coming Soon...</h1>
+  </div>
+
+  <!-- <section>
     <Container>
       <div class="intro">
-        <h1>Welcome to Blog Name</h1>
+        <h1>Welcome to Blog Names</h1>
       </div>
     </Container>
     <Container flex>
@@ -13,11 +18,11 @@
         :article-info="blog"
       />
     </Container>
-  </section>
+  </section> -->
 </template>
 
 <script>
-import ArticleCard from '~/components/ArticleCard'
+/* import ArticleCard from '~/components/ArticleCard'
 import Container from '~/components/Container'
 
 import blogs from '~/content/blogs.json'
@@ -47,16 +52,38 @@ export default {
 
     return blogList
   },
-}
+} */
 </script>
 
 <style lang="scss" scoped>
+img {
+  width: 500px;
+}
+.main {
+  background: black;
+}
+.soon {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  flex: 1;
+  align-self: center;
+}
+
+.line {
+  flex: 1;
+  color: White;
+}
+
 .intro {
   text-align: center;
   margin-bottom: 2.4rem;
 
   h1 {
-    margin-top: 0;
+    // margin-top: 0;
+    text-align: center;
   }
 }
 </style>
