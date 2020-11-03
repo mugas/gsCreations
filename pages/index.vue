@@ -1,8 +1,5 @@
 <template>
-  <div class="soon">
-    <img class="image" src="../assets/gscreations_log.png" />
-    <h1 class="line">Coming Soon...</h1>
-  </div>
+  <div class="soon"></div>
 
   <!-- <section>
     <Container>
@@ -56,11 +53,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  label {
+    color: White;
+  }
+}
 img {
   width: 350px;
 }
 .main {
-  background: black;
+  background: white;
 }
 .soon {
   display: flex;

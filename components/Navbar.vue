@@ -35,11 +35,11 @@
 .navbar {
   width: 100%;
   font-family: 'Rubik', sans-serif;
-  background: black;
+  background: #131313;
 
   .navbar-inner {
     display: flex;
-    background: black;
+    background: #131313;
     flex-direction: row;
     justify-content: space-between;
     max-width: 1200px;

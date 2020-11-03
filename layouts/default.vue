@@ -1,27 +1,39 @@
 <template>
   <div class="site-wrapper">
-    <Navbar />
+    <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
+    <TheSidenav :show="displaySidenav" @close="displaySidenav = false" />
 
     <main id="main" class="main" role="main">
       <nuxt />
-    </main>
 
-    <Footer />
+      <!--  <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
+      <TheSidenav :show="displaySidenav" @close="displaySidenav = false" /> -->
+    </main>
   </div>
 </template>
 
 <script>
-import Footer from '~/components/Footer'
-import Navbar from '~/components/Navbar'
+/* import TheHeader from '~/components/Navigation/TheHeader'
+import TheSidenav from '~/components/Navigation/TheSidenav' */
+/* import Footer from '~/components/Footer'
+import Navbar from '~/components/Navbar' */
 
 export default {
-  components: {
-    Footer,
-    Navbar,
+  /*  components: {
+      Footer,
+    Navbar, 
+    TheHeader,
+    TheSidenav,
+  }, */
+  data() {
+    return {
+      displaySidenav: false,
+    }
   },
 }
 </script>
 
+/*
 <style lang="scss">
 @import '../assets/scss/syntax.scss';
 
@@ -42,7 +54,7 @@ body {
 body {
   color: #252525;
   font-family: 'Karla', sans-serif;
-  background: #131313;
+  background: white;
 }
 
 *,
@@ -58,10 +70,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   line-height: 1.2;
   margin-bottom: 0;
   text-align: center;
+  color: white;
 }
 
 h1 {
