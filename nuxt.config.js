@@ -105,7 +105,7 @@ export default {
    */
   webfontloader: {
     google: {
-      families: ['Merriweather:400,700', 'Karla:400,700,400i,700i'], // Loads Lato font with weights 400 and 700
+      families: ['Montserrat:900', 'Work+Sans:300'], // Loads Lato font with weights 400 and 700
     },
   },
 

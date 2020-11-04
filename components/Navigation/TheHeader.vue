@@ -10,11 +10,15 @@
       <div class="spacer"></div>
       <div class="navigation-items">
         <ul class="nav-list">
-          <li class="nav-item"><nuxt-link to="/posts">Blog</nuxt-link></li>
+          <li class="nav-item">
+            <nuxt-link to="/services">Services</nuxt-link>
+          </li>
           <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
-          <li class="nav-item"><nuxt-link to="/admin">Admin</nuxt-link></li>
+          <li class="nav-item"><nuxt-link to="/contact">Contact</nuxt-link></li>
+          <li class="nav-item"><nuxt-link to="/coding">Coding</nuxt-link></li>
         </ul>
       </div>
+      <img width="150px" src="~/assets/Svg/gs.svg" class="right-logo" />
     </header>
   </div>
 </template>
@@ -46,11 +50,13 @@ export default {
   z-index: 100;
   box-sizing: border-box;
   padding: 0 20px;
+  margin-top: 10px;
 }
 
 .logo {
   margin: 0 10px;
   font-size: 1.3rem;
+  display: none;
 }
 
 .logo a {
@@ -70,9 +76,28 @@ img {
   width: 75px;
 }
 
+.right-logo {
+  width: 150px;
+}
+
+.right-logo {
+  display: block;
+}
+
 @media (min-width: 768px) {
   .navigation-items {
     display: block;
+  }
+  .right-logo {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  img {
+    width: 150px;
   }
 }
 

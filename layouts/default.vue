@@ -53,7 +53,8 @@ body {
 
 body {
   color: #252525;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
   background: white;
 }
 
@@ -70,7 +71,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Merriweather', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
   line-height: 1.2;
   margin-bottom: 0;
   text-align: center;

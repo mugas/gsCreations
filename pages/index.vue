@@ -59,14 +59,14 @@ form {
   flex-direction: column;
   align-items: center;
   label {
-    color: White;
+    color: black;
   }
 }
 img {
   width: 350px;
 }
 .main {
-  background: white;
+  background: black;
 }
 .soon {
   display: flex;
@@ -80,7 +80,7 @@ img {
 
 .line {
   flex: 1;
-  color: White;
+  color: black;
 }
 
 .intro {

@@ -4,6 +4,10 @@
     <transition name="slide-side">
       <div v-if="show" class="sidenav">
         <ul class="nav-list" @click="$emit('close')">
+          <li class="nav-item">
+            <img src="~/assets/Svg/gs.svg" class="side-logo" />
+          </li>
+
           <li class="nav-item"><nuxt-link to="/posts">Blog</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/admin">Admin</nuxt-link></li>
@@ -26,6 +30,10 @@ export default {
 </script>
 
 <style scoped>
+.side-logo {
+  width: 150px;
+  margin-left: -35px;
+}
 .sidenav-container {
   height: 100%;
   width: 100%;
@@ -40,7 +48,9 @@ export default {
   top: 0;
   left: 0;
 }
-
+li:first-child {
+  margin-top: 0;
+}
 .sidenav {
   height: 100%;
   width: 300px;
@@ -50,7 +60,9 @@ export default {
   top: 0;
   left: 0;
   box-sizing: border-box;
-  padding: 30px;
+  /* padding: 30px; */
+  padding-left: 20px;
+  margin-top: 10px;
 }
 
 .slide-side-enter-active,
