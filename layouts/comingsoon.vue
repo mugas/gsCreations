@@ -1,47 +1,26 @@
 <template>
   <div class="site-wrapper">
-    <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
-    <TheSidenav :show="displaySidenav" @close="displaySidenav = false" />
+    <Navbar />
 
-    <main id="main" class="main" role="main">
-      <nuxt />
-
-      <!--  <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
-      <TheSidenav :show="displaySidenav" @close="displaySidenav = false" /> -->
-    </main>
+    <nuxt />
   </div>
 </template>
 
 <script>
-/* import TheHeader from '~/components/Navigation/TheHeader'
-import TheSidenav from '~/components/Navigation/TheSidenav' */
-/* import Footer from '~/components/Footer'
-import Navbar from '~/components/Navbar' */
-
+import Navbar from '~/components/Navbar'
 export default {
-  /*  components: {
-      Footer,
-    Navbar, 
-    TheHeader,
-    TheSidenav,
-  }, */
-  data() {
-    return {
-      displaySidenav: false,
-    }
+  components: {
+    Navbar,
   },
 }
 </script>
 
-/*
 <style lang="scss">
 @import '../assets/scss/syntax.scss';
-
 html {
   font-size: 20px;
   word-spacing: 1px;
 }
-
 html,
 body {
   box-sizing: border-box;
@@ -49,54 +28,41 @@ body {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  background: #131313;
 }
-
 body {
   color: #252525;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
-  background: white;
+  font-family: 'Karla', sans-serif;
+  background: #131313;
 }
-
 *,
 *:before,
 *:after {
   box-sizing: border-box;
   margin: 0;
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
+  font-family: 'Rubik', sans-serif;
   line-height: 1.2;
   margin-bottom: 0;
   text-align: center;
-  color: white;
 }
-
 h1 {
   font-size: 2.4rem;
-  // margin-top: 6rem;
+  margin-top: 6rem;
   text-align: center;
-
   & + p {
     margin-top: 1.2rem;
-  }
-  @media (min-width: 1000px) {
-    font-size: {
-      width: 3.4rem;
-    }
   }
 }
 h2 {
   font-size: 1.8rem;
   margin-top: 2rem;
-
   & + p {
     margin-top: 1rem;
   }
@@ -104,7 +70,6 @@ h2 {
 h3 {
   font-size: 1.5rem;
   margin-top: 1.8rem;
-
   & + p {
     margin-top: 1rem;
   }
@@ -112,32 +77,26 @@ h3 {
 h4 {
   font-size: 1.2rem;
   margin-top: 1.6rem;
-
   & + p {
     margin-top: 0.8rem;
   }
 }
-
 p {
   margin-top: 0;
   margin-bottom: 1.6rem;
   font-size: 1rem;
   line-height: 1.6;
 }
-
 a {
   color: #252525;
-}
-/*  text-decoration: none;
+  text-decoration: none;
   box-shadow: inset 0 -1px 0 currentColor;
   transition: color 80ms ease-in, box-shadow 130ms ease-in-out,
     -webkit-box-shadow 130ms ease-in-out;
-
   &:hover {
     box-shadow: inset 0 0 0 currentcolor, 0 3px 0 currentcolor;
-  } */
-/*}*/
-
+  }
+}
 ul {
   padding-left: 1rem;
   font-size: 1rem;
@@ -145,33 +104,27 @@ ul {
   margin-top: 0;
   margin-bottom: 1.6rem;
 }
-
 ::-moz-selection {
   background: #e5e5e5;
 }
 ::selection {
   background: #e5e5e5;
 }
-
-/* main {
+main {
   padding: 80px 0;
-
   @media (max-width: 567px) {
     padding: 64px 0;
   }
 }
- */
 // Transitions
 .fade-enter-active {
   animation: acrossIn 0.2s ease-out both;
-
   @media (max-width: 567px) {
     animation: none;
   }
 }
 .fade-leave-active {
   animation: acrossOut 0.2s ease-in both;
-
   @media (max-width: 567px) {
     animation: none;
   }

@@ -7,11 +7,18 @@
           <li class="nav-item">
             <img src="~/assets/Svg/gs.svg" class="side-logo" />
           </li>
-
-          <li class="nav-item"><nuxt-link to="/posts">Blog</nuxt-link></li>
+          <li class="nav-item">
+            <nuxt-link to="/services">Services</nuxt-link>
+          </li>
           <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
-          <li class="nav-item"><nuxt-link to="/admin">Admin</nuxt-link></li>
+          <li class="nav-item"><nuxt-link to="/contact">Contact</nuxt-link></li>
+          <li class="nav-item"><nuxt-link to="/coding">Coding</nuxt-link></li>
+          <li class="nav-item">
+            <nuxt-link to="/projects">Projects</nuxt-link>
+          </li>
+          <li class="nav-item"><nuxt-link to="/blog">Blog</nuxt-link></li>
         </ul>
+        <SocialMedia />
       </div>
     </transition>
   </div>
@@ -50,6 +57,7 @@ export default {
 }
 li:first-child {
   margin-top: 0;
+  text-decoration: none;
 }
 .sidenav {
   height: 100%;

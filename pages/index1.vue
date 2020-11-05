@@ -1,15 +1,24 @@
 <template>
-  <div class="soon">
-    <img class="image" src="../assets/Svg/gs.svg" />
-    <h1 class="line">Coming Soon...</h1>
-  </div>
+  <div class="soon"></div>
+
+  <!-- <section>
+    <Container>
+      <div class="intro">
+        <h1>Welcome to Blog Names</h1>
+      </div>
+    </Container>
+    <Container flex>
+      <ArticleCard
+        v-for="(blog, index) in blogList"
+        :key="index"
+        :index="index"
+        :article-info="blog"
+      />
+    </Container>
+  </section> -->
 </template>
 
 <script>
-export default {
-  layout: 'comingsoon',
-}
-
 /* import ArticleCard from '~/components/ArticleCard'
 import Container from '~/components/Container'
 
@@ -64,10 +73,6 @@ img {
   flex-direction: column;
 }
 
-.soon {
-  background: #131313;
-}
-
 .image {
   flex: 1;
   align-self: center;
@@ -75,7 +80,7 @@ img {
 
 .line {
   flex: 1;
-  color: white;
+  color: black;
 }
 
 .intro {
@@ -86,10 +91,6 @@ img {
     // margin-top: 0;
     text-align: center;
   }
-}
-
-body {
-  background: black;
 }
 
 @media (min-width: 1000px) {
