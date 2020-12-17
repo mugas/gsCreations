@@ -1,6 +1,6 @@
 ---
 type: CSS
-language: vue
+language: vuejs
 title: Muito nobito
 summary: >+
   Adgsdgv sdgsd sdtsdgsdg sdgsdgsdgsdgg sdg adgs
