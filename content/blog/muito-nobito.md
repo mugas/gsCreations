@@ -1,5 +1,5 @@
 ---
-type: CSS
+type: faCSS3Alt
 language: vuejs
 title: Muito nobito
 summary: >+
