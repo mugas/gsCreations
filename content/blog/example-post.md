@@ -1,6 +1,6 @@
 ---
 type: snippet
-language: js
+language: vuejs
 title: Example Post
 summary: Cras mattis consectetur purus sit amet fermentum. Curabitur blandit
   tempus porttitor. Cum sociis natoque penatibus et magnis dis partur
