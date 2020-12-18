@@ -25,7 +25,7 @@ collections:
           name: summary,
           widget: text,
           required: true,
-          pattern: ['.{164,220}', 'Must be within 164 and 220 characters'],
+          pattern: ['.{80,150}', 'Must be within 80 and 150 characters'],
         }
       - { label: 'Publish Date', name: 'date', widget: 'date', required: true }
       - {

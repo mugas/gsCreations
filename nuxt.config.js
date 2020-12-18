@@ -118,6 +118,7 @@ export default {
         set: '@fortawesome/free-brands-svg-icons',
         icons: [
           'faTwitter',
+          'faCss3',
           'faInstagram',
           'faGithub',
           'faVuejs',
@@ -189,8 +190,8 @@ export default {
           loader: 'eslint-loader',
           exclude: /(node_modules)/,
           options: {
-            fix: true
-          }
+            fix: true,
+          },
         })
       }
 

@@ -245,6 +245,9 @@ export default {
     width: 100%;
     height: auto;
   }
+  img {
+    width: 100%;
+  }
 
   .meta-section {
     text-align: center;

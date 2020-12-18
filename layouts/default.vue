@@ -3,12 +3,9 @@
     <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
     <TheSidenav :show="displaySidenav" @close="displaySidenav = false" />
 
-    <main id="main" class="main" role="main">
-      <nuxt />
-
-      <!--  <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
-      <TheSidenav :show="displaySidenav" @close="displaySidenav = false" /> -->
-    </main>
+    <!-- <main id="main" class="main" role="main"> -->
+    <nuxt />
+    <!-- </main> -->
   </div>
 </template>
 
@@ -33,29 +30,29 @@ export default {
 }
 </script>
 
-/*
 <style lang="scss">
-@import '../assets/scss/syntax.scss';
+// @import '../assets/scss/syntax.scss';
 
-html {
+/* html {
   font-size: 20px;
   word-spacing: 1px;
-}
-
+} */
+/* 
 html,
 body {
   box-sizing: border-box;
   -ms-text-size-adjust: 100%;
+  widows: 100%;
+
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-}
+} */
 
-body {
+/* body {
   color: #252525;
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
-  background: white;
 }
 
 *,
@@ -127,7 +124,7 @@ p {
 
 a {
   color: #252525;
-}
+} */
 /*  text-decoration: none;
   box-shadow: inset 0 -1px 0 currentColor;
   transition: color 80ms ease-in, box-shadow 130ms ease-in-out,
@@ -138,20 +135,20 @@ a {
   } */
 /*}*/
 
-ul {
+/* ul {
   padding-left: 1rem;
   font-size: 1rem;
   line-height: 1.6;
   margin-top: 0;
   margin-bottom: 1.6rem;
-}
+} */
 
-::-moz-selection {
+/* ::-moz-selection {
   background: #e5e5e5;
 }
 ::selection {
   background: #e5e5e5;
-}
+} */
 
 /* main {
   padding: 80px 0;
@@ -162,7 +159,7 @@ ul {
 }
  */
 // Transitions
-.fade-enter-active {
+/* .fade-enter-active {
   animation: acrossIn 0.2s ease-out both;
 
   @media (max-width: 567px) {
@@ -195,5 +192,5 @@ ul {
     opacity: 0;
     transform: translateX(64px);
   }
-}
+} */
 </style>

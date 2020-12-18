@@ -50,10 +50,11 @@ export default {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1000;
+  /* z-index: 1000; */
   position: fixed;
   top: 0;
   left: 0;
+  background: red;
 }
 li:first-child {
   margin-top: 0;
@@ -63,7 +64,7 @@ li:first-child {
   height: 100%;
   width: 300px;
   background-color: white;
-  z-index: 10000;
+  /* z-index: 10000; */
   position: fixed;
   top: 0;
   left: 0;

@@ -28,12 +28,12 @@ body {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background: #131313;
+  background: white;
 }
 body {
-  color: #252525;
+  color: white;
   font-family: 'Karla', sans-serif;
-  background: #131313;
+  background: white;
 }
 *,
 *:before,

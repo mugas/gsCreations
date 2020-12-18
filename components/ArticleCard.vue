@@ -7,6 +7,7 @@
           {{ capitalize(articleInfo.attributes.type) }}
         </p>
         <h4>{{ articleInfo.attributes.title }}</h4>
+        <p>{{ articleInfo.attributes.summary }}</p>
       </div>
     </nuxt-link>
   </article>
@@ -44,6 +45,9 @@ export default {
     switch (this.language) {
       case 'vuejs':
         this.icon = 'vuejs'
+        break
+      case 'css3':
+        this.icon = 'css3'
         break
       case 'react':
         this.icon = 'react'
