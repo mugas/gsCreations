@@ -21,13 +21,20 @@ collections:
         }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - {
-          label: Summary 164-220,
+          label: Summary 80-150,
           name: summary,
           widget: text,
           required: true,
           pattern: ['.{80,150}', 'Must be within 80 and 150 characters'],
         }
-      - { label: 'Publish Date', name: 'date', widget: 'date', required: true }
+      - {
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'date',
+          required: true,
+          date_format: 'DD.MM.YYYY',
+          format: 'LLL',
+        }
       - {
           label: 'Updated Date',
           name: 'update',

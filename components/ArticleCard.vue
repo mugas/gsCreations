@@ -1,5 +1,5 @@
 <template>
-  <article class="article-card" :class="[size, language]">
+  <article class="article-card" :class="[size, language, icon]">
     <nuxt-link :to="`/blog/${articleInfo.link}`">
       <div class="card-inner">
         <p class="type">
@@ -7,7 +7,7 @@
           {{ capitalize(articleInfo.attributes.type) }}
         </p>
         <h4>{{ articleInfo.attributes.title }}</h4>
-        <p>{{ articleInfo.attributes.summary }}</p>
+        <p>{{ articleInfo.attributes.date }}</p>
       </div>
     </nuxt-link>
   </article>
@@ -26,8 +26,9 @@ export default {
     },
   },
   data() {
+    console.log(this.articleInfo.attributes.language)
     return {
-      size: 'two-thirds',
+      size: 'one-third',
       language: this.articleInfo.attributes.language,
       icon: 'js',
     }
@@ -76,6 +77,8 @@ export default {
 
 <style lang="scss">
 .article-card {
+  display: flex;
+  flex-direction: column;
   border-radius: 0.5rem;
   background-color: #d84727;
   padding: 1rem;
@@ -109,6 +112,13 @@ export default {
     }
   }
   &.one-third {
+    width: calc(33% - 1rem);
+
+    @media (max-width: 567px) {
+      width: 100%;
+    }
+  }
+  &.three-thirds {
     width: calc(33% - 1rem);
 
     @media (max-width: 567px) {
