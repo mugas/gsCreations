@@ -40,6 +40,8 @@ collections:
           name: 'update',
           widget: 'date',
           required: false,
+          date_format: 'DD.MM.YYYY',
+          format: 'LLL',
         }
       - { label: 'Author', name: 'author', widget: 'string', required: true }
       - {
