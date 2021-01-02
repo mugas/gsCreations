@@ -19,11 +19,7 @@
       <ShareThis />
       <div class="other-content"></div>
     </div>
-    <client-only>
-      <Sharethis
-        share-this-embed-url="//platform-api.sharethis.com/js/sharethis.js#property=5ff064f32bc64600181b0f01&product=sticky-share-buttons&cms=sop"
-      />
-    </client-only>
+    <div class="sharethis-inline-share-buttons"></div>
   </section>
 </template>
 
@@ -33,13 +29,11 @@ import shareThis from 'share-this'
 import * as twitterSharer from 'share-this/dist/sharers/twitter'
 import * as facebookSharer from 'share-this/dist/sharers/facebook'
 import * as redditSharer from 'share-this/dist/sharers/reddit'
-import Sharethis from 'vue-sharethis'
 import Container from '~/components/Container'
 
 export default {
   name: 'App',
   components: {
-    Sharethis,
     Container,
   },
   async asyncData({ params }) {
