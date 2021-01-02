@@ -31,7 +31,6 @@ body {
   background: white;
 }
 body {
-  color: white;
   font-family: 'Karla', sans-serif;
   background: white;
 }

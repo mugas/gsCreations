@@ -15,6 +15,15 @@
       <img v-lazy="thumbnail" class="thumbnail" :alt="title" />
       <div id="shareable" class="post-content" v-html="html"></div>
     </Container>
+    <div class="container">
+      <ShareThis />
+      <div class="other-content"></div>
+    </div>
+    <client-only>
+      <Sharethis
+        share-this-embed-url="//platform-api.sharethis.com/js/sharethis.js#property=5ff064f32bc64600181b0f01&product=sticky-share-buttons&cms=sop"
+      />
+    </client-only>
   </section>
 </template>
 
@@ -24,11 +33,13 @@ import shareThis from 'share-this'
 import * as twitterSharer from 'share-this/dist/sharers/twitter'
 import * as facebookSharer from 'share-this/dist/sharers/facebook'
 import * as redditSharer from 'share-this/dist/sharers/reddit'
-
+import Sharethis from 'vue-sharethis'
 import Container from '~/components/Container'
 
 export default {
+  name: 'App',
   components: {
+    Sharethis,
     Container,
   },
   async asyncData({ params }) {
@@ -84,6 +95,7 @@ export default {
 
     selectionShare.init()
   },
+
   head() {
     return {
       title: `${this.title} | <Blog Name>`,
@@ -179,7 +191,7 @@ export default {
   animation: share-this 360ms forwards linear;
 
   &::before {
-    border-color: #252525 transparent;
+    border-color: red;
     border-style: solid;
     border-width: 0.4em 0.4em 0;
     bottom: 100%;
@@ -193,14 +205,14 @@ export default {
   }
 
   ul {
-    background-color: #252525;
+    background-color: green;
     border-radius: 0.5rem;
     transform: translate(-50%, -110%);
-    background: linear-gradient(to bottom, rgba(49, 49, 47, 0.99), #252525);
+    background: linear-gradient(to bottom, rgba(49, 49, 47, 0.99), blue);
     padding: 0;
     margin: 0;
     display: inline-block;
-    color: #fff;
+    color: black;
     left: 50%;
     display: flex;
     list-style: none;
@@ -227,7 +239,7 @@ export default {
       }
 
       a {
-        color: #fff;
+        color: black;
         box-shadow: none;
         display: block;
       }

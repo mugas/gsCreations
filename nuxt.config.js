@@ -7,6 +7,15 @@ export default {
    ** Headers of the page
    */
   head: {
+    script: [
+      {
+        type: 'text/javascript',
+        src:
+          'https://platform-api.sharethis.com/js/sharethis.js#property=5ff064f32bc64600181b0f01&product=sop',
+        async: 'async',
+      },
+    ],
+
     title: '<Blog Name>',
     meta: [
       {

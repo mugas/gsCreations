@@ -8,6 +8,7 @@
         </p>
         <h4>{{ articleInfo.attributes.title }}</h4>
         <p>{{ articleInfo.attributes.date }}</p>
+        <p>{{ articleInfo.attributes.update }}</p>
       </div>
     </nuxt-link>
   </article>
