@@ -7,8 +7,6 @@
           {{ capitalize(articleInfo.attributes.type) }}
         </p>
         <h4>{{ articleInfo.attributes.title }}</h4>
-        <p>{{ articleInfo.attributes.date }}</p>
-        <p>{{ articleInfo.attributes.update }}</p>
       </div>
     </nuxt-link>
   </article>
@@ -81,7 +79,7 @@ export default {
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
-  background-color: #d84727;
+  background-color: #edbd54;
   padding: 1rem;
   margin-bottom: 2rem;
   min-height: 240px;
@@ -96,7 +94,7 @@ export default {
     top: 0;
     color: #fff;
     box-shadow: none;
-    background: rgba(0, 0, 0, 0);
+    background: #7f471b;
     transition: 0.2s ease all;
 
     &:hover {
@@ -129,13 +127,11 @@ export default {
 
   // Types
   &.vuejs {
-    background-color: #3ab795;
+    background-color: #28430a;
   }
-  &.react {
-    background-color: #01baef;
-  }
+
   &.js {
-    background-color: #fff275;
+    background-color: #edbd54;
 
     a {
       color: #252525;
@@ -164,6 +160,7 @@ export default {
       font-size: 0.8rem;
       display: inline-block;
       line-height: 0.8rem;
+      color: white;
     }
     h4 {
       margin-top: 0;

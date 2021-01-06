@@ -11,14 +11,12 @@
         <a v-if="authorlink" :href="authorlink">{{ author }}</a>
       </p>
     </Container>
+
     <Container narrow>
       <img v-lazy="thumbnail" class="thumbnail" :alt="title" />
       <div id="shareable" class="post-content" v-html="html"></div>
     </Container>
-    <div class="container">
-      <ShareThis />
-      <div class="other-content"></div>
-    </div>
+
     <div class="sharethis-inline-share-buttons"></div>
   </section>
 </template>
@@ -261,15 +259,16 @@ export default {
 
     .post-meta {
       margin: 0;
-      color: #535353;
+      color: #d0d1c6;
       font-weight: 700;
     }
   }
   h1 {
-    margin-top: 0;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     display: block;
     width: 100%;
+    color: #28430a;
   }
 }
 

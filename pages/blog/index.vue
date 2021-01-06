@@ -2,7 +2,7 @@
   <section>
     <Container>
       <div class="intro">
-        <h2>Welcome to Blog Names</h2>
+        <h1>Welcome to Blog Names</h1>
       </div>
     </Container>
     <Container flex>
@@ -42,7 +42,9 @@ export default {
 </script>
 
 <style scoped>
-h2 {
-  color: red;
+h1 {
+  color: #28430a;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 </style>

@@ -114,7 +114,7 @@ export default {
    */
   webfontloader: {
     google: {
-      families: ['Montserrat:900', 'Work+Sans:300'], // Loads Lato font with weights 400 and 700
+      families: ['Montserrat:900', 'Work+Sans:300'],
     },
   },
 

@@ -31,6 +31,26 @@ export default {
 </script>
 
 <style lang="scss">
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 6px;
+  text-align: center;
+  color: white;
+}
+
+body {
+  color: #252525;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+}
+
 // @import '../assets/scss/syntax.scss';
 
 /* html {
@@ -47,13 +67,9 @@ body {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-} */
+} 
 
-/* body {
-  color: #252525;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
-}
+/* 
 
 *,
 *:before,
@@ -62,19 +78,7 @@ body {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  line-height: 1.2;
-  margin-bottom: 0;
-  text-align: center;
-  color: white;
-}
+
 
 h1 {
   font-size: 2.4rem;

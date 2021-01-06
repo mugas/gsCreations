@@ -7,9 +7,6 @@
 </template>
 
 <style scoped>
-.test {
-  color: red;
-}
 .drawer-toggle {
   display: flex;
   flex-direction: column;
