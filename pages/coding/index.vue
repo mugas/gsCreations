@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import contents from '~/content/contents.json'
+import codings from '~/content/codings.json'
 
 export default {
   async asyncData({ app }) {

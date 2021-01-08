@@ -1,6 +1,6 @@
 <template>
   <article class="article-card" :class="[size, language, icon]">
-    <nuxt-link :to="`/blog/${articleInfo.link}`">
+    <nuxt-link :to="`/coding/${articleInfo.link}`">
       <div class="card-inner">
         <p class="type">
           <font-awesome-icon :icon="['fab', icon]" />
