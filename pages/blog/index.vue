@@ -27,7 +27,7 @@ export default {
         attributes: wholeMD.attributes,
         link: blog.slug,
       }
-    
+    }
 
     const blogList = await Promise.all(
       blogs.map((blog) => awaitImport(blog))
