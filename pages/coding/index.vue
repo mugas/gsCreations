@@ -21,7 +21,7 @@ import codings from '~/content/codings.json'
 
 export default {
   async asyncData({ app }) {
-    async function awaitImport(blog) {
+    async function awaitImport(coding) {
       const wholeMD = await import(`~/content/coding/${coding.slug}.md`)
       return {
         attributes: wholeMD.attributes,
