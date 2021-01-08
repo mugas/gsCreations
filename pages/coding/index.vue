@@ -26,6 +26,7 @@ export default {
       return {
         attributes: wholeMD.attributes,
         link: coding.slug,
+      }
     }
 
     const codingList = await Promise.all(
