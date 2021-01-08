@@ -35,7 +35,7 @@ export default {
     Container,
   },
   async asyncData({ params }) {
-    const post = await import(`~/content/blog/${params.slug}.md`)
+    const post = await import(`~/content/coding/${params.slug}.md`)
     const attr = post.attributes
     const slug = params.slug
 
@@ -110,7 +110,7 @@ export default {
         {
           hid: 'og:url',
           property: 'og:url',
-          content: `https://<domain>/blog/${this.slug}`,
+          content: `https://<domain>/coding/${this.slug}`,
         },
         {
           hid: 'og:title',

@@ -7,36 +7,35 @@
     </Container>
     <Container flex>
       <ArticleCard
-        v-for="(blog, index) in blogList"
+        v-for="(coding, index) in codingList"
         :key="index"
         :index="index"
-        :article-info="blog"
+        :article-info="coding"
       />
     </Container>
   </section>
 </template>
 
 <script>
-import blogs from '~/content/blogs.json'
+import contents from '~/content/contents.json'
 
 export default {
   async asyncData({ app }) {
     async function awaitImport(blog) {
-      const wholeMD = await import(`~/content/blog/${blog.slug}.md`)
+      const wholeMD = await import(`~/content/coding/${coding.slug}.md`)
       return {
         attributes: wholeMD.attributes,
-        link: blog.slug,
-      }
+        link: coding.slug,
     }
 
-    const blogList = await Promise.all(
-      blogs.map((blog) => awaitImport(blog))
+    const codingList = await Promise.all(
+      codings.map((blog) => awaitImport(blog))
     ).then((res) => {
       return {
-        blogList: res,
+        codingList: res,
       }
     })
-    return blogList
+    return codingList
   },
 }
 </script>
