@@ -89,7 +89,7 @@ p {
 a {
   color: #252525;
   text-decoration: none;
-  box-shadow: inset 0 -1px 0 currentColor;
+  // box-shadow: inset 0 -1px 0 currentColor;
   transition: color 80ms ease-in, box-shadow 130ms ease-in-out,
     -webkit-box-shadow 130ms ease-in-out;
   &:hover {

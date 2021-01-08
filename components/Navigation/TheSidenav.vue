@@ -100,6 +100,6 @@ li:first-child {
 
 .nav-item a:hover,
 .nav-item a:active {
-  color: red;
+  color: #793000;
 }
 </style>

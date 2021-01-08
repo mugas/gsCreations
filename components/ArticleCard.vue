@@ -79,7 +79,7 @@ export default {
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
-  background-color: #edbd54;
+  background-color: #7f471b;
   padding: 1rem;
   margin-bottom: 2rem;
   min-height: 240px;
@@ -94,11 +94,17 @@ export default {
     top: 0;
     color: #fff;
     box-shadow: none;
-    background: #7f471b;
+    background: #edbd54;
     transition: 0.2s ease all;
 
     &:hover {
       background: rgba(0, 0, 0, 0.05);
+    }
+    &:hover .type {
+      color: white;
+    }
+    &:hover h4 {
+      color: white;
     }
   }
 
@@ -160,11 +166,18 @@ export default {
       font-size: 0.8rem;
       display: inline-block;
       line-height: 0.8rem;
-      color: white;
+      color: black;
+      &:hover {
+        color: white;
+      }
     }
     h4 {
       margin-top: 0;
       margin-bottom: 0.25rem;
+      color: black;
+      &:hover {
+        color: white;
+      }
     }
   }
 }

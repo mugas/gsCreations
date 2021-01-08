@@ -46,7 +46,7 @@ h1 {
   font-family: 'Inknut Antiqua', serif;
   padding: 0;
   margin: 0;
-  color: #c8882d;
+  color: #28430a;
   text-align: center;
 }
 form {
@@ -62,7 +62,7 @@ form {
   padding-bottom: 15px;
   margin-bottom: 10px;
   border-radius: 4px;
-  background-color: #edbd54;
+  background-color: #28430a;
 }
 .form__name input {
   width: inherit;
@@ -72,20 +72,21 @@ form {
   border: 0;
   width: 100%;
   font-size: 1rem;
-  background-color: #edbd54;
-  color: black;
+  background-color: #28430a;
+  color: white;
   border-radius: 4px;
   padding: 1.3rem 30px 1rem 30px;
   top: 10px;
   left: 0;
 }
+
 .form__name label {
   padding: 1.3rem 30px 1rem 30px;
   font-size: 17px;
   position: relative;
   top: 10px;
   left: 0;
-  color: black;
+  color: white;
 }
 .form__contacts {
   display: flex;
@@ -100,7 +101,7 @@ form {
   position: relative;
   top: 10px;
   left: 0;
-  color: black;
+  color: white;
 }
 .form__contacts input {
   width: inherit;
@@ -110,13 +111,13 @@ form {
   border: 0;
   width: 100%;
   font-size: 1rem;
-  background-color: #edbd54;
-  color: black;
+  background-color: #28430a;
+  color: white;
   border-radius: 4px;
 }
 .form__email {
   width: 90%;
-  background-color: #edbd54;
+  background-color: #28430a;
   border-radius: 4px;
   margin-bottom: 10px;
 }
@@ -126,7 +127,7 @@ form {
 }
 .form__phone {
   width: 90%;
-  background-color: #edbd54;
+  background-color: #28430a;
   border-radius: 4px;
 }
 .form__phone input {
@@ -137,8 +138,8 @@ form {
   width: 90%;
   margin-bottom: 10px;
   border-radius: 4px;
-  background-color: #edbd54;
-  color: black;
+  background-color: #28430a;
+  color: white;
 }
 .form__textarea textarea {
   width: inherit;
@@ -152,8 +153,8 @@ form {
   top: 10px;
   left: 0;
   line-height: 20px;
-  background-color: #edbd54;
-  color: black;
+  background-color: #28430a;
+  color: white;
   border-radius: 4px;
 }
 
@@ -173,9 +174,9 @@ textarea:focus {
   padding: 7px 35px;
   border-radius: 60px;
   display: inline-block;
-  background-color: #7f471b;
+  background-color: #28430a;
   align-self: center;
-  color: black;
+  color: white;
   font-size: 18px;
   cursor: pointer;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);
@@ -186,7 +187,7 @@ textarea:focus {
   transform: translateY(1px);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
 }
-@media (min-width: 35rem) {
+@media (min-width: 945px) {
   form {
     display: flex;
     flex-direction: column;
@@ -210,7 +211,7 @@ textarea:focus {
     padding-bottom: 15px;
     margin-bottom: 10px;
     border-radius: 4px;
-    background-color: #edbd54;
+    background-color: #28430a;
   }
   .form__email {
     margin-bottom: 0px;

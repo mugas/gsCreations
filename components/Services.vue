@@ -6,34 +6,44 @@
       digital presence and I can help you achieve it.
     </p>
     <div class="about__cards">
-      <div class="about__single-card" active-click width="350px" height="450px">
-        <div class="front">
-          <img width="100px" src="~/assets/Svg/web.svg" />
-          <h2>Web Development</h2>
-          <p>
-            I build digital products that are responsive, acessible and fast
-          </p>
-          <button>Get in touch</button>
-        </div>
-      </div>
+      <nuxt-link to="/contact">
+        <section
+          class="about__single-card"
+          active-click
+          width="350px"
+          height="450px"
+        >
+          <div class="front">
+            <img width="100px" src="~/assets/Svg/web.svg" />
+            <h2>Web Development</h2>
+            <p>
+              I build digital products that are responsive, acessible and fast
+            </p>
 
-      <div class="about__single-card" width="350px" height="450px">
-        <div class="front">
-          <img width="100px" src="~/assets/Svg/digital.svg" />
-          <h2>Digital Strategy and SEO</h2>
-          <p>Engage your audience and reach your marketing goals</p>
-          <button>Get in touch</button>
-        </div>
-      </div>
-
-      <div class="about__single-card" width="350px" height="450px">
-        <div class="front">
-          <img width="100px" src="~/assets/Svg/seo.svg" />
-          <h2>Wordpress Development</h2>
-          <p>I help you put your Wordpress website tailored for your needs</p>
-          <button>Get in touch</button>
-        </div>
-      </div>
+            <button>Get in touch</button>
+          </div>
+        </section>
+      </nuxt-link>
+      <nuxt-link to="/contact">
+        <section class="about__single-card" width="350px" height="450px">
+          <div class="front">
+            <img width="100px" src="~/assets/Svg/digital.svg" />
+            <h2>Digital Strategy and SEO</h2>
+            <p>Engage your audience and reach your marketing goals</p>
+            <button>Get in touch</button>
+          </div>
+        </section>
+      </nuxt-link>
+      <nuxt-link to="/contact">
+        <section class="about__single-card" width="350px" height="450px">
+          <div class="front">
+            <img width="100px" src="~/assets/Svg/seo.svg" />
+            <h2>Wordpress Development</h2>
+            <p>I help you put your Wordpress website tailored for your needs</p>
+            <button>Get in touch</button>
+          </div>
+        </section>
+      </nuxt-link>
     </div>
   </section>
 </template>
@@ -94,7 +104,7 @@ button {
 }
 
 .about__cards >>> .front:hover {
-  background: #7f471b;
+  background: #793000;
 }
 
 @media (min-width: 768px) {
