@@ -1,16 +1,32 @@
 <template>
-  <div class="soon">
-    <img class="image" src="../assets/Svg/gs.svg" />
-    <h1 class="line">Coming Soon...</h1>
+  <div>
+    <Container>
+      <Hero class="background" />
+      <h1>Digital presence for your business</h1>
+    </Container>
+    <section>
+      <Container class="button">
+        <nuxt-link to="/services"> <button>Services</button></nuxt-link>
+        <nuxt-link to="/contact"> <button>Contact</button></nuxt-link>
+        <nuxt-link to="/coding"> <button>Coding</button></nuxt-link>
+      </Container>
+      <Container flex class="blog">
+        <ArticleCard
+          v-for="(blog, index) in blogList"
+          :key="index"
+          :index="index"
+          :article-info="blog"
+        />
+        <nuxt-link to="/blog"
+          ><p class="posts">See all of ours posts</p></nuxt-link
+        >
+      </Container>
+    </section>
   </div>
 </template>
 
 <script>
-export default {
-  layout: 'comingsoon',
-}
-
-/* import ArticleCard from '~/components/ArticleCard'
+import ArticleCard from '~/components/ArticleCard'
 import Container from '~/components/Container'
 
 import blogs from '~/content/blogs.json'
@@ -31,7 +47,7 @@ export default {
     }
 
     const blogList = await Promise.all(
-      blogs.map((blog) => awaitImport(blog))
+      blogs.slice(0, 2).map((blog) => awaitImport(blog))
     ).then((res) => {
       return {
         blogList: res,
@@ -40,61 +56,60 @@ export default {
 
     return blogList
   },
-} */
+}
 </script>
 
-<style lang="scss" scoped>
-form {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  label {
-    color: black;
-  }
+<style scoped>
+.background {
+  background-color: #edbd54;
 }
-img {
-  width: 350px;
-}
-.main {
-  background: black;
-}
-.soon {
-  display: flex;
-  flex-direction: column;
-}
-
-.soon {
-  background: #131313;
-}
-
-.image {
-  flex: 1;
-  align-self: center;
-}
-
-.line {
-  flex: 1;
-  color: white;
-}
-
-.intro {
-  text-align: center;
-  margin-bottom: 2.4rem;
-
-  h1 {
-    // margin-top: 0;
-    text-align: center;
-  }
-}
-
 body {
-  background: black;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hid;
+}
+.button {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-@media (min-width: 1000px) {
-  img {
-    width: 650px;
+h1 {
+  margin-top: 0;
+  line-height: 2.1;
+  color: #28430a;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  text-transform: inherit;
+  background-color: #793000;
+  color: #fff;
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 1.125rem;
+  padding: 14.00778px 20px;
+  border-radius: 2em;
+  cursor: pointer;
+}
+.posts {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: larger;
   }
 }
 </style>

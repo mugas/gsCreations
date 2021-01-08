@@ -2,11 +2,11 @@
   <section>
     <Container>
       <div class="intro">
-        <h1>Welcome to Blog Names</h1>
+        <h1>Let's code</h1>
       </div>
     </Container>
     <Container flex>
-      <ArticleCard
+      <Coding
         v-for="(coding, index) in codingList"
         :key="index"
         :index="index"

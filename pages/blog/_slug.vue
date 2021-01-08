@@ -183,7 +183,7 @@ export default {
   animation: share-this 360ms forwards linear;
 
   &::before {
-    border-color: red;
+    border-color: #793000;
     border-style: solid;
     border-width: 0.4em 0.4em 0;
     bottom: 100%;
@@ -197,7 +197,7 @@ export default {
   }
 
   ul {
-    background-color: green;
+    background-color: #28430a;
     border-radius: 0.5rem;
     transform: translate(-50%, -110%);
     background: linear-gradient(to bottom, rgba(49, 49, 47, 0.99), blue);

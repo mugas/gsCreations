@@ -34,6 +34,9 @@ export default {
 
     @media (max-width: 567px) {
       display: block;
+      h1 {
+        color: red;
+      }
     }
   }
 

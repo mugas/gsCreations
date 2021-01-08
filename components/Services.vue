@@ -1,10 +1,7 @@
 <template>
   <section>
     <h1>Services</h1>
-    <p>
-      My services are focused in hospitality business. Your business needs
-      digital presence and I can help you achieve it.
-    </p>
+    <p>Your business needs digital presence and I can help you achieve it.</p>
     <div class="about__cards">
       <nuxt-link to="/contact">
         <section
