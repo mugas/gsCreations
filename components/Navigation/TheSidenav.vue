@@ -5,7 +5,9 @@
       <div v-if="show" class="sidenav">
         <ul class="nav-list" @click="$emit('close')">
           <li class="nav-item">
-            <img src="~/assets/Svg/gs.svg" class="side-logo" />
+            <nuxt-link to="/"
+              ><img src="~/assets/Svg/gs.svg" class="side-logo"
+            /></nuxt-link>
           </li>
           <li class="nav-item">
             <nuxt-link to="/services">Services</nuxt-link>
@@ -13,9 +15,6 @@
           <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/contact">Contact</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/coding">Coding</nuxt-link></li>
-          <li class="nav-item">
-            <nuxt-link to="/projects">Projects</nuxt-link>
-          </li>
           <li class="nav-item"><nuxt-link to="/blog">Blog</nuxt-link></li>
         </ul>
         <SocialMedia />

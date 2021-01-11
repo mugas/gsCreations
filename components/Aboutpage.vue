@@ -249,9 +249,6 @@ article {
 }
 
 @media (min-width: 1100px) {
-  .text {
-    padding: 0 60px;
-  }
 }
 footer {
   height: 40px;
