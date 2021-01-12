@@ -79,6 +79,9 @@ form {
   top: 10px;
   left: 0;
 }
+.form__name input:hover {
+  background-color: #28430a;
+}
 
 .form__name label {
   padding: 1.3rem 30px 1rem 30px;

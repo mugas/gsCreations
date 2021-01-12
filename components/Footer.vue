@@ -18,6 +18,7 @@ export default {
 
 <style lang="scss">
 .footer {
+  background-color: #28430a;
   padding: 2rem 0;
   color: black;
   @media (max-width: 567px) {

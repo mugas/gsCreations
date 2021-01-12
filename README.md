@@ -1,51 +1,88 @@
-# NuxtJS Netlify CMS Starter
+[![Social banner for mugas](./assets/me_banner.png)](http://gscreations.io/)
 
-> Netlify CMS starter based on the [Code Tribe](https://code-tribe.com) blog.
+<h1 align="center"> 🔥Good Stuff Creations🔥</h1>
 
-## Build Setup
+<h2 align="center">More sustainable website and coding</h2>
 
-``` bash
-# install dependencies
-$ yarn install
+### Index
 
-# serve with hot reload at localhost:3000
-$ yarn run dev
+- [Name](#Name) 👈
+- [Links](#Links) 🔗
+- [Description](#Description) 📖
+- [Languages and Frameworks](####Languages-and-Frameworks) ⚙️
+- [Screenshots](#Screenshots) 📱
+- [Instalation](#Instalation) 🧩
+- [Support](#Support) 🆘
+- [Roadmap](#Roadmap) 🗺️
+- [Authors and acknowledgment](####Authors-and-acknowledgment) ✍️
+- [Project Status](#Project-Status) 📜
 
-# generate blog
-$ yarn run generate
-```
+# Name
 
-## Quick Start
+Good Stuff Creations
 
-1. Clone or fork this repository.
-2. Set up your [Netlify](https://netlify.com) account.
-3. Sync Netlify with your own repository to automatically deploy when you write a new post.
-4. `yarn dev` or `npm run dev` for local development (available at `http://localhost:3000`).
-5. Deploy, write some posts and profit!
+# Links
 
-Access your Netlify CMS admin dashboard at `localhost:3000/admin`. By default, the project assumes you want to use [Netlify Identity](https://www.netlify.com/docs/identity/). If you don't wish to use this, modify the `static/admin/index.html` file.
+[Website](https://www.gscreations.io/)
 
-## Configuration
+---
 
-Netlify CMS configuration is stored in `static/admin/config.yml`. See the [Netlify CMS docs](https://www.netlifycms.org/docs/intro/) for more info.
+# Description
 
-Blog posts will be stored in the `content/blog` folder.
+I wanted to have a website where I could offer my freelance services but also could share my coding tutorials, snippets, etc. I had my own [website](http://ricardomoreira.io/) but I want that my personal website becomes more than only about coding, hence I create this website.
+Also made in Nuxt, but with some improvements. Mostly based on Tom [tutorial](https://code-tribe.com/). Then I add change (and will continue changing it) to become more my own website. With Tom tutorial I could learn more about to create a blog without using Vuex, but stil have a fast and functional website.
 
-## Features
+---
 
-Features include:
+# Languages, Frameworks and others
 
-- Full SEO support for blog posts.
-- Lazy-load images.
-- robots.txt to disallow admin routes.
-- Automatic sitemap generation of your homepage and blog posts.
-- Font Awesome imports (see nuxt.config.js to add more).
-- Google font loading.
-- PrismJS syntax highlighting.
-- Medium-like social sharing.
-- Page transitions.
-- And of course, full page HTML rendering for deployment on Netlify!
+- **Nuxt.js** - Framework
+- **Netlify CMS** - CMS
+- **Font Awesome** - Icons
+- **Share This** - Social Media
 
-## NuxtJS
+---
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+# Screenshots
+
+|             Home Page             |             Blog Page              |
+| :-------------------------------: | :--------------------------------: |
+| ![](assets/images/screenshot.png) | ![](assets/images/screenshot1.png) |
+
+---
+
+# Instalation
+
+---
+
+# Support
+
+Have any question or find something that doesn't look good? Let's talk 😊
+
+[Here](https://github.com/mugas)
+
+[And Here](https://www.gscreations.io/about)
+
+---
+
+# Roadmap
+
+Next steps to me implemented:
+
+1. Improve Acessibility
+
+---
+
+# Authors-and-acknowledgment
+
+- [Tom](https://code-tribe.com/)
+
+- Me 😊
+
+---
+
+# Project-Status
+
+Always improving
+
+---
