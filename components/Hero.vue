@@ -257,8 +257,8 @@ svg {
 
 @keyframes pulse {
   /* Rotating it along with the scale makes it a little bit more fancy */
-  0%,
-  100% {
+  0%
+  /*100%*/ {
     transform: scale(0) rotate(33deg);
   }
   35%,

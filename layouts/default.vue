@@ -129,10 +129,6 @@ a {
   // box-shadow: inset 0 -1px 0 currentColor;
   transition: color 80ms ease-in, box-shadow 130ms ease-in-out,
     -webkit-box-shadow 130ms ease-in-out;
-
-  &:hover {
-    box-shadow: inset 0 0 0 currentcolor, 0 3px 0 currentcolor;
-  }
 }
 
 ul {
