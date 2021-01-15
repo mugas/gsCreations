@@ -95,11 +95,12 @@ button {
   text-transform: inherit;
   background-color: #793000;
   color: #fff;
+
   position: relative;
   z-index: 0;
   display: inline-block;
   overflow: hidden;
-  font-size: 1.125rem;
+  font-size: 1rem;
   /* padding: 14.00778px 20px; */
   /* padding: 14.00778px -1px; */
   border-radius: 2em;
