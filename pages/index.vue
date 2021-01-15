@@ -101,7 +101,7 @@ button {
   overflow: hidden;
   font-size: 1.125rem;
   /* padding: 14.00778px 20px; */
-  padding: 14.00778px -1px;
+  /* padding: 14.00778px -1px; */
   border-radius: 2em;
   cursor: pointer;
 }
