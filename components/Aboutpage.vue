@@ -110,7 +110,7 @@ a:hover {
 }
 .action {
   color: #793000;
-  font-size: 11.5vw;
+  font-size: 3.5vw;
   filter: brightness(2);
 }
 
@@ -122,12 +122,6 @@ a:hover {
 @media (min-width: 700px) {
   .page-wrapper {
     display: flex;
-  }
-
-  .action {
-    color: #793000;
-    font-size: 3.5vw;
-    filter: brightness(2);
   }
 }
 aside {

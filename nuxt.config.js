@@ -17,7 +17,7 @@ export default {
       },
     ],
 
-    title: 'Good Stuff Creations – web development and coding tutorials',
+    title: '<Blog Name>',
     meta: [
       {
         charset: 'utf-8',
@@ -29,34 +29,32 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: `http://gscreations.io/`,
+        content: `https://example.com`,
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Good Stuff Creations - web development and coding tutorials',
+        content: '<Blog Name>',
       },
       {
         hid: 'description',
         name: 'description',
-        content:
-          'Good stuff creations helps your hospitality business grow with a new website and a strong digital presence',
+        content: '<Blog name> and description',
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content:
-          'Good stuff creations helps your hospitality business grow with a new website and a strong digital presence',
+        content: '<Blog name> and description',
       },
       {
         hid: 'og:image:alt',
         property: 'og:image:alt',
-        content: '~/assets/Svg/gs.svg',
+        content: '<Blog Name>',
       },
       {
         hid: 'og:article:author',
         property: 'og:article:author',
-        content: 'https://github.com/mugas',
+        content: 'https://github.com/code-tribe',
       },
       {
         hid: 'og:site_name',
@@ -68,7 +66,6 @@ export default {
         property: 'og:type',
         content: 'website',
       },
-      { name: 'twitter:site', content: '@g_s_creations' },
       {
         hid: 'twitter:card',
         name: 'twitter:card',
@@ -77,7 +74,7 @@ export default {
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'Good Stuff Creations - web development and coding tutorials',
+        content: '<Blog Name>',
       },
       {
         hid: 'twitter:description',

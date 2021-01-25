@@ -78,19 +78,6 @@ button {
   border: 2px white solid;
   border-radius: 16px;
 }
-
-a {
-  color: #252525;
-  text-decoration: none;
-  /* box-shadow: inset 0 -1px 0 currentColor; */
-  transition: color 80ms ease-in, box-shadow 130ms ease-in-out,
-    -webkit-box-shadow 130ms ease-in-out;
-}
-/* a:hover {
-  box-shadow: inset 0 0 0 currentcolor, 0 3px 0 currentcolor;
- 
-} */
-
 .about__single-card {
   border-radius: 16px;
   overflow: hidden;
