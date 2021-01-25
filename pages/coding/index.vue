@@ -2,7 +2,7 @@
   <section>
     <Container>
       <div class="intro">
-        <h1>Let's code todaynp,</h1>
+        <h1>Let's code today,</h1>
       </div>
     </Container>
     <Container flex>
