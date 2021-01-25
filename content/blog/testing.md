@@ -1,7 +1,7 @@
 ---
 type: Js
 language: Js
-title: Testing
+title: Testings
 summary: Testing first post Testing first post Testing first post Testing first
   post Testing first post Testing first post Testing first post Testing first
   post Testing first post Testing first post Testing first post Testing first
