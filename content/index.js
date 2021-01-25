@@ -28,6 +28,27 @@ const getFiles = (dir) => {
 }
 
 const getCodes = (dir) => {
+  const codes = fs.readdirSync(dir)
+  let filecodes = []
+
+  codes.forEach((file) => {
+    if (fs.statSync(dir + file).isDirectory()) {
+      filecodes = getCodes(dir + file + '/', filelist)
+    } else {
+      const markdownFiles = fs.readFileSync(`content/coding/${file}`, 'utf-8')
+      const fileContent = parseMarkdown(markdownFiles)
+      const dates = fileContents.date
+      const slugs = file.split('.').slice(0, -1).join('.')
+
+      const obj = { dates, slugs }
+
+      filecodes.push(obj)
+    }
+  })
+  return filecodes
+}
+
+/* const getCodes = (dir) => {
   const files = fs.readdirSync(dir)
   let filelist = []
 
@@ -46,7 +67,7 @@ const getCodes = (dir) => {
     }
   })
   return filelist
-}
+} */
 /**
  * Write blogs json file
  */
