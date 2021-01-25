@@ -27,7 +27,7 @@ const getFiles = (dir) => {
   return filelist
 }
 
-const getCodes = (dir) => {
+/* const getCodes = (dir) => {
   const codes = fs.readdirSync(dir)
   let filecodes = []
 
@@ -46,7 +46,7 @@ const getCodes = (dir) => {
     }
   })
   return filecodes
-}
+} */
 
 /* const getCodes = (dir) => {
   const files = fs.readdirSync(dir)
@@ -89,7 +89,7 @@ const writeBlogs = async () => {
 
 writeBlogs()
 
-const writeCodings = async () => {
+/* const writeCodings = async () => {
   // Get the aray from files
   const fileArray = await getCodes('content/coding/')
   // Order array by date (default asc)
@@ -106,3 +106,4 @@ const writeCodings = async () => {
 }
 
 writeCodings()
+ */
