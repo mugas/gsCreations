@@ -1,7 +1,7 @@
 ---
 type: css
 language: css
-title: Testing coding
+title: Testing codings
 summary: Testing first post Testing first post Testing first post Testing first
   post  Testing first post Testing first post Testing first post Testing first
   post Testing first post Testing first post Testing first post
