@@ -22,7 +22,7 @@
           <li class="nav-item"><nuxt-link to="/coding">Coding</nuxt-link></li>
         </ul>
       </div>
-      <nuxt-link to="/"
+      <nuxt-link to="/blog"
         ><img width="150px" src="~/assets/Svg/gs.svg" class="right-logo"
       /></nuxt-link>
     </header>

@@ -30,13 +30,13 @@ const getFiles = (dir) => {
 /**
  * Write blogs json file
  */
-
 const writeBlogs = async () => {
   // Get the aray from files
   const fileArray = await getFiles('content/blog/')
   // Order array by date (default asc)
   const sortedArray = await fileArray.sort((a, b) => {
-    return a.date.getTime() - b.date.getTime()
+    const date = new Date()
+    return new Date(a.date).getTime() - new Date(b.date).getTime()
   })
   // Reverse array and write to JSON
   const reversedArray = await sortedArray.reverse()
