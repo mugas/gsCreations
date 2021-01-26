@@ -27,21 +27,12 @@ collections:
           required: true,
           pattern: ['.{80,150}', 'Must be within 80 and 150 characters'],
         }
-      - {
-          label: 'Publish Date',
-          name: 'date',
-          widget: 'datetime',
-          required: true,
-          date_format: 'DD.MM.YYYY',
-          format: 'LL',
-        }
+      - { label: 'Publish Date', name: 'date', widget: 'date', required: true }
       - {
           label: 'Updated Date',
           name: 'update',
-          widget: 'datetime',
+          widget: 'date',
           required: false,
-          date_format: 'DD.MM.YYYY',
-          format: 'LL',
         }
       - { label: 'Author', name: 'author', widget: 'string', required: true }
       - {
@@ -79,21 +70,12 @@ collections:
           required: true,
           pattern: ['.{80,150}', 'Must be within 80 and 150 characters'],
         }
-      - {
-          label: 'Publish Date',
-          name: 'date',
-          widget: 'datetime',
-          required: true,
-          date_format: 'DD.MM.YYYY',
-          format: 'LL',
-        }
+      - { label: 'Publish Date', name: 'date', widget: 'date', required: true }
       - {
           label: 'Updated Date',
           name: 'update',
-          widget: 'datetime',
+          widget: 'date',
           required: false,
-          date_format: 'DD.MM.YYYY',
-          format: 'LL',
         }
       - { label: 'Author', name: 'author', widget: 'string', required: true }
       - {

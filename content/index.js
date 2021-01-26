@@ -33,7 +33,7 @@ const getCodes = (dir) => {
 
   codes.forEach((file) => {
     if (fs.statSync(dir + file).isDirectory()) {
-      filecodes = getCodes(dir + file + '/', filelist)
+      filecodes = getCodes(dir + file + '/', filecodes)
     } else {
       const markdownFiles = fs.readFileSync(`content/coding/${file}`, 'utf-8')
       const fileContent = parseMarkdown(markdownFiles)
@@ -76,6 +76,7 @@ const writeBlogs = async () => {
   const fileArray = await getFiles('content/blog/')
   // Order array by date (default asc)
   const sortedArray = await fileArray.sort((a, b) => {
+    console.log(a)
     return a.date.getTime() - b.date.getTime()
   })
   // Reverse array and write to JSON
