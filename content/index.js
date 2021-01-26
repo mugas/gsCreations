@@ -27,7 +27,7 @@ const getFiles = (dir) => {
   return filelist
 }
 
-/* const getCodes = (dir) => {
+const getCodes = (dir) => {
   const codes = fs.readdirSync(dir)
   let filecodes = []
 
@@ -37,7 +37,7 @@ const getFiles = (dir) => {
     } else {
       const markdownFiles = fs.readFileSync(`content/coding/${file}`, 'utf-8')
       const fileContent = parseMarkdown(markdownFiles)
-      const dates = fileContents.date
+      const dates = fileContent.date
       const slugs = file.split('.').slice(0, -1).join('.')
 
       const obj = { dates, slugs }
@@ -46,9 +46,9 @@ const getFiles = (dir) => {
     }
   })
   return filecodes
-} */
-
-/* const getCodes = (dir) => {
+}
+/* 
+ const getCodes = (dir) => {
   const files = fs.readdirSync(dir)
   let filelist = []
 
@@ -67,7 +67,7 @@ const getFiles = (dir) => {
     }
   })
   return filelist
-} */
+}  */
 /**
  * Write blogs json file
  */
@@ -89,7 +89,7 @@ const writeBlogs = async () => {
 
 writeBlogs()
 
-/* const writeCodings = async () => {
+const writeCodings = async () => {
   // Get the aray from files
   const fileArray = await getCodes('content/coding/')
   // Order array by date (default asc)
@@ -106,4 +106,3 @@ writeBlogs()
 }
 
 writeCodings()
- */
