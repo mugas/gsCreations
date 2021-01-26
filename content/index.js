@@ -76,7 +76,6 @@ const writeBlogs = async () => {
   const fileArray = await getFiles('content/blog/')
   // Order array by date (default asc)
   const sortedArray = await fileArray.sort((a, b) => {
-    console.log(a)
     return a.date.getTime() - b.date.getTime()
   })
   // Reverse array and write to JSON
