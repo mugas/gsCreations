@@ -35,7 +35,6 @@ const writeBlogs = async () => {
   const fileArray = await getFiles('content/blog/')
   // Order array by date (default asc)
   const sortedArray = await fileArray.sort((a, b) => {
-    const date = new Date()
     return new Date(a.date).getTime() - new Date(b.date).getTime()
   })
   // Reverse array and write to JSON
@@ -49,7 +48,7 @@ const writeBlogs = async () => {
 
 writeBlogs()
 
-const getCodes = (dir) => {
+/* const getCodes = (dir) => {
   const codes = fs.readdirSync(dir)
   let filecodes = []
   codes.forEach((file) => {
@@ -67,27 +66,8 @@ const getCodes = (dir) => {
     }
   })
   return filecodes
-}
+} */
 
-const writeCodings = async () => {
-  // Get the aray from files
-  const fileArray = await getCodes('content/coding/')
-  // Order array by date (default asc)
-  const sortedArray = await fileArray.sort((a, b) => {
-    return new Date(a.date).getTime() - new Date(b.date).getTime()
-  })
-  // Reverse array and write to JSON
-  const reversedArray = await sortedArray.reverse()
-  const jsonContent = await JSON.stringify(reversedArray)
-
-  fs.writeFile('content/codings.json', jsonContent, (err) => {
-    if (err) throw new Error(err)
-  })
-}
-
-writeCodings()
-
-/* 
 const getCodes = (dir) => {
   const files = fs.readdirSync(dir)
   let filelist = []
@@ -107,4 +87,21 @@ const getCodes = (dir) => {
   })
   return filelist
 }
-*/
+
+const writeCodings = async () => {
+  // Get the aray from files
+  const fileArray = await getCodes('content/coding/')
+  // Order array by date (default asc)
+  const sortedArray = await fileArray.sort((a, b) => {
+    return new Date(a.date).getTime() - new Date(b.date).getTime()
+  })
+  // Reverse array and write to JSON
+  const reversedArray = await sortedArray.reverse()
+  const jsonContent = await JSON.stringify(reversedArray)
+
+  fs.writeFile('content/codings.json', jsonContent, (err) => {
+    if (err) throw new Error(err)
+  })
+}
+
+writeCodings()
