@@ -15,9 +15,6 @@
           </li>
           <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/contact">Contact</nuxt-link></li>
-          <!-- <li class="nav-item">
-            <nuxt-link to="/projecs">Projects</nuxt-link>
-          </li> -->
           <li class="nav-item"><nuxt-link to="/blog">Blog</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/coding">Coding</nuxt-link></li>
         </ul>

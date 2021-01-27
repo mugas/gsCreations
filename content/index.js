@@ -69,7 +69,7 @@ const getCodes = (dir) => {
   })
   return filecodes
 } */
-
+/* 
 const getCodes = (dir) => {
   const files = fs.readdirSync(dir)
   let filelist = []
@@ -107,3 +107,4 @@ const writeCodings = async () => {
 }
 
 writeCodings()
+ */
