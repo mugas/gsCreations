@@ -2,7 +2,7 @@
   "name": "nuxt-netlify-cms-starter",
   "version": "1.0.0",
   "description": "<Blog Name> Blog",
-  "author": "Code Tribe",
+  "author": "Ricardo Moreira",
   "private": true,
   "scripts": {
     "dev": "node content/index.js && nuxt",
