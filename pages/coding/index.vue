@@ -30,7 +30,7 @@ export default {
     }
 
     const codingList = await Promise.all(
-      codings.map((blog) => awaitImport(coding))
+      codings.map((coding) => awaitImport(coding))
     ).then((res) => {
       return {
         codingList: res,
