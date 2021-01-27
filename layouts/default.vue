@@ -6,6 +6,7 @@
     <!-- <main id="main" class="main" role="main"> -->
     <nuxt />
     <!-- </main> -->
+    <Footer />
   </div>
 </template>
 
@@ -14,7 +15,6 @@
 import TheSidenav from '~/components/Navigation/TheSidenav' */
 /* import Footer from '~/components/Footer'
 import Navbar from '~/components/Navbar' */
-
 export default {
   /*  components: {
       Footer,
@@ -44,47 +44,35 @@ h6 {
   text-align: center;
   color: white;
 }
-
 body {
   color: #252525;
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
 }
-
 // @import '../assets/scss/syntax.scss';
-
-/* html {
+html {
   font-size: 20px;
   word-spacing: 1px;
-} */
-/* 
+}
 html,
 body {
   box-sizing: border-box;
   -ms-text-size-adjust: 100%;
   widows: 100%;
-
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-} 
-
-/* 
-
+}
 *,
 *:before,
 *:after {
   box-sizing: border-box;
   margin: 0;
 }
-
-
-
 h1 {
   font-size: 2.4rem;
   // margin-top: 6rem;
   text-align: center;
-
   & + p {
     margin-top: 1.2rem;
   }
@@ -97,7 +85,6 @@ h1 {
 h2 {
   font-size: 1.8rem;
   margin-top: 2rem;
-
   & + p {
     margin-top: 1rem;
   }
@@ -105,7 +92,6 @@ h2 {
 h3 {
   font-size: 1.5rem;
   margin-top: 1.8rem;
-
   & + p {
     margin-top: 1rem;
   }
@@ -113,66 +99,51 @@ h3 {
 h4 {
   font-size: 1.2rem;
   margin-top: 1.6rem;
-
   & + p {
     margin-top: 0.8rem;
   }
 }
-
 p {
   margin-top: 0;
   margin-bottom: 1.6rem;
   font-size: 1rem;
   line-height: 1.6;
 }
-
 a {
   color: #252525;
-} */
-/*  text-decoration: none;
-  box-shadow: inset 0 -1px 0 currentColor;
+  text-decoration: none;
+  // box-shadow: inset 0 -1px 0 currentColor;
   transition: color 80ms ease-in, box-shadow 130ms ease-in-out,
     -webkit-box-shadow 130ms ease-in-out;
-
-  &:hover {
-    box-shadow: inset 0 0 0 currentcolor, 0 3px 0 currentcolor;
-  } */
-/*}*/
-
-/* ul {
+}
+ul {
   padding-left: 1rem;
   font-size: 1rem;
   line-height: 1.6;
   margin-top: 0;
   margin-bottom: 1.6rem;
-} */
-
-/* ::-moz-selection {
+}
+::-moz-selection {
   background: #e5e5e5;
 }
 ::selection {
   background: #e5e5e5;
-} */
-
-/* main {
+}
+main {
   padding: 80px 0;
-
   @media (max-width: 567px) {
     padding: 64px 0;
   }
 }
- */
 // Transitions
-/* .fade-enter-active {
+.fade-enter-active {
   animation: acrossIn 0.2s ease-out both;
-
   @media (max-width: 567px) {
     animation: none;
   }
 }
 .fade-leave-active {
   animation: acrossOut 0.2s ease-in both;
-
   @media (max-width: 567px) {
     animation: none;
   }
@@ -196,5 +167,5 @@ a {
     opacity: 0;
     transform: translateX(64px);
   }
-} */
+}
 </style>
