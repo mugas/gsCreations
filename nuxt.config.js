@@ -29,7 +29,7 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: `https://example.com`,
+        content: `https://gscreations.io`,
       },
       {
         hid: 'og:title',
@@ -156,7 +156,7 @@ export default {
    * sitemap
    */
   sitemap: {
-    hostname: 'https://example.com',
+    hostname: 'https://gscreations.io',
     gzip: true,
     exclude: ['/admin/'],
   },
