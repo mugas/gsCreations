@@ -1,6 +1,6 @@
 ---
-type: css
-language: css
+type: css3
+language: css3
 title: "Create a image gallery "
 summary: Using Grid and Flexbox - First I need to say that this is not my newest
   project, but 2019 for a couple of reasons I didn't code so much as I wanted,
