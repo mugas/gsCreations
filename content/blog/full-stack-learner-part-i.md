@@ -5,7 +5,7 @@ title: Full Stack Learner (Part I)
 summary: "All about keeping it going - The path from deciding that you need to
   change your life and what you have to do to achieve it till the moment that
   you know you going to get it, just need one thing: Patience."
-date: 2021-02-02T07:01:18.647Z
+date: 2018-09-19T06:01:18.647Z
 update: 2021-02-02T07:01:18.758Z
 author: Ricardo Moreira
 thumbnail: https://res.cloudinary.com/mugas/image/upload/v1589884800/calendar_frz1sn.png
