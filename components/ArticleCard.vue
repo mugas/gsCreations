@@ -94,7 +94,7 @@ export default {
     top: 0;
     color: #fff;
     box-shadow: none;
-    background: #edbd54;
+    background: rgba(0, 0, 0, 0);
     transition: 0.2s ease all;
 
     &:hover {
@@ -135,7 +135,6 @@ export default {
   &.vuejs {
     background-color: #28430a;
   }
-
   &.js {
     background-color: #edbd54;
 
@@ -143,9 +142,15 @@ export default {
       color: #252525;
     }
   }
+  &.css {
+    background-color: #0f5298;
+  }
+
+  &.learning {
+    background-color: #228b22;
+  }
   &.other {
     background-color: #ff8c42;
-
     a {
       color: #252525;
     }

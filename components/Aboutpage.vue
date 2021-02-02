@@ -2,7 +2,7 @@
   <div>
     <div class="page-wrapper">
       <aside>
-        <h1>Hi, I'm Ricardo</h1>
+        <h1>Hi, I'm Ricardos</h1>
         <p class="bio">
           Let's <br />
           <span class="action"> {{ actions[0] }}</span>

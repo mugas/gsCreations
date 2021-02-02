@@ -43,7 +43,7 @@ export default {
       }
     }
     const blogList = await Promise.all(
-      blogs.slice(0, 2).map((blog) => awaitImport(blog))
+      blogs.slice(0, 1).map((blog) => awaitImport(blog))
     ).then((res) => {
       return {
         blogList: res,
@@ -59,6 +59,7 @@ export default {
   background-color: #edbd54;
   margin-top: 5%;
 }
+
 body {
   margin: 0;
   padding: 0;

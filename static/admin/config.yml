@@ -16,7 +16,7 @@ collections:
     folder: 'content/blog'
     create: true
     slug: '{{slug}}'
-    sort: 'date:desc'
+    sort: 'date:asc'
     fields:
       - { label: 'Type', name: 'type', widget: 'string', required: false }
       - {
