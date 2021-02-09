@@ -11,7 +11,7 @@ thumbnail: https://res.cloudinary.com/mugas/image/upload/v1591084549/musicQuiz_r
 ---
 # **What it is?**
 
-A music game. Based on the [color game](http://localhost:3000/projects/2020-06-02-color-game) I decided to create my version and along the way, went learning about Object Oriented Programming
+A music game based on a tutorial. I decided to create my version and along the way, went learning about Object Oriented Programming
 
 
 
