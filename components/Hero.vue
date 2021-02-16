@@ -235,7 +235,7 @@
 /* Basic styling */
 svg {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .filled-heading {
@@ -257,14 +257,10 @@ svg {
   transform-box: fill-box;
 }
 
-@media (min-width: 600px) {
-  #background {
-    height: 1200px;
-  }
-}
 @keyframes pulse {
   /* Rotating it along with the scale makes it a little bit more fancy */
-  0% {
+  0%,
+  100% {
     transform: scale(0) rotate(33deg);
   }
   35%,

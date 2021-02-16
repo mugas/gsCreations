@@ -1,8 +1,9 @@
 <template>
   <div>
     <Container>
-      <Hero class="background" />
-      <h1>Digital presence for your business</h1>
+      <Cards />
+      <!-- <Hero class="background" />
+      <h1>Digital presence for your business</h1> -->
     </Container>
     <section>
       <Container class="button">
@@ -58,7 +59,7 @@ export default {
 .background {
   background-color: #edbd54;
   margin-top: 5%;
-  height: 45vh;
+  /* height: 45vh; */
 }
 
 body {

@@ -10,6 +10,7 @@
       <div class="spacer"></div>
       <div class="navigation-items">
         <ul class="nav-list">
+          <SocialMedia />
           <li class="nav-item">
             <nuxt-link to="/services">Services</nuxt-link>
           </li>
