@@ -11,7 +11,7 @@
       <h2 class="line">Websites and Digital Presence for your business</h2>
     </article>
     <article class="cta">
-      <button>Let's start</button>
+      <nuxt-link to="/contact"><button>Let's start</button></nuxt-link>
     </article>
   </section>
 </template>
