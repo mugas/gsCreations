@@ -58,6 +58,7 @@ export default {
 .background {
   background-color: #edbd54;
   margin-top: 5%;
+  height: 45vh;
 }
 
 body {
