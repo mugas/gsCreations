@@ -2,7 +2,10 @@
   <section>
     <Container>
       <div class="intro">
-        <h1>Welcome to Blog Names</h1>
+        <h1>Blog</h1>
+        <p class="subtitle">
+          Our toughts and ideas about websites and everything related
+        </p>
       </div>
     </Container>
     <Container flex>
@@ -46,5 +49,10 @@ h1 {
   color: #28430a;
   margin-bottom: 2rem;
   margin-top: 2rem;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  color: #28430a;
 }
 </style>

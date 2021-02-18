@@ -92,6 +92,7 @@ button {
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
+
 .about__cards >>> .front {
   background: #edbd54;
   height: 100%;
@@ -102,6 +103,11 @@ button {
 
 .about__cards >>> .front:hover {
   background: #793000;
+  color: white;
+}
+
+.front >>> button:hover {
+  color: white;
 }
 
 @media (min-width: 768px) {
