@@ -1,6 +1,6 @@
 ---
 type: Snippets
-language: CSS
+language: CSS3
 title: Navbars
 summary: A collection of navbars, all responsive for mobile for you to use and
   optimized for accessibility. Code is available also in Codepen and Github. All
