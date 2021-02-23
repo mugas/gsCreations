@@ -11,7 +11,7 @@ update: 2021-01-27T11:30:29.954Z
 author: Ricardo Moreira
 thumbnail: https://res.cloudinary.com/mugas/image/upload/v1590665493/imagegallery_iwjmq5.png
 ---
-# **What it is?**
+# **What is it?**
 
 A Image gallery responsive made with CSS grid and Flexbox. The number of columns expands or contract accordingly with the name of pictures but also with the size of the screen
 
