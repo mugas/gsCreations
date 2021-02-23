@@ -10,7 +10,7 @@ update: 2021-02-22T03:43:00.602Z
 author: Ricardo Moreira
 thumbnail: https://res.cloudinary.com/mugas/image/upload/v1613965617/navbar_tdnpvz.png
 ---
-# **What it is?**
+# **What is it?**
 
 A collection of navbars free to use. Mostly CSS, some use Javascript to create a hidden navbar on click.
 
