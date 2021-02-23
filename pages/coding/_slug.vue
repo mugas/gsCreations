@@ -90,7 +90,7 @@ export default {
 
   head() {
     return {
-      title: `${this.title} | <Blog Name>`,
+      title: `${this.title} | Good Stuff Creations`,
       meta: [
         {
           hid: 'article:published_time',
