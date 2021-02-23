@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-netlify-cms-starter",
+  "name": "good-stuff-creations",
   "version": "1.0.0",
-  "description": "<Blog Name> Blog",
+  "description": "Web development and digital marketing",
   "author": "Ricardo Moreira",
   "private": true,
   "scripts": {
