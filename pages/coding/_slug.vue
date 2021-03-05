@@ -28,7 +28,6 @@ import * as twitterSharer from 'share-this/dist/sharers/twitter'
 import * as facebookSharer from 'share-this/dist/sharers/facebook'
 import * as redditSharer from 'share-this/dist/sharers/reddit'
 import Container from '~/components/Container'
-
 export default {
   name: 'App',
   components: {
@@ -38,7 +37,6 @@ export default {
     const post = await import(`~/content/coding/${params.slug}.md`)
     const attr = post.attributes
     const slug = params.slug
-
     const {
       author,
       authorlink,
@@ -49,19 +47,16 @@ export default {
       type,
       update,
     } = attr
-
     const dateOptions = {
       weekday: 'long',
       year: 'numeric',
       month: 'short',
       day: 'numeric',
     }
-
     const publishedDate = new Date(date)
     const updatedDate = new Date(update)
     const published = publishedDate.toLocaleDateString('en-GB', dateOptions)
     const updated = updatedDate.toLocaleDateString('en-GB', dateOptions)
-
     return {
       title,
       author,
@@ -79,15 +74,12 @@ export default {
   },
   mounted() {
     Prism.highlightAll()
-
     const selectionShare = shareThis({
       selector: '#shareable',
       sharers: [twitterSharer, facebookSharer, redditSharer],
     })
-
     selectionShare.init()
   },
-
   head() {
     return {
       title: `${this.title} | Good Stuff Creations`,
@@ -115,7 +107,7 @@ export default {
         {
           hid: 'og:title',
           property: 'og:title',
-          content: `${this.title},
+          content: `${this.title}| ${this.summary} | Good Stuff Creations`,
         },
         {
           hid: 'description',
@@ -181,7 +173,6 @@ export default {
 <style lang="scss">
 .share-this-popover {
   animation: share-this 360ms forwards linear;
-
   &::before {
     border-color: #793000;
     border-style: solid;
@@ -195,7 +186,6 @@ export default {
     position: absolute;
     width: 0;
   }
-
   ul {
     background-color: #28430a;
     border-radius: 0.5rem;
@@ -211,7 +201,6 @@ export default {
     position: absolute;
     white-space: nowrap;
     padding: 0.5rem 0.7rem;
-
     li {
       display: inline-block;
       height: 1.2rem;
@@ -220,7 +209,6 @@ export default {
       margin: 0;
       padding: 0 0.4rem;
       width: 2rem;
-
       &:first-child {
         padding-left: 0;
         width: 1.6rem;
@@ -229,7 +217,6 @@ export default {
         padding-right: 0;
         width: 1.6rem;
       }
-
       a {
         color: black;
         box-shadow: none;
@@ -238,13 +225,11 @@ export default {
     }
   }
 }
-
 .post {
   .meta-section,
   .thumbnail {
     margin-bottom: 2.4rem;
   }
-
   .thumbnail {
     width: 100%;
     height: auto;
@@ -252,11 +237,9 @@ export default {
   img {
     width: 100%;
   }
-
   .meta-section {
     text-align: center;
     display: block;
-
     .post-meta {
       margin: 0;
       color: #d0d1c6;
@@ -271,7 +254,6 @@ export default {
     color: #28430a;
   }
 }
-
 @keyframes share-this {
   0% {
     opacity: 0;
