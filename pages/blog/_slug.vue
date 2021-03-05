@@ -115,7 +115,7 @@ export default {
         {
           hid: 'og:title',
           property: 'og:title',
-          content: `Good Stuff Creations - web development and coding tutorials`,
+          content: `${this.title}| ${this.summary} | Good Stuff Creations`,
         },
         {
           hid: 'description',
