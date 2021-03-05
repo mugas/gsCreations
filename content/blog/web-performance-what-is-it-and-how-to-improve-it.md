@@ -19,7 +19,7 @@ Some statistic to back it up:
 * If your e-commerce website is too slow, the basket abandonment can reach 75%
 * 74% users leave the website on mobile if it doesn’t load after 5sec
 * 44% of customers will tell their friends about a bad experience online
-* Amazon realizes that “only” one second in their website could 1.6 billion in sales each year
+* Amazon realizes that “only” one second in their website could cost 1.6 billion in sales each year
 
 Besides the load speed, all site performance is important to determine how your website stands among others. 
 
@@ -37,7 +37,6 @@ For now, I will just mention the **5 main topics** about web performance that yo
    A responsive website has more chances to show on Google search results. When you have a website with a good user experience on mobile your customers are happier. Nowadays many websites are built with a mobile-first approach design 
 
    **Statistics** : 94% of People Judge Websites on Responsive Web Design
-
 2. **Accessibility** 🦻🏻
 
    Since a directive from 2016, all websites or apps of the public sector are demanded to meet technical accessibility standards. Most private companies are now also implementing the same standards to their websites. What does this mean? Accessibility is when a website or apps are designed that people with disabilities can use them. Can be color contrasts, images with no alternative text, no enough labels in the forms, etc. Main point: Your website has to be accessible. 
@@ -66,8 +65,6 @@ There are other topics you should ask/discuss when it comes to web performance:
 
 This was a small and fast introduction to web performance. I will go back to this subject focusing on each topic on the next posts. 
 You can always follow me on [Twitter ](https://twitter.com/mugas11)where I talk about web development and entrepreneurship among other subjects 😊.
-
-
 
 Statistics source:
 
