@@ -22,11 +22,11 @@
 </template>
 
 <script>
-import Prism from 'prismjs'
 import shareThis from 'share-this'
 import * as twitterSharer from 'share-this/dist/sharers/twitter'
 import * as facebookSharer from 'share-this/dist/sharers/facebook'
 import * as redditSharer from 'share-this/dist/sharers/reddit'
+import Prism from '~/plugins/prism'
 import Container from '~/components/Container'
 export default {
   name: 'App',
@@ -171,6 +171,17 @@ export default {
 </script>
 
 <style lang="scss">
+.language-javascript {
+  color: red;
+}
+
+.language-js {
+  color: yellow;
+}
+
+.code {
+  background: blue;
+}
 .share-this-popover {
   animation: share-this 360ms forwards linear;
   &::before {
