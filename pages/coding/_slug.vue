@@ -236,6 +236,9 @@ export default {
     }
   }
 }
+a {
+  color: red;
+}
 .post {
   .meta-section,
   .thumbnail {
