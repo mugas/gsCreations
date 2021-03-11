@@ -96,7 +96,7 @@ export default {
   /**
    * Plugins
    */
-  plugins: ['~/plugins/lazyload', ['~/plugins/prism']],
+  plugins: [{ src: '~/plugins/lazyload' }, { src: '~/plugins/prism' }],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
