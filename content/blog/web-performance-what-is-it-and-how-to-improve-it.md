@@ -71,3 +71,19 @@ Statistics source:
 * [WpoStats](https://wpostats.com/)
 * [Usable](https://blog.usablenet.com/)
 * [Websitebuilder](https://www.websitebuilderexpert.com/building-websites/website-load-time-statistics/)
+
+```javascript
+const x = document.queryselector('fs)
+```
+
+```html
+<h1>{{ title }}</h1>
+      <p v-if="published === updated" class="post-meta">
+        Posted on {{ published }} by
+        <a v-if="authorlink" :href="authorlink">{{ author }}</a>
+      </p>
+      <p v-else class="post-meta">
+        Updated on {{ updated }} by
+        <a v-if="authorlink" :href="authorlink">{{ author }}</a>
+      </p>
+```
