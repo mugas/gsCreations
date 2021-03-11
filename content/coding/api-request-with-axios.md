@@ -673,9 +673,11 @@ Links about what we cover:
 
 Normally I use the Bem methodology for naming my classes. In this one there is a mix. Because I tried different ways using the API and using other APIs and using Axios  I was not following the methodology. Then when I start writing the post and adding the code pen with the code, I realized that I missed that spot. Sorry for that. I hope that even though you understand the class naming.
 
-`console log(test)`
-`const allElements = document.querySelectorAll('.query-selector-all');
-const blackBoard = document.querySelector('.first**code');
-const blackBoardSecond = document.querySelector('.second**code');`
 
-ffsfs\`dbggg\`
+```js
+const allElements = document.querySelectorAll('.query-selector-all');
+const blackBoard = document.querySelector('.first**code');
+const blackBoardSecond = document.querySelector('.second**code');
+```
+
+
