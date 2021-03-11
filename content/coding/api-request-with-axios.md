@@ -655,7 +655,7 @@ You have a file in your folder named `.gitignore`right?Open it. In case you don'
 Now if you commit and push your changes and check your github, you see that the `.env` file is not available. No one can see it, so your API_keys are safe. Remember also to delete the console of the message.
 Tell me (trough [twitter](https://twitter.com/mugas11), [instagram](https://www.instagram.com/mugas_codes/) or from my [website](http://ricardomoreira.io/)) if you need a better explanation of this part and I do a video of it and add it to the tutorial. 
 
-```js
+```javascript
 console.log(message);
 //DELETE ME
 ```
@@ -671,4 +671,4 @@ Links about what we cover:
 
 **Side Notes**
 
-Normally I use the Bem methodology for naming my classed. In this one there is a mix. Because I tried different ways using the API and using other APIs and using Axios  I was not following the methodology. Then when I start writing the post and adding the code pen with the code, I realized that I missed that spot. Sorry for that. I hope that even though you understand the class naming.
+Normally I use the Bem methodology for naming my classes. In this one there is a mix. Because I tried different ways using the API and using other APIs and using Axios  I was not following the methodology. Then when I start writing the post and adding the code pen with the code, I realized that I missed that spot. Sorry for that. I hope that even though you understand the class naming.
