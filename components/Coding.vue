@@ -135,6 +135,9 @@ export default {
       color: #252525;
     }
   }
+  &.nuxtjs {
+    background-color: #28430a;
+  }
   &.other {
     background-color: #ff8c42;
     a {
