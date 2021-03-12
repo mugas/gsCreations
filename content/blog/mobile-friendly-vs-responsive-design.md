@@ -10,7 +10,7 @@ summary: >
 date: 2021-03-12T08:47:05.272Z
 update: 2021-03-12T08:47:05.389Z
 author: Ricardo Moreira
-thumbnail: https://res.cloudinary.com/mugas/image/upload/v1615541365/Responsive_design.jpg
+thumbnail: https://res.cloudinary.com/mugas/image/upload/v1615544805/Responsive_design.png
 ---
 When creating a website, not only the desktop version counts but also the mobile version. One of the reasons behind that is the mobile traffic worldwide has grown over 220% in the last 7 years. Nowadays more people use mobile over desktop. 
 
