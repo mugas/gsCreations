@@ -122,7 +122,7 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: `${this.thumbnail}`,
+          content: this.thumbnail,
         },
         {
           hid: 'og:image:alt',
