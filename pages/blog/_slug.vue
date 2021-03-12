@@ -130,7 +130,7 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: `https://<domain>${this.thumbnail}`,
+          content: `${this.thumbnail}`,
         },
         {
           hid: 'og:image:alt',
