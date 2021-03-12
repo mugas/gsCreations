@@ -1,7 +1,7 @@
 ---
 type: Small Tips
 language: nuxtjs
-title: Highlight syntax with Prismjs on a Nuxt wesbite and Netlify Cms
+title: Prismjs + Nuxt
 summary: An easy way to highlight syntax when writing code snippets is using
   Prismjs, a great syntax highlighter.
 date: 2021-03-11T08:36:01.543Z
@@ -15,7 +15,7 @@ I know it might seem an easy way out, but the fact is that I want to upgrade the
 
 So expect many posts about things I did on this website. 
 
-Today it will be about code snippets and their highlight while writing for example a code post.
+Today it will be about code snippets and their highlight while writing for example a code post. 
 
 When I created this website and started to write code posts I realize that the code was not highlighted and would not look good.
 
