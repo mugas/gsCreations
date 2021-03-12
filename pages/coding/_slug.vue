@@ -3,7 +3,7 @@
     <Container class="meta-section">
       <h1>{{ title }}</h1>
       <p v-if="published === updated" class="post-meta">
-        Posted on {{ published }} by
+        Posted on {{ published }} by {{ author }}
         <a v-if="authorlink" :href="authorlink">{{ author }}</a>
       </p>
       <p v-else class="post-meta">
