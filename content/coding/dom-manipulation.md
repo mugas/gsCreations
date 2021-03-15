@@ -238,3 +238,6 @@ So you would do:
 ```js
 recipe.innerHTML = myHTML
 ```
+
+And just like this text that is inside te variable `myHTML` will show up in the page ( in the end I will explain the inner HTML with the text Content).
+So 
