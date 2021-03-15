@@ -170,3 +170,43 @@ firstImage.addEventListener('click', () => {
 And just like that when you reload the page, and click the image, it became round while rotating 360 degrees.
 Great right? With a couple lines of code we already talk about 3 of the 4 topics I mentioned above about DOM Manipulation
 
+Now we go to the more fun for me that is creating new elements on the DOM.
+How?
+Let's say you have a recipe app that you want to add a new recipe and show up in the page. By adding a new recipe to the dom you are indeed creating new elements on it.
+
+Here is our html:
+
+```html
+<section class="recipes-manager">
+
+      <article class="recipes-manager_docs">
+        <div class="recipe-background">
+          <section class="first">
+          <label for="name">Recipe Name</label>
+          <input class="name" type="text" id="name" >
+          <label for="cuisine">Type of cuisine</label>
+          <input class="cuisine" type="text" id="cuisine">
+        </section>
+        <section class="second">
+          <label for="number">How many people</label>
+          <input class="number" type="number" id="number">
+        </section>
+        <section class="buttons">
+          <input class="image" type="file"  accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
+          <label class="upload" for="file"  tabindex="0" style="cursor: pointer;">Upload Image</label> 
+          <button class="button-recipe">Show recipe</button>
+        </section>
+      </div>
+        
+        
+      </article>
+     
+      <article class="recipe-menu">
+        <div class="recipe" id="output">
+        </div>
+      </article>
+
+    </section>
+```
+
+
