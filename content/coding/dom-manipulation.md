@@ -21,21 +21,16 @@ So the main parent is the html document but every element has its own direct par
 
 So what topics are we going to cover in this post?
 
-
-
 * Accessing the DOM
 * Manipulating the DOM
 * Creating new elements DOM
 * Adding event listeners
-
-
 
 We will cover all these topics with 3 small examples:
 
 1. We have some text, we will select it and add changes to it 
 2. We have a picture and add some different style to it
 3. Insert a recipe into the Dom
-
 
 Take this html:
 
@@ -55,7 +50,6 @@ Take this html:
 
 We have a section that inside as 2 different sections. Inside of these section there is an article with a div. The magic of Dom is that you can access the elements that exist on the DOM. How we do that? There is a couple of methods we can use:
 
-
 ```js
 document.getElementsByClassName();
 // If instead of an id your element has a class, this is the method where you can access it.
@@ -71,7 +65,6 @@ document.querySelectorAll();
 document.querySelector('#id');
 document.querySelector('.classname');
 document.querySelector('section');
-
 ```
 
 These are the ways to access the DOM. I only use the `querySelector` and the `querySelectorAll` as it gives me all the info I want.
@@ -82,7 +75,6 @@ const allElements = document.querySelectorAll('.query-selector-all');
 console.log(allElements)
 ```
 
-
 Why the querySelectorAlland not the querySelector? Because this class name has more than one element, so with querySelectorwe only access the first element and we want to access all. 
 
 But if you check your console we see that allElements return a Nodelist, so it return all the elements inside that class. Ok, so we access the DOM and the section we wanted to manipulate but how we do it when it returns a Node list? You have to loop all over those elements with a forEach for example:
@@ -91,8 +83,8 @@ But if you check your console we see that allElements return a Nodelist, so it r
 allElements.forEach(eachElement => {
  console.log(eachElement)
 });
-
 ```
+
 If you open the console you see that now you have access to all elements that are inside the class Name. I want that when we load the page the all the text changes color. First we go to our CSS and create that style inside a new class. Let's name it `selector__all`.
 
 ```css
@@ -110,10 +102,10 @@ allElements.forEach(eachElement => {
   eachElement.classList.add('selector__all');
 });
 ```
+
 What we are doing here? Because we are looping each element we have access to each one of them when looping. Then we are just adding the class, that has the code of color change, to each of the elements.
 And just like this, our text now shows in a different color after 2 secs.
 Main thing to remember, when you want to access/manipulate more than one element at the time, us the `document.querySelectorAll()`and loop over it to access each of the elements inside.
-
 
 What if you only have one element?
 It's more easy and you probably know the answer now.
@@ -149,8 +141,32 @@ we have now `firstImage`. To add the event listener we need to:
 
 ```js
 firstImage.addEventListener('click', () => {
-  console.log("hello"
+  console.log("hello")
 });
 ```
 
-first you write the element. In this case is the `firstImage`, then you add event listener; in this case is the 'click' function. There are plenty more
+first you write the element. In this case is the `firstImage`, then you add event listener; in this case is the 'click' function. There are [plenty ](https://developer.mozilla.org/en-US/docs/Web/Events)more.
+And then has any function, you write the code you want to add inside that function. I just console a "hello" for now. If you open the console it should show up there everytime you click the image
+
+Ok, now we add an event listener to the image when we click on it. So we go to our css and :
+
+```css
+.round {
+  border-radius: 50%;
+  transform: rotate(360deg);
+  transition: all 10s;
+}
+```
+
+Like we did in the first example, we create a class, in this case names `round` and add the style we want. Here we add a border radius of 50% to make it round and rotate 360 degrees.
+Now that we have the class we go to our js event listener and rewrite:
+
+```js
+firstImage.addEventListener('click', () => {
+  firstImage.classList.toggle('round');
+});
+```
+
+And just like that when you reload the page, and click the image, it became round while rotating 360 degrees.
+Great right? With a couple lines of code we already talk about 3 of the 4 topics I mentioned above about DOM Manipulation
+
