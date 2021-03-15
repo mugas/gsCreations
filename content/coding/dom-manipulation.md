@@ -209,4 +209,32 @@ Here is our html:
     </section>
 ```
 
+Let's explain what we have here.
+There is a big section with the class `recipes-manager`.Inside that section there are 2 article that includes the form to add the recipe and the "area" where the recipe is going to show up. The first is the article with the class `recipes-manager_docs`. Inside of it I add also an event to be able to upload the image from your pc( `onchange="loadFile(event)"`).
+How we do this?
 
+First we add to our js, our recipe name, cuisine and for how many people
+
+```js
+const recipe = document.querySelector('.recipe');
+const buttonRecipe = document.querySelector('.button-recipe');
+const recipeName = document.querySelector('.name');
+const recipeType = document.querySelector('.cuisine');
+const numberPeople = document.querySelector('.number');
+```
+
+We also add the button to show up the recipe and also the div where the recipe is going to sit.
+To add new elements there are some ways like for example [this](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) but I will focus only on the template strings that is the most forward way for me.
+Note: In production be aware about [Cross Site Scriptings ](https://owasp.org/www-community/attacks/xss/)when using the template literals.
+
+How template literals work?
+
+```js
+const myHTML = ` I am a templare literal`
+```
+You create a variable and inside backticks you write some text. Now you want to add that text on the html, in this case to the `recipe`
+So you would do:
+
+```js
+recipe.innerHTML = myHTML
+```
