@@ -27,7 +27,7 @@ Now let's go to our project:
 * [Code Pen](https://codepen.io/mugas/pen/QWGJrRa)
 
 
-Some things we will not covering in this post: The CSS, and the `show the code` function ( note in the end of the post).
+Some things we will not cover in this post: The CSS, and the `show the code` function ( note at the end of the post).
 
 So what topics are we going to cover in this post?
 
