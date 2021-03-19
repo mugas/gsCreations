@@ -132,5 +132,5 @@ Hope after this I may have reached someone to have another approach about access
 If you want to know more and follow my next projects and topics to talk about, follow me on [Twitter](https://twitter.com/mugas11) and feel free to contact me with any questions, comments, or anything.
 
 * [Khan Academy visualization kit](https://khan.github.io/tota11y/)
-* [Acessibility resources from A11y](https://a11yresources.webflow.io/)
+* [Accessibility resources from A11y](https://a11yresources.webflow.io/)
 * [Accessibility evaluation tool](https://wave.webaim.org/)
