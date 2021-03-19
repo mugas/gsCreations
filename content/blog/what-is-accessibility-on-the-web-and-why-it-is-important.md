@@ -1,7 +1,7 @@
 ---
 type: Web Performance
 language: Web
-title: " What is Accessibility on the web and why it is important?"
+title: " What is  Web Accessibility and why it is important?"
 summary: >
   Accessibility should be implemented on all websites as a process with
   continuous improvement. Not only is better for people, but it's also good for
