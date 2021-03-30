@@ -68,7 +68,7 @@ writeBlogs()
   return filecodes
 } */
 
-const getCodes = (dir) => {
+/* const getCodes = (dir) => {
   const files = fs.readdirSync(dir)
   let filelist = []
   files.forEach((file) => {
@@ -104,4 +104,4 @@ const writeCodings = async () => {
   })
 }
 
-writeCodings()
+writeCodings() */
