@@ -26,7 +26,9 @@ Then I decided to go deeper into this subject that I was not aware of it, theref
 
 ## **What is Web sustainability?**
 
-Gary Cook leads the campaign from Greenpeace to challenge global IT companies to become 100% renewably powered. He once said that “*This (the internet) is something that if we build it the right way, with the right sources of energy, could help power our transition to renewables. If we build it the wrong way, it could exacerbate the problem*.”
+Gary Cook leads the campaign from Greenpeace to challenge global IT companies to become 100% renewably powered. He once said:
+
+ “*This (the internet) is something that if we build it the right way, with the right sources of energy, could help power our transition to renewables. If we build it the wrong way, it could exacerbate the problem*.”
 
 A sustainable web can be defined by designing an internet that focuses on the needs of the present time but without compromising the future and the future generations. When creating digital products with web sustainability as a method you put people and the planet first.  
 
