@@ -18,15 +18,11 @@ It all started when I read that if the internet was a country would be the 6th m
 
 Then I decided to go deeper into this subject that I was not aware of it, therefore this month I will focus on Web Sustainability and I will divide it into 3 posts for easier reading:
 
-
-
 **Definition and Problem** – Today
 
 **Solutions** – 21/04/2021
 
 **Benefits and Resources** – 28/04/2021
-
-
 
 ## **What is Web sustainability?**
 
@@ -36,40 +32,31 @@ A sustainable web can be defined by designing an internet that focuses on the ne
 
 In the [Sustainable Web Manifesto](https://www.sustainablewebmanifesto.com/), a public declaration that you can also be part of, they call for internet that:
 
-·        **Clean:** Services provided and used will be powered by renewable energy.
+**Clean:** Services provided and used will be powered by renewable energy.
 
-·        **Efficient:** Products and services will use the least amount of energy and material resources possible.
+**Efficient:** Products and services will use the least amount of energy and material resources possible.
 
-·        **Open:** Products and services will be accessible, allow users to control their data, and enable the open exchange of information.
+**Open:** Products and services will be accessible, allow users to control their data, and enable the open exchange of information.
 
-·        **Honest:** Products and services will not mislead or exploit users.
+**Honest:** Products and services will not mislead or exploit users.
 
-·        **Regenerative:** Products and services will support an economy that nourishes people and the planet.
+**Regenerative:** Products and services will support an economy that nourishes people and the planet.
 
-·        **Resilient:** Products and services will function in times and places where users need them most.
+**Resilient:** Products and services will function in times and places where users need them most.
 
-## \
 **The Problem(s)**
 
-
-
 * **Energy/ electricity**  
-
-
 
 The big or the more direct problem with web sustainability is electricity. Internet is run on electricity. To have your website running you need electricity. The server that runs the hosting of your website needs to run 24/7 so of course that electricity can become a problem because it can be “dirty” electricity that runs on fossil fuels not using renewable energy. 
 
 Globally renewables made up 26.2% of global electricity generation and should expect to raise 45% by [2040](https://www.c2es.org/content/renewable-energy/). So as you can see much electricity is still running on non-renewable energies making your webpage (maybe) not running on renewable energy.
-
-
 
 Many hosting providers are quite secrete about mentioning the sources of the energy used, and greenwashing is practiced by many, so it becomes quite difficult to choose the right hosting for it ( In the last post of this series I will focus on resources to check that situation).
 
 So by not running your website on green hosting (hosting that is served by renewable energy), the Carbon footprint of it becomes bigger.
 
 Even that many big companies nowadays use exclusively renewable energy for hosting ( and sometimes it can be difficult to achieve that) the truth is some bigger players are not yet fully [committed to it](https://www.wired.co.uk/article/netflix-carbon-footprint). 
-
-
 
 * **Web Performance**
 
