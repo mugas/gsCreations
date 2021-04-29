@@ -21,11 +21,7 @@ So let’s talk about the benefits of a more sustainable website:
 * **Branding**. There is no way to deny it but being sustainable is trendy and creating a business and a website that is also focused on sustainability is good for your brand, therefore is good for your business.
 * **Faster websites.** We have all been there. You go to a website, it takes centuries to load (in this century equals 3 seconds) and we just go to a different website. If your website is faster you have more chances for your customer to hold into your website.
 
-
-
 I hope these benefits have made you at least thinking about having a better approach towards web sustainability. If not think that all these benefits bring more benefits and the sooner you apply some of the solutions said before the faster you are on the right track.
-
-
 
 Resources.
 
@@ -37,10 +33,6 @@ Resources.
 6. [Green Web Foundation](https://www.thegreenwebfoundation.org/) – Green hosts around the world
 7. Books – [Sustainable Web Design](https://abookapart.com/products/sustainable-web-design) and [Designing for Sustainability](https://www.oreilly.com/library/view/designing-for-sustainability/9781491935767/)
 
-
-
-If you have more resources than you know feel free to share them and we all win something out of it. 
-
-May is arriving and local producers are going to spend the next months to show their best products and make the best out of it. How can a website and a digital presence help local producers to achieve their goals and grow their brand? That will be my topic for next month.
+If you have more resources free to share them and we all win something out of it. 
 
 Say tuned and follow the [ride](https://twitter.com/mugas11).
