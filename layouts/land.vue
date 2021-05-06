@@ -47,9 +47,9 @@ export default {
   text-align: center;
 
   /* Background styles */
-  background-image: url('~assets/images/two.png');
+  background-image: url('~assets/images/one.png');
   background-size: cover;
-  background-position: center center;
+  background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

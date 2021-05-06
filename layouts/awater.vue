@@ -49,7 +49,7 @@ export default {
   /* Background styles */
   background-image: url('~assets/images/two.png');
   background-size: cover;
-  background-position: center center;
+  background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
