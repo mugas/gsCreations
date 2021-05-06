@@ -37,7 +37,7 @@
 
 <script>
 export default {
-  layout: 'land1',
+  layout: 'earth',
 }
 </script>
 
@@ -99,26 +99,6 @@ h3 {
 }
 
 @media (min-width: 720px) {
-  .hero {
-    /* Sizing */
-    width: 100vw;
-    height: 100vh;
-
-    /* Flexbox stuff */
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-
-    /* Text styles */
-    text-align: center;
-
-    /* Background styles */
-    /* background-image: url('~assets/images/four.png'); */
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
   h1 {
     color: #28430a;
     font-size: 3em;

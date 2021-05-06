@@ -47,7 +47,7 @@ export default {
   text-align: center;
 
   /* Background styles */
-  background-image: url('~assets/images/one.png');
+  background-image: url('~assets/images/two.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

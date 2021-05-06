@@ -118,7 +118,7 @@ img {
 
 .nav-item a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .nav-item a:hover,
