@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="home__page">
-      <img class="image" src="~/assets/svg/gardening.svg" />
+      <img class="image" src="~/assets/Svg/gardening.svg" />
       <div class="text">
         <h1 class="title">
           Good<br />
