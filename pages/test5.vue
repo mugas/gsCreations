@@ -1,17 +1,8 @@
 <template>
   <div>
-    <section class="home__page">
-      <img class="image" src="~/assets/test/sixth.svg" />
-      <div class="text">
-        <h1 class="title">
-          Good<br />
-          Stuff<br />
-          Creations <br />
-        </h1>
-        <h1 class="title__mobile">Good Stuff Creations</h1>
-        <h2 class="line">Put local producers online</h2>
-      </div>
-    </section>
+    <!--   <section class="hero">
+      <div class="hero-inner"></div>
+    </section> -->
     <section class="services">
       <h2 class="services__title">Services</h2>
       <div class="services__name">
@@ -43,7 +34,17 @@
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  layout: 'land4',
+}
+</script>
+
 <style scoped>
+.hero {
+  background-position: inherit;
+}
 .home__page {
   margin-top: 5%;
   display: flex;
@@ -51,7 +52,7 @@
   align-items: center;
   height: 70vh;
   justify-content: space-around;
-  width: 100%;
+  /* width: 100%; */
 }
 .title {
   display: none;
@@ -98,8 +99,28 @@ h3 {
 }
 
 @media (min-width: 720px) {
+  .hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center;
+
+    /* Background styles */
+    /* background-image: url('~assets/images/two.png'); */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   h1 {
-    color: #edbd54;
+    color: #28430a;
     font-size: 3em;
   }
   .title {
@@ -127,11 +148,15 @@ h3 {
   .home__page {
     margin-top: 0;
     display: flex;
+    margin-left: 5%;
+    border-radius: 30px;
+    margin-right: 5%;
+    margin-top: 5%;
     flex-direction: row;
     align-items: center;
-    height: 70vh;
+    height: 62vh;
     justify-content: space-around;
-    width: 100%;
+    /* width: 100%; */
   }
   .services__title {
     width: 100%;

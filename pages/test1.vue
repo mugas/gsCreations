@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="home__page">
-      <img class="image" src="~/assets/test/sixth.svg" />
+      <img class="image" src="~/assets/svg/gardening-animate.svg" />
       <div class="text">
         <h1 class="title">
           Good<br />
@@ -51,7 +51,7 @@
   align-items: center;
   height: 70vh;
   justify-content: space-around;
-  width: 100%;
+  /* width: 100%; */
 }
 .title {
   display: none;
@@ -99,7 +99,7 @@ h3 {
 
 @media (min-width: 720px) {
   h1 {
-    color: #edbd54;
+    color: #28430a;
     font-size: 3em;
   }
   .title {
@@ -125,13 +125,18 @@ h3 {
     align-items: center;
   }
   .home__page {
+    background-color: #edbd54;
     margin-top: 0;
     display: flex;
+    margin-left: 5%;
+    border-radius: 30px;
+    margin-right: 5%;
+    margin-top: 5%;
     flex-direction: row;
     align-items: center;
-    height: 70vh;
+    height: 62vh;
     justify-content: space-around;
-    width: 100%;
+    /* width: 100%; */
   }
   .services__title {
     width: 100%;
