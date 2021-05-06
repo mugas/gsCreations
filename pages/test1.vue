@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="home__page">
-      <img class="image" src="~/assets/svg/gardening-animate.svg" />
+      <img class="image" src="~/assets/svg/gardening.svg" />
       <div class="text">
         <h1 class="title">
           Good<br />
@@ -43,6 +43,7 @@
     </section>
   </div>
 </template>
+
 <style scoped>
 .home__page {
   margin-top: 5%;
