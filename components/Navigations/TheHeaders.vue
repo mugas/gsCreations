@@ -1,7 +1,7 @@
 <template>
   <div class="header-container">
     <header class="the-header">
-      <TheSideNavToggles @toggle="$emit('sidenavToggles')" />
+      <TheSideNavToggles @toggle="$emit('sidenavToggle')" />
       <div class="logo">
         <nuxt-link to="/">
           <img width="150px" src="~/assets/Svg/gs.svg" />
@@ -30,7 +30,7 @@
 import TheSideNavToggles from '@/components/Navigations/TheSideNavToggles'
 
 export default {
-  name: 'TheHeader',
+  name: 'TheHeaders',
   components: {
     TheSideNavToggles,
   },
