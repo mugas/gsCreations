@@ -37,7 +37,7 @@
 
 <script>
 export default {
-  layout: 'land',
+  layout: 'homepage',
 }
 </script>
 

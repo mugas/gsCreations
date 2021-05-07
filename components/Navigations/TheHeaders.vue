@@ -39,12 +39,13 @@ export default {
 
 <style scoped>
 .header-container {
+  width: 100%;
   height: 100px;
 }
 
 .the-header {
   width: 100%;
-  position: fixed;
+
   height: 100px;
   display: flex;
   justify-content: space-around;
