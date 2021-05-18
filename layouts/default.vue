@@ -37,8 +37,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
+  font-family: 'Halant', sans-serif;
+  font-weight: 500;
   line-height: 1.2;
   margin-bottom: 6px;
   text-align: center;
@@ -46,7 +46,7 @@ h6 {
 }
 body {
   color: #252525;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 300;
 }
 // @import '../assets/scss/syntax.scss';

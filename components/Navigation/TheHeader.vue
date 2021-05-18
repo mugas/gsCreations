@@ -4,7 +4,8 @@
       <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
       <div class="logo">
         <nuxt-link to="/">
-          <img width="150px" src="~/assets/Svg/gs.svg" />
+          <img width="500px" src="~/assets/Svg/two.svg" />
+          <!-- <img width="150px" src="~/assets/Svg/gs.svg" /> -->
         </nuxt-link>
       </div>
       <div class="spacer"></div>
@@ -48,7 +49,7 @@ export default {
   height: 100px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center; */
   background-color: white;
   /* z-index: 100; */
   box-sizing: border-box;
@@ -100,7 +101,7 @@ img {
   }
 
   img {
-    width: 150px;
+    width: 200px;
   }
 }
 

@@ -1,66 +1,40 @@
 <template>
   <div>
     <section class="home__page">
-      <img class="image" src="~/assets/test/sixth.svg" />
+      <div class="vector">
+        <img width="100px" src="~/assets/test/five.svg" alt="" />
+      </div>
       <div class="text">
-        <h1 class="title">
-          Good<br />
-          Stuff<br />
-          Creations <br />
-        </h1>
-        <h1 class="title__mobile">Good Stuff Creations</h1>
-        <h2 class="line">Put local producers online</h2>
+        <!-- <h1 class="title">Good Stuff Creations</h1> -->
+        <h1 class="title">Bringing your product online</h1>
+        <p class="line">
+          I create websites and digital products for local producers and
+          groceries
+        </p>
       </div>
     </section>
-    <section class="services">
-      <h2 class="services__title">Services</h2>
-      <div class="services__name">
-        <article class="services__description Development">
-          <img
-            class="services__image"
-            width="100px"
-            src="~/assets/Svg/web.svg"
-          />
-          <h3>Web Development</h3>
-        </article>
-        <article class="services__description seo">
-          <img
-            class="services__image"
-            width="100px"
-            src="~/assets/Svg/web.svg"
-          />
-          <h3>Web Development</h3>
-        </article>
-        <article class="services__description refactor">
-          <img
-            class="services__image"
-            width="100px"
-            src="~/assets/Svg/web.svg"
-          />
-          <h3>Web Development</h3>
-        </article>
-      </div>
+    <section>
+      <Services />
     </section>
   </div>
 </template>
+
 <style scoped>
 .home__page {
   margin-top: 5%;
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
   height: 70vh;
-  justify-content: space-around;
   width: 100%;
 }
-.title {
-  display: none;
+.line {
+  text-align: center;
 }
-img {
-  width: 100%;
-}
+
 h1 {
-  color: #edbd54;
+  color: #793000;
   font-size: 2em;
 }
 h2 {
@@ -68,14 +42,9 @@ h2 {
   font-size: 1em;
   margin-top: 7px;
 }
-.image {
-  width: 71%;
-  flex: 1;
-}
 
 .text {
   display: flex;
-  flex: 1;
   flex-direction: column;
   justify-content: center;
 }
@@ -99,23 +68,13 @@ h3 {
 
 @media (min-width: 720px) {
   h1 {
-    color: #edbd54;
+    color: #793000;
     font-size: 3em;
   }
-  .title {
-    display: inherit;
-  }
-  .title__mobile {
-    display: none;
-  }
+
   h2 {
     color: #28430a;
     font-size: 1em;
-  }
-  .image {
-    width: 50%;
-    order: 1;
-    height: 60vh;
   }
 
   .text {
@@ -127,12 +86,14 @@ h3 {
   .home__page {
     margin-top: 0;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     height: 70vh;
-    justify-content: space-around;
     width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
   }
+
   .services__title {
     width: 100%;
   }

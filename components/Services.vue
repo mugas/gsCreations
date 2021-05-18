@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="services__background">
     <h1>Services</h1>
     <p>Your business needs digital presence and I can help you achieve it.</p>
     <div class="about__cards">
@@ -11,10 +11,11 @@
           height="450px"
         >
           <div class="front">
-            <img width="100px" src="~/assets/Svg/web.svg" />
+            <img width="100px" src="~/assets/Svg/website__development.svg" />
             <h2>Web Development</h2>
             <p>
-              I build digital products that are responsive, acessible and fast
+              Websites solutions that focus on your customer needs. Let's put
+              your brand online
             </p>
 
             <button>Get in touch</button>
@@ -24,9 +25,12 @@
       <nuxt-link to="/contact">
         <section class="about__single-card" width="350px" height="450px">
           <div class="front">
-            <img width="100px" src="~/assets/Svg/digital.svg" />
-            <h2>Digital Strategy and SEO</h2>
-            <p>Engage your audience and reach your marketing goals</p>
+            <img width="100px" src="~/assets/Svg/seo.svg" />
+            <h2>SEO</h2>
+            <p>
+              Each producut needs a different SEO strategy. Together we find the
+              best way to engage your audience
+            </p>
             <button>Get in touch</button>
           </div>
         </section>
@@ -34,9 +38,12 @@
       <nuxt-link to="/contact">
         <section class="about__single-card" width="350px" height="450px">
           <div class="front">
-            <img width="100px" src="~/assets/Svg/seo.svg" />
-            <h2>Wordpress Development</h2>
-            <p>I help you put your Wordpress website tailored for your needs</p>
+            <img width="100px" src="~/assets/Svg/web__maintenance.svg" />
+            <h2>Maintenance</h2>
+            <p>
+              If you need a fix on your website or some upgrade or even some
+              maintenance I can help you
+            </p>
             <button>Get in touch</button>
           </div>
         </section>
@@ -94,7 +101,8 @@ button {
 }
 
 .about__cards >>> .front {
-  background: #edbd54;
+  background: #28430a;
+  color: white;
   height: 100%;
   width: 100%;
   box-shadow: 1px 1px 5px 1px rgb(200, 136, 45);
