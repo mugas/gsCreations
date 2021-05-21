@@ -44,7 +44,7 @@ export default {
       }
     }
     const blogList = await Promise.all(
-      blogs.slice(0, 1).map((blog) => awaitImport(blog))
+      blogs.slice(0, 3).map((blog) => awaitImport(blog))
     ).then((res) => {
       return {
         blogList: res,

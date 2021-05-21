@@ -4,7 +4,7 @@
       <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
       <div class="logo">
         <nuxt-link to="/">
-          <img width="500px" src="~/assets/Svg/two.svg" />
+          <img width="500px" src="~/assets/Svg/logo.svg" />
           <!-- <img width="150px" src="~/assets/Svg/gs.svg" /> -->
         </nuxt-link>
       </div>
@@ -21,7 +21,7 @@
         </ul>
       </div>
       <nuxt-link to="/"
-        ><img width="150px" src="~/assets/Svg/gs.svg" class="right-logo"
+        ><img width="150px" src="~/assets/Svg/logo.svg" class="right-logo"
       /></nuxt-link>
     </header>
   </div>

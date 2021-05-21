@@ -11,14 +11,14 @@
           height="450px"
         >
           <div class="front">
-            <img width="100px" src="~/assets/Svg/website__development.svg" />
+            <img width="100px" src="~/assets/Svg/website__dev.svg" />
             <h2>Web Development</h2>
             <p>
               Websites solutions that focus on your customer needs. Let's put
               your brand online
             </p>
 
-            <button>Get in touch</button>
+            <button>Know more</button>
           </div>
         </section>
       </nuxt-link>
@@ -31,7 +31,7 @@
               Each producut needs a different SEO strategy. Together we find the
               best way to engage your audience
             </p>
-            <button>Get in touch</button>
+            <button>Know more</button>
           </div>
         </section>
       </nuxt-link>
@@ -44,7 +44,7 @@
               If you need a fix on your website or some upgrade or even some
               maintenance I can help you
             </p>
-            <button>Get in touch</button>
+            <button>Know more</button>
           </div>
         </section>
       </nuxt-link>
@@ -78,12 +78,14 @@ img {
 button {
   text-transform: uppercase;
   background: transparent;
+  cursor: pointer;
   text-decoration: none;
   padding: 20px;
   border-radius: 50px;
   display: inline-block;
   border: 2px white solid;
   border-radius: 16px;
+  color: white;
 }
 .about__single-card {
   border-radius: 16px;

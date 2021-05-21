@@ -13,68 +13,83 @@
         </p>
       </div>
     </section>
-
-    <section class="services-offered">
-      <h2>Services</h2>
-      <article class="websites services-each">
-        <h3>Websites</h3>
-        <div class="websites__text">
-          <p>
-            Websites solutions that focus on your customer needs. Let's put your
-            brand online
-          </p>
-        </div>
-        <div class="websites__image">
-          <img
-            class="services__images"
-            width="300px"
-            src="~/assets/images/land__mobile.png"
-            alt=""
-          />
-        </div>
-      </article>
-      <article class="seo">
-        <h3>SEO</h3>
-        <div class="seo__image">
-          <img
-            class="services__images"
-            width="300px"
-            src="~/assets/images/land__desktop.jpg"
-            alt=""
-          />
-        </div>
-        <div class="seo__text">
-          <p>
-            Websites solutions that focus on your customer needs. Let's put your
-            brand online
-          </p>
-        </div>
-      </article>
-      <article class="maintenance">
-        <h3>Maintenance</h3>
-        <div class="maintenance__text">
-          <p>
-            Websites solutions that focus on your customer needs. Let's put your
-            brand online
-          </p>
-        </div>
-        <div class="maintenance__image">
-          <img
-            class="services__images"
-            width="300px"
-            src="~/assets/images/land__mob.jpg"
-            alt=""
-          />
-        </div>
-      </article>
+    <section class="description">
+      <div class="description__image">
+        <img class="website__image" src="~/assets/images/two.png" alt="" />
+      </div>
+      <div class="description__text">
+        <p>Take your local produce or grocery online</p>
+      </div>
     </section>
+
     <section>
       <Services />
+    </section>
+    <section class="reviews">
+      <article class="review__article">
+        <img class="review__image" src="~/assets/images/Tukka.jpg" alt="" />
+        <h3>Tuukka Saukkonen</h3>
+        <h4>Coopza</h4>
+        <p>
+          "Ricardo built very smoothly functioning landing page for my project.
+          Ricardo had great "can do" attitude and his commitment was hugely
+          appreciated."
+        </p>
+      </article>
+      <article class="review__article">
+        <img class="review__image" src="~/assets/images/Tukka.jpg" alt="" />
+        <h3>Gonçalo Jesus</h3>
+        <h4>BundAsliga</h4>
+        <p>
+          "He has the ability to both think & plan long term and to deliver
+          short term results. Very action oriented so you could always count on
+          Ricardo to get things done. Committed and with a strategic vision."
+        </p>
+      </article>
+    </section>
+    <section class="blog">
+      <ArticleCard
+        v-for="(blog, index) in blogList"
+        :key="index"
+        :index="index"
+        :article-info="blog"
+      />
+      <nuxt-link to="/blog"
+        ><p class="posts">See all of ours posts</p></nuxt-link
+      >
     </section>
   </div>
 </template>
 
+<script>
+import ArticleCard from '~/components/ArticleCard'
+import blogs from '~/content/blogs.json'
+export default {
+  components: {
+    ArticleCard,
+  },
+  async asyncData({ app }) {
+    async function awaitImport(blog) {
+      const wholeMD = await import(`~/content/blog/${blog.slug}.md`)
+      return {
+        attributes: wholeMD.attributes,
+        link: blog.slug,
+      }
+    }
+    const blogList = await Promise.all(
+      blogs.slice(0, 1).map((blog) => awaitImport(blog))
+    ).then((res) => {
+      return {
+        blogList: res,
+      }
+    })
+    return blogList
+  },
+}
+</script>
+
 <style scoped>
+/*Hero*/
 .home__page {
   margin-top: 5%;
   display: flex;
@@ -86,6 +101,7 @@
 }
 .line {
   text-align: center;
+  font-weight: bold;
 }
 
 h1 {
@@ -100,28 +116,52 @@ h2 {
 h3 {
   color: #28430a;
 }
-
+h4 {
+  color: black;
+}
 .text {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.services__images {
-  width: 100%;
-}
-
-/*Services*/
-.services-offered {
+/*Description*/
+.description {
+  background: #28430a;
   display: flex;
   flex-direction: column;
-  text-align: center;
 }
-.services-each {
+.website__image {
+  width: 100%;
+  margin-top: 6%;
+}
+.description__text {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+/*Reviews*/
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20%;
+  align-items: center;
+}
+.review__image {
+  border-radius: 50%;
+  width: 50%;
+}
+.review__article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5%;
 }
 
+.review__article p {
+  text-align: center;
+  font-style: italic;
+}
 @media (min-width: 720px) {
   h1 {
     color: #793000;
