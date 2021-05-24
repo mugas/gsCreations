@@ -13,6 +13,7 @@
         </p>
       </div>
     </section>
+
     <section class="description">
       <div class="description__image">
         <img class="website__image" src="~/assets/images/two.png" alt="" />
@@ -47,16 +48,29 @@
         </p>
       </article>
     </section>
-    <section class="blog">
-      <ArticleCard
-        v-for="(blog, index) in blogList"
-        :key="index"
-        :index="index"
-        :article-info="blog"
-      />
-      <nuxt-link to="/blog"
-        ><p class="posts">See all of ours posts</p></nuxt-link
-      >
+    <Container>
+      <section class="blog">
+        <ArticleCard
+          v-for="(blog, index) in blogList"
+          :key="index"
+          class="test"
+          :index="index"
+          :article-info="blog"
+        />
+        <nuxt-link to="/blog"
+          ><p class="posts">See all of ours posts</p></nuxt-link
+        >
+      </section>
+    </Container>
+    <section class="about__me">
+      <p>
+        My name is Ricardo and after many years working in the hospitality I
+        follow what I believe and decided to create Good Stuff Creations to help
+        local producers to bring their product to the digital world.Know more
+        about me
+        <nuxt-link to="/about" class="about__me__link"> here</nuxt-link>
+      </p>
+      <img class="about__me__image" src="~/assets/images/me.jpg" alt="" />
     </section>
   </div>
 </template>
@@ -77,7 +91,7 @@ export default {
       }
     }
     const blogList = await Promise.all(
-      blogs.slice(0, 1).map((blog) => awaitImport(blog))
+      blogs.slice(0, 3).map((blog) => awaitImport(blog))
     ).then((res) => {
       return {
         blogList: res,
@@ -89,6 +103,14 @@ export default {
 </script>
 
 <style scoped>
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-top: 30px; */
+  align-items: center;
+  align-content: space-between;
+}
 /*Hero*/
 .home__page {
   margin-top: 5%;
@@ -114,10 +136,12 @@ h2 {
   margin-top: 7px;
 }
 h3 {
-  color: #28430a;
+  color: black;
+  margin-top: 3%;
 }
 h4 {
   color: black;
+  margin-top: 1%;
 }
 .text {
   display: flex;
@@ -138,6 +162,7 @@ h4 {
   font-size: 20px;
   color: white;
   font-weight: bold;
+  text-align: center;
 }
 /*Reviews*/
 
@@ -161,6 +186,25 @@ h4 {
 .review__article p {
   text-align: center;
   font-style: italic;
+}
+
+/*About*/
+.about__me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #793000;
+  color: White;
+}
+
+.about__me__image {
+  width: 50%;
+  border-radius: 50%;
+  margin-bottom: 5%;
+}
+.about__me__link {
+  color: white;
+  text-decoration: underline;
 }
 @media (min-width: 720px) {
   h1 {

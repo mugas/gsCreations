@@ -1,6 +1,6 @@
 <template>
   <section class="services__background">
-    <h1>Services</h1>
+    <h2 class="services">Services</h2>
     <p>Your business needs digital presence and I can help you achieve it.</p>
     <div class="about__cards">
       <nuxt-link to="/contact">
@@ -59,6 +59,9 @@ h1 {
   margin-top: 2rem;
 }
 
+.services {
+  color: black;
+}
 p {
   text-align: center;
 }
