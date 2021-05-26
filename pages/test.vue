@@ -2,22 +2,26 @@
   <div>
     <section class="home__page">
       <div class="vector">
-        <img width="100px" src="~/assets/test/five.svg" alt="" />
+        <img
+          width="100px"
+          class="vector__image"
+          src="~/assets/test/five.svg"
+          alt=""
+        />
       </div>
       <div class="text">
         <!-- <h1 class="title">Good Stuff Creations</h1> -->
-        <h1 class="title">Bringing your product online</h1>
+        <h1 class="title">Share your product with the world</h1>
         <p class="line">
-          I create websites and digital products for local producers and
-          groceries
+          I create websites and store onlines for local producers and groceries
         </p>
       </div>
     </section>
 
     <section class="description">
-      <div class="description__image">
-        <img class="website__image" src="~/assets/images/two.png" alt="" />
-      </div>
+      <!-- <div class="description__image"> -->
+      <img class="website__image" src="~/assets/images/two.png" alt="" />
+      <!-- </div> -->
       <div class="description__text">
         <p>Take your local produce or grocery online</p>
       </div>
@@ -146,7 +150,7 @@ h4 {
   flex-direction: column;
 }
 .website__image {
-  width: 100%;
+  max-width: 100%;
   margin-top: 6%;
 }
 .description__text {
@@ -182,12 +186,21 @@ h4 {
 @media (min-width: 720px) {
   h1 {
     color: #793000;
-    font-size: 3em;
+    font-size: 4em;
+    margin: 0 20% 0 20%;
   }
 
   h2 {
     color: #28430a;
     font-size: 1em;
+  }
+  .vector__image {
+    padding-bottom: 50%;
+  }
+  .home__page {
+    height: 100vh;
+    margin-top: 5%;
+    justify-content: inherit;
   }
 
   .text {
@@ -196,15 +209,9 @@ h4 {
     justify-content: center;
     align-items: center;
   }
-  .home__page {
-    margin-top: 0;
+  .description {
     display: flex;
-    flex-direction: column;
-    height: 70vh;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+    flex-direction: row;
   }
 }
 </style>
