@@ -1,6 +1,6 @@
 ---
-type: Web Performance
-language: Web
+type: Mobile
+language: Mobile
 title: Mobile Friendly vs Responsive Design
 summary: >
   Is your website ready for mobile? Does it matter? Yes, it does, and a lot. One
