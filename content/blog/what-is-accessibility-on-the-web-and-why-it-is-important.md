@@ -1,6 +1,6 @@
 ---
-type: Web Performance
-language: Web
+type: Accessibility
+language: Accessibility
 title: " What is  Web Accessibility and why it is important?"
 summary: >
   Accessibility should be implemented on all websites as a process with
