@@ -1,6 +1,6 @@
 ---
-type: Web
-language: "Web sustainability "
+type: Sustainability
+language: Sustainability
 title: Web sustainability  - Benefits and Resources
 summary: "Deciding to go to a more sustainable approach can be trickier when
   talking to a customer and some benefits are necessary to be said. "
