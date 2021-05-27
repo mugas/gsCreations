@@ -1,5 +1,5 @@
 ---
-type: Web Development
+type: Web
 language: "Web sustainability "
 title: Web sustainability  - Benefits and Resources
 summary: "Deciding to go to a more sustainable approach can be trickier when
