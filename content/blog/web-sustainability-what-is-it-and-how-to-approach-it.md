@@ -1,6 +1,6 @@
 ---
 type: Sustainability
-language: Web Sustainability
+language: Sustainability
 title: Web Sustainability. What is it and how to approach it?
 summary: It all started when I read that if the internet was a country would be
   the 6th most polluted country in the world. How is that possible? We are only
