@@ -1,6 +1,6 @@
 ---
-type: Web Performance
-language: Web
+type: SEO
+language: SEO
 title: Why SEO is important for your business
 summary: Do you know how to improve your SEO in your website? Do you know that
   there is local SEO for businesses that want to grow locally? In this post I
