@@ -1,5 +1,5 @@
 ---
-type: Sustainability
+type: "Sustainability "
 language: Sustainability
 title: Web Sustainability. What is it and how to approach it?
 summary: It all started when I read that if the internet was a country would be
