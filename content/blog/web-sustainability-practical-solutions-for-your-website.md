@@ -1,6 +1,6 @@
 ---
-type: Web Development
-language: Web Sustainability
+type: Sustainability
+language: Sustainability
 title: Web Sustainability - Practical Solutions for your website
 summary: Today I will talk about the good parts. The solutions, the small steps
   that can lead to a better website that can lead for a better company that
