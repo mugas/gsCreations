@@ -1,6 +1,6 @@
 ---
-type: Web performance
-language: Web
+type: Performance
+language: Performance
 title: Web performance - What is it and how to improve it?
 summary: Web performance is a keystone of your website. Your website might look
   amazing but if it doesn't have a good performance, does it show on google
