@@ -48,6 +48,7 @@ export default {
   position: fixed;
   height: 100px;
   display: flex;
+  align-items: center;
   justify-content: space-around;
   /* align-items: center; */
   background-color: white;
@@ -103,6 +104,9 @@ img {
   img {
     width: 200px;
   }
+  .the-header {
+    align-items: inherit;
+  }
 }
 
 .nav-list {
@@ -118,7 +122,8 @@ img {
 
 .nav-item a {
   text-decoration: none;
-  color: black;
+  color: #28430a;
+  font-weight: bold;
 }
 
 .nav-item a:hover,

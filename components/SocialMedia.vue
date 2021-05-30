@@ -12,8 +12,8 @@
         </a>
       </li>
       <li>
-        <a href="https://github.com/mugas" target="_blank">
-          <font-awesome-icon :icon="['fab', 'github']" />
+        <a href="https://www.facebook.com/goodstuffcodes/" target="_blank">
+          <font-awesome-icon :icon="['fab', 'facebook']" />
         </a>
       </li>
       <li>
@@ -38,6 +38,8 @@ ul {
 
 a {
   padding: 1rem;
+
+  color: #28430a;
   text-decoration: none;
 }
 

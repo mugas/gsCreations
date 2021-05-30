@@ -43,16 +43,16 @@ export default {
 
     // Switch for font awesome icon
     switch (this.language) {
-      case 'vuejs':
+      case 'Web Development':
         this.icon = 'vuejs'
         break
-      case 'css3':
-        this.icon = 'css3'
+      case 'Sustainability':
+        this.icon = 'braille'
         break
       case 'react':
         this.icon = 'react'
         break
-      case 'js':
+      case 'Sustainabili':
         this.icon = 'js'
         break
       case 'wordpress':
@@ -79,7 +79,7 @@ export default {
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
-  background-color: #7f471b;
+
   padding: 1rem;
   margin-bottom: 2rem;
   min-height: 240px;
@@ -94,7 +94,7 @@ export default {
     top: 0;
     color: #fff;
     box-shadow: none;
-    background: rgba(0, 0, 0, 0);
+    // background: rgba(0, 0, 0, 0);
     transition: 0.2s ease all;
 
     &:hover {
@@ -132,22 +132,28 @@ export default {
   }
 
   // Types
-  &.vuejs {
+  &.Sustainability {
     background-color: #28430a;
+    a {
+      color: white;
+    }
   }
-  &.js {
-    background-color: #edbd54;
+  &.SEO {
+    background-color: #0f5298;
 
     a {
       color: #252525;
     }
   }
-  &.css {
-    background-color: #0f5298;
+  &.Accessibility {
+    background-color: #edbd54;
   }
 
-  &.learning {
-    background-color: #228b22;
+  &.Performance {
+    background-color: #793000;
+  }
+  &.Mobile {
+    background-color: #562450;
   }
   &.other {
     background-color: #ff8c42;
@@ -171,19 +177,23 @@ export default {
       font-size: 0.8rem;
       display: inline-block;
       line-height: 0.8rem;
-      color: black;
-      &:hover {
-        color: white;
-      }
+      color: white;
     }
     h4 {
       margin-top: 0;
       margin-bottom: 0.25rem;
-      color: black;
+      color: white;
       &:hover {
         color: white;
       }
     }
+  }
+}
+@media (min-width: 720px) {
+  .article-card .card-inner {
+    display: flex;
+    flex-direction: column;
+    bottom: inherit;
   }
 }
 </style>

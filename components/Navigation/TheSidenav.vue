@@ -6,7 +6,7 @@
         <ul class="nav-list" @click="$emit('close')">
           <li class="nav-item">
             <nuxt-link to="/blog"
-              ><img src="~/assets/Svg/gs.svg" class="side-logo"
+              ><img src="~/assets/Svg/logo.svg" class="side-logo"
             /></nuxt-link>
           </li>
           <li class="nav-item">
@@ -37,7 +37,6 @@ export default {
 <style scoped>
 .side-logo {
   width: 150px;
-  margin-left: -35px;
 }
 .sidenav-container {
   height: 100%;

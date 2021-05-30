@@ -42,7 +42,7 @@
         </p>
       </article>
       <article class="review__article">
-        <img class="review__image" src="~/assets/images/Tukka.jpg" alt="" />
+        <img class="review__image" src="~/assets/images/goncalo.png" alt="" />
         <h3>Gonçalo Jesus</h3>
         <h4>BundAsliga</h4>
         <p>
@@ -52,7 +52,7 @@
         </p>
       </article>
     </section>
-    <h2>News from the Blog</h2>
+    <h2 class="blog__menu">News from the Blog</h2>
     <Container>
       <section class="blog">
         <ArticleCard
@@ -62,10 +62,13 @@
           :index="index"
           :article-info="blog"
         />
-        <nuxt-link to="/blog"
+        <!-- <nuxt-link to="/blog"
           ><p class="posts">See all of ours posts</p></nuxt-link
-        >
+        > -->
       </section>
+      <nuxt-link to="/blog"
+        ><p class="posts">See all of ours posts</p></nuxt-link
+      >
     </Container>
   </div>
 </template>
@@ -135,7 +138,7 @@ h3 {
   margin-top: 3%;
 }
 h4 {
-  color: black;
+  color: #793000;
   margin-top: 1%;
 }
 .text {
@@ -147,10 +150,12 @@ h4 {
 .description {
   background: #28430a;
   display: flex;
+  margin-bottom: 10%;
   flex-direction: column;
 }
 .website__image {
   max-width: 100%;
+  width: 540px;
   margin-top: 6%;
 }
 .description__text {
@@ -191,8 +196,7 @@ h4 {
   }
 
   h2 {
-    color: #28430a;
-    font-size: 1em;
+    color: black;
   }
   .vector__image {
     padding-bottom: 50%;
@@ -212,6 +216,42 @@ h4 {
   .description {
     display: flex;
     flex-direction: row;
+    height: 58vh;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .description__text {
+    font-size: 35px;
+    line-height: 1.3em;
+  }
+  .reviews {
+    margin-top: 7%;
+    display: flex;
+    flex-direction: row;
+  }
+  .review__image {
+    width: 100px;
+    height: 100px;
+  }
+  .review__article {
+    flex: 1;
+  }
+  .blog {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+  }
+  .test {
+    width: 30%;
+    display: flex;
+  }
+  .blog__menu {
+    margin-top: 7%;
+    margin-bottom: 7%;
+  }
+  .posts {
+    margin-left: 2%;
   }
 }
 </style>

@@ -134,6 +134,7 @@ export default {
           'faCss3',
           'faInstagram',
           'faGithub',
+          'faFacebook',
           'faVuejs',
           'faReact',
           'faJs',
