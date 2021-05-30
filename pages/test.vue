@@ -242,9 +242,11 @@ h4 {
 
     justify-content: space-around;
   }
+  .article-card.two-thirds {
+    width: 30%;
+  }
   .test {
     width: 30%;
-    display: flex;
   }
   .blog__menu {
     margin-top: 7%;
