@@ -10,9 +10,11 @@
 <style lang="scss">
 .footer {
   display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   padding: 2rem 0;
   color: black;
   @media (max-width: 567px) {
@@ -21,6 +23,12 @@
   > * {
     margin-left: 2%;
     margin-right: 2%;
+  }
+}
+@media (min-width: 720px) {
+  .footer {
+    flex-direction: row;
+    align-items: inherit;
   }
 }
 </style>

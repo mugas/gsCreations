@@ -1,82 +1,110 @@
 <template>
-  <section>
-    <Services />
-  </section>
+  <div class="services">
+    <section class="web__development">
+      <img
+        class="service__image"
+        width="300px"
+        src="~/assets/Svg/ecommerce.svg"
+        alt=""
+      />
+      <article class="services__text">
+        <h2>Web Development</h2>
+        <p>
+          Digital is ubiquitous within organizations, impacting every discipline
+          and department. We’ll help you design responsible digital strategies
+          that create transformative change.
+        </p>
+        <button>Web Development Services</button>
+      </article>
+    </section>
+    <section class="seo">
+      <article class="services__text">
+        <h2 class="seo__title">SEO</h2>
+        <p>
+          Digital is ubiquitous within organizations, impacting every discipline
+          and department. We’ll help you design responsible digital strategies
+          that create transformative change.
+        </p>
+        <button>SEO Services</button>
+      </article>
+      <img
+        class="service__image"
+        width="300px"
+        loading="lazy"
+        src="~/assets/Svg/seo_search.svg"
+        alt=""
+      />
+    </section>
+    <section class="maintenance">
+      <img
+        class="service__image"
+        width="300px"
+        fill="black"
+        src="~/assets/Svg/maintenance.svg"
+        alt=""
+      />
+      <article class="services__text">
+        <h2>Maintenance</h2>
+        <p>
+          Digital is ubiquitous within organizations, impacting every discipline
+          and department. We’ll help you design responsible digital strategies
+          that create transformative change.
+        </p>
+        <button>Maintenance Services</button>
+      </article>
+    </section>
+  </div>
 </template>
 
 <style scoped>
-h1 {
-  color: #28430a;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+h2 {
+  color: black;
+}
+.services {
+  display: flex;
+  flex-direction: column;
+}
+.web__development,
+.seo,
+.maintenance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+.services__text {
+  text-align: center;
+  padding-bottom: 5%;
+}
+.service__image {
+  max-width: 100%;
+  height: auto;
+}
+button {
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 50px;
+  display: inline-block;
+  border: 2px solid #28430a;
+  border-radius: 16px;
+  color: black;
+}
+.seo {
+  background-color: #793000;
+  color: white;
+}
+.seo__title {
+  color: white;
+}
+@media (min-width: 720px) {
+  .web__development,
+  .seo,
+  .maintenance {
+    flex-direction: row;
+  }
 }
 </style>
-
-<!-- <section class="services-offered">
-      <h2>Services</h2>
-      <article class="websites services-each">
-        <h3>Websites</h3>
-        <div class="websites__text">
-          <p>
-            Websites solutions that focus on your customer needs. Let's put your
-            brand online
-          </p>
-        </div>
-        <div class="websites__image">
-          <img
-            class="services__images"
-            width="300px"
-            src="~/assets/images/land__mobile.png"
-            alt=""
-          />
-        </div>
-      </article>
-      <article class="seo">
-        <h3>SEO</h3>
-        <div class="seo__image">
-          <img
-            class="services__images"
-            width="300px"
-            src="~/assets/images/land__desktop.jpg"
-            alt=""
-          />
-        </div>
-        <div class="seo__text">
-          <p>
-            Websites solutions that focus on your customer needs. Let's put your
-            brand online
-          </p>
-        </div>
-      </article>
-      <article class="maintenance">
-        <h3>Maintenance</h3>
-        <div class="maintenance__text">
-          <p>
-            Websites solutions that focus on your customer needs. Let's put your
-            brand online
-          </p>
-        </div>
-        <div class="maintenance__image">
-          <img
-            class="services__images"
-            width="300px"
-            src="~/assets/images/land__mob.jpg"
-            alt=""
-          />
-        </div>
-      </article>
-    </section>
-
-    .services__images {
-  width: 100%;
-}
-.services-offered {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.services-each {
-  display: flex;
-  flex-direction: column;
-  align-items: center; */
-} -->

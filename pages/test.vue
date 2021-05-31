@@ -42,7 +42,7 @@
         </p>
       </article>
       <article class="review__article">
-        <img class="review__image" src="~/assets/images/goncalo.png" alt="" />
+        <img class="review__image" src="~/assets/images/goncalo.jpg" alt="" />
         <h3>Gonçalo Jesus</h3>
         <h4>BundAsliga</h4>
         <p>
@@ -174,6 +174,7 @@ h4 {
 }
 .review__image {
   border-radius: 50%;
+  height: 100px;
   width: 25%;
 }
 .review__article {
