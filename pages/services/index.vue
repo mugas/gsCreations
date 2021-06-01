@@ -3,10 +3,12 @@
     <section class="web__development">
       <img
         class="service__image"
-        width="300px"
+        width="200px"
+        loading="lazy"
         src="~/assets/Svg/ecommerce.svg"
         alt=""
       />
+
       <article class="services__text">
         <h2>Web Development</h2>
         <p>
@@ -14,7 +16,9 @@
           and department. We’ll help you design responsible digital strategies
           that create transformative change.
         </p>
-        <button>Web Development Services</button>
+        <nuxt-link to="/services/webdev">
+          <button>Web Development Services</button>
+        </nuxt-link>
       </article>
     </section>
     <section class="seo">
@@ -25,12 +29,12 @@
           and department. We’ll help you design responsible digital strategies
           that create transformative change.
         </p>
-        <button>SEO Services</button>
+        <button class="seo__button">SEO Services</button>
       </article>
       <img
         class="service__image"
-        width="300px"
         loading="lazy"
+        width="200px"
         src="~/assets/Svg/seo_search.svg"
         alt=""
       />
@@ -38,8 +42,8 @@
     <section class="maintenance">
       <img
         class="service__image"
-        width="300px"
-        fill="black"
+        width="200px"
+        loading="lazy"
         src="~/assets/Svg/maintenance.svg"
         alt=""
       />
@@ -79,7 +83,11 @@ h2 {
 }
 .service__image {
   max-width: 100%;
+  width: 33%;
   height: auto;
+}
+.seo__button {
+  color: white;
 }
 button {
   text-transform: uppercase;
@@ -105,6 +113,11 @@ button {
   .seo,
   .maintenance {
     flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .services__text {
+    width: 50%;
   }
 }
 </style>
