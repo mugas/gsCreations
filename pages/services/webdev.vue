@@ -19,7 +19,7 @@
           class="service__image"
           width="100px"
           loading="lazy"
-          src="~/assets/svg/mini-sites.svg"
+          src="~/assets/Svg/mini-sites.svg"
           alt=""
         />
         <p class="services__text">Mini Sites</p>
@@ -33,7 +33,7 @@
           class="service__image"
           width="100px"
           loading="lazy"
-          src="~/assets/svg/mini-sites.svg"
+          src="~/assets/Svg/mini-sites.svg"
           alt=""
         />
         <p class="services__text">Mini Sites1</p>
@@ -47,7 +47,7 @@
           class="service__image"
           width="100px"
           loading="lazy"
-          src="~/assets/svg/mini-sites.svg"
+          src="~/assets/Svg/mini-sites.svg"
           alt=""
         />
         <p class="services__text">Mini Sites2</p>
