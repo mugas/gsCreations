@@ -29,7 +29,9 @@
           and department. We’ll help you design responsible digital strategies
           that create transformative change.
         </p>
-        <button class="seo__button">SEO Services</button>
+        <nuxt-link to="/services/seo">
+          <button class="seo__button">SEO Services</button>
+        </nuxt-link>
       </article>
       <img
         class="service__image"
@@ -54,7 +56,9 @@
           and department. We’ll help you design responsible digital strategies
           that create transformative change.
         </p>
-        <button>Maintenance Services</button>
+        <nuxt-link to="/services/maintenance">
+          <button>Maintenance Services</button>
+        </nuxt-link>
       </article>
     </section>
   </div>

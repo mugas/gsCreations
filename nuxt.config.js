@@ -111,8 +111,11 @@ export default {
     '@nuxtjs/robots',
     'nuxt-fontawesome',
     'nuxt-webfontloader',
+    'vue-plausible',
   ],
-
+  plausible: {
+    domain: 'gscreations.io',
+  },
   /**
    * Google fonts
    */

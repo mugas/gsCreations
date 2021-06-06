@@ -18,13 +18,9 @@
         <div class="text">
           <p>
             My name is Ricardo Moreira and I am a Web developer. I was born in
-            Portugal but I live in Finland with my wife and 2 daughters. Good
-            Stuff Creations was created for 2 main reasons: A web more
-            accessible and sustainable for all focused on the
-            <nuxt-link to="/services">Hospitality</nuxt-link>
-            business, and <nuxt-link to="/coding">tutorials</nuxt-link>,
-            courses, and e-books for parents and/or people with a day-job that
-            want to learn to code.
+            Portugal but I live in Finland with my wife and 2 daughters. I
+            create Good Stuff Creations focused in local producers and small
+            groceries.
           </p>
           <p>
             Before I learn web development, I spent many years working for
@@ -37,33 +33,17 @@
             help, and my knowledge from both sides ( web development and
             hospitality) I can deliver you a
             <nuxt-link to="/services">solution</nuxt-link> that helps you
-            business grows, either by creating a new website or finding the best
-            digital strategy for your company. Lately, I have been focusing in
-            accessibility and sustainability(yes your website can and it should
-            be more sustainable) and the more I know the more I find it
-            important to create digital solutions that are better for all and
-            that reduce your carbon footprint.
+            business grow.
           </p>
           <p>
-            I'm not a developer by trade. I learn on my "own"(thank you internet
-            and all great programming courses out there) while having a shift
-            job and being a parent and it's not an easy road but it's a
-            possible, challenging, and worth take it on. So I know that are many
-            people like me, parents or not that have a day job and are new to
-            coding but want to learn to code because they want to get into this
-            career, because they have a great business idea and learning to code
-            helps them achieve that or just because. Without a network, and with
-            few free time can be daunting, so I want that my
-            <nuxt-link to="/coding">tutorials</nuxt-link> and courses can help a
-            bit your road to reach your goal. Also, feel free to connect with me
+            Also, feel free to connect with me
             <nuxt-link to="/contact">here</nuxt-link> or with the
             <a href="https://twitter.com/mugas11">bluebird</a>
             help for any question that may arise you.
           </p>
           <p>
-            You can learn more about me in my personal
-            <a href="http://ricardomoreira.io/">website</a> and follow my and
-            Good Stuff Creations social media.
+            You can learn more about me and my other projects in my personal
+            <a href="http://ricardomoreira.io/">website</a>
           </p>
         </div>
       </article>

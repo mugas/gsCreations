@@ -5,7 +5,7 @@
         <img
           class="service__image"
           loading="lazy"
-          src="~/assets/images/land__mobile.png"
+          src="~/assets/images/webdev_services.jpg"
           alt=""
         />
       </article>
@@ -24,8 +24,8 @@
         />
         <p class="services__text">Mini Sites</p>
         <p>
-          High-performing, intuitive and secure web solutions that support
-          business processes and serve users globally.
+          Launch your new product or service in a beautiful and fast mini site
+          or landing page. Responsive and modern
         </p>
       </article>
       <article class="services__each">
@@ -33,13 +33,14 @@
           class="service__image"
           width="100px"
           loading="lazy"
-          src="~/assets/Svg/mini-sites.svg"
+          src="~/assets/Svg/webdev.svg"
           alt=""
         />
-        <p class="services__text">Mini Sites1</p>
+        <p class="services__text">Website Development</p>
         <p>
-          High-performing, intuitive and secure web solutions that support
-          business processes and serve users globally.
+          Your brand needs to be online and your product needs to reach more
+          people. Good Stuff Creations helps creates a fully website, from
+          scratch. Your product is the focus. Optimized for SEO and responsive
         </p>
       </article>
       <article class="services__each">
@@ -47,20 +48,63 @@
           class="service__image"
           width="100px"
           loading="lazy"
-          src="~/assets/Svg/mini-sites.svg"
+          src="~/assets/Svg/wordpress.svg"
           alt=""
         />
-        <p class="services__text">Mini Sites2</p>
+        <p class="services__text">Wordpress Development</p>
         <p>
-          High-performing, intuitive and secure web solutions that support
-          business processes and serve users globally.
+          You and your product in control. A website with CMS(content management
+          system), easy to edit, customizable and unique.
         </p>
       </article>
-      <p class="contact">
-        Contact me at firstname.lastname@gscreations.io (Ricardo Moreira) and
-        let's grow your business
-      </p>
+      <article class="services__each">
+        <img
+          class="service__image"
+          width="100px"
+          loading="lazy"
+          src="~/assets/Svg/woocommerce.svg"
+          alt=""
+        />
+        <p class="services__text">E-commerce</p>
+        <p>
+          Sell more by selling your product or service online. With a fast and
+          beautifull online store you control and sell more. Easy customization
+          and many features
+        </p>
+      </article>
+      <article class="services__each">
+        <img
+          class="service__image"
+          width="100px"
+          loading="lazy"
+          src="~/assets/Svg/hosting.svg"
+          alt=""
+        />
+        <p class="services__text">Hosting</p>
+        <p>
+          Do what makes you happy. I take care of all websites updates, email
+          hosting and support.
+        </p>
+      </article>
+      <article class="services__each">
+        <img
+          class="service__image"
+          width="100px"
+          loading="lazy"
+          src="~/assets/Svg/rebuild.svg"
+          alt=""
+        />
+        <p class="services__text">Redesign</p>
+        <p>
+          It's ok to keep it. If you like your website but just need some
+          changes I can help to achieve your goals
+        </p>
+      </article>
     </section>
+    <p class="contact">
+      Contact me at firstname.lastname@gscreations.io (Ricardo Moreira) and
+      let's grow your business
+    </p>
   </div>
 </template>
 <style scoped>
@@ -72,7 +116,7 @@
 .promo__header {
   display: flex;
   flex-direction: column;
-  background-color: #96d082;
+  background-color: #7e2318;
   margin-bottom: 10%;
 }
 .first {
@@ -114,13 +158,34 @@ p {
 @media (min-width: 720px) {
   .promo__header {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
-    background-color: #96d082;
+    background-color: #7e2318;
   }
   .promo {
     color: white;
     text-align: center;
     font-size: 2rem;
+  }
+  .service__image {
+    margin-left: 5%;
+  }
+  .services__detailed {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .first {
+    margin-top: inherit;
+  }
+  .services__each {
+    width: 20%;
+    border: inherit;
+    box-shadow: inherit;
+  }
+  .services__detailed {
+    align-items: inherit;
   }
 }
 </style>
