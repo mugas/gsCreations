@@ -5,7 +5,7 @@
       <div v-if="show" class="sidenav">
         <ul class="nav-list" @click="$emit('close')">
           <li class="nav-item">
-            <nuxt-link to="/blog"
+            <nuxt-link to="/"
               ><img src="~/assets/Svg/logo.svg" class="side-logo"
             /></nuxt-link>
           </li>
