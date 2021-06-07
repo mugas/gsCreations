@@ -17,7 +17,7 @@ export default {
       },
     ],
 
-    title: 'Good Stuff Creations – web development and coding tutorials',
+    title: 'Good Stuff Creations –  Websites for local producers and groceries',
     meta: [
       {
         charset: 'utf-8',
@@ -34,19 +34,20 @@ export default {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Good Stuff Creations - web development and coding tutorials',
+        content:
+          'Good Stuff Creations - Websites for local producers and groceries',
       },
       {
         hid: 'description',
         name: 'description',
         content:
-          'Good stuff creations helps your hospitality business grow with a new website and a strong digital presence',
+          'Good stuff creations creates websites and e-commerce for local producers and groceries',
       },
       {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'Good stuff creations helps your hospitality business grow with a new website and a strong digital presence',
+          'Good stuff creations helps local producers sharing their product with the world ',
       },
       {
         hid: 'og:image:alt',
@@ -77,7 +78,8 @@ export default {
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'Good Stuff Creations - web development and coding tutorials',
+        content:
+          'Good Stuff Creations - websites for local producers and groceries',
       },
       {
         hid: 'twitter:description',
@@ -85,7 +87,7 @@ export default {
         content: '<Blog name> and description',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }],
   },
 
   /*
