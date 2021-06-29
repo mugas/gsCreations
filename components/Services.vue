@@ -3,7 +3,7 @@
     <h2 class="services">Services</h2>
     <p>Your business needs digital presence and I can help you achieve it.</p>
     <div class="about__cards">
-      <nuxt-link to="/contact">
+      <nuxt-link to="/services/webdev">
         <section
           class="about__single-card"
           active-click
@@ -22,7 +22,7 @@
           </div>
         </section>
       </nuxt-link>
-      <nuxt-link to="/contact">
+      <nuxt-link to="/services/seo">
         <section class="about__single-card" width="350px" height="450px">
           <div class="front">
             <img width="100px" src="~/assets/Svg/seo.svg" />
@@ -35,7 +35,7 @@
           </div>
         </section>
       </nuxt-link>
-      <nuxt-link to="/contact">
+      <nuxt-link to="/services/maintenance">
         <section class="about__single-card" width="350px" height="450px">
           <div class="front">
             <img width="100px" src="~/assets/Svg/web__maintenance.svg" />

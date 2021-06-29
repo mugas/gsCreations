@@ -70,6 +70,24 @@
         ><p class="posts">See all of ours posts</p></nuxt-link
       >
     </Container>
+    <Container>
+      <h2 class="blog__menu">Get inspired</h2>
+      <section class="mywebsites">
+        <article class="mywebsites__card">
+          <div class="mywebsites__text">
+            <h3 class="mywebsites__farming">Farming in Family</h3>
+            <button>
+              <a href="https://gscsite1.netlify.app/"> See the website</a>
+            </button>
+          </div>
+          <img
+            class="mywebsites__image"
+            src="~assets/images/gsimage.jpg"
+            alt=""
+          />
+        </article>
+      </section>
+    </Container>
   </div>
 </template>
 
@@ -142,8 +160,6 @@ h4 {
   margin-top: 1%;
 }
 .text {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 /*Description*/
@@ -187,6 +203,46 @@ h4 {
 .review__article p {
   text-align: center;
   font-style: italic;
+}
+/*website*/
+.mywebsites {
+  display: flex;
+  flex-direction: column;
+}
+.mywebsites__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mywebsites__card {
+  background: #793000;
+  border-radius: 0.5rem;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5%;
+}
+.mywebsites__image {
+  width: 80%;
+}
+
+button {
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  width: 40%;
+  margin-bottom: 2%;
+  border-radius: 50px;
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  color: black;
+}
+.mywebsites__farming {
+  color: #fff;
 }
 
 @media (min-width: 720px) {
@@ -255,6 +311,18 @@ h4 {
   }
   .posts {
     margin-left: 2%;
+  }
+  /* .websites {
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: #edbd54;
+    flex-direction: row;
+  } */
+  /*mywebsites*/
+  .mywebsites {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 </style>
