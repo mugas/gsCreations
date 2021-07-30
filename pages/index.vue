@@ -11,7 +11,7 @@
       </div>
       <div class="text">
         <!-- <h1 class="title">Good Stuff Creations</h1> -->
-        <h1 class="title">Share your product with the world</h1>
+        <h1 class="title">Share your product with the worlds</h1>
         <p class="line">
           I create websites and store onlines for local producers and groceries
         </p>
