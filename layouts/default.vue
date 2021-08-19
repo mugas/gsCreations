@@ -11,17 +11,17 @@
 </template>
 
 <script>
-/* import TheHeader from '~/components/Navigation/TheHeader'
-import TheSidenav from '~/components/Navigation/TheSidenav' */
-/* import Footer from '~/components/Footer'
-import Navbar from '~/components/Navbar' */
+import TheHeader from '~/components/Navigation/TheHeader'
+import TheSidenav from '~/components/Navigation/TheSidenav'
+import Footer from '~/components/Footer'
+// import Navbar from '~/components/Navbar'
 export default {
-  /*  components: {
-      Footer,
-    Navbar, 
+  components: {
+    Footer,
+    // Navbar,
     TheHeader,
     TheSidenav,
-  }, */
+  },
   data() {
     return {
       displaySidenav: false,

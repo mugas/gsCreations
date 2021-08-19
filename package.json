@@ -24,10 +24,10 @@
     "front-matter-markdown": "^0.4.3",
     "frontmatter-markdown-loader": "^3.6.0",
     "node-sass": "^4.12.0",
-    "nuxt": "^2.8.1",
+    "nuxt": "^2.15.8",
     "nuxt-fontawesome": "^0.4.0",
     "nuxt-webfontloader": "^1.1.0",
-    "prismjs": "^1.16.0",
+    "prismjs": "^1.24.1",
     "sass-loader": "^10.0.2",
     "share-this": "^1.2.2",
     "vue-lazyload": "^1.2.6",
@@ -55,6 +55,7 @@
     "jest": "^26.4.2",
     "nodemon": "^2.0.4",
     "prettier": "^2.1.1",
+    "vue-calendly": "0.0.4",
     "vue-jest": "^3.0.3"
   }
 }

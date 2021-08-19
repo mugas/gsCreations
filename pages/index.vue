@@ -15,6 +15,9 @@
         <p class="line">
           I create websites and store onlines for local producers and groceries
         </p>
+        <button class="calendly">
+          <a href="https://calendly.com/gscreations"> Book a meeting</a>
+        </button>
       </div>
     </section>
 
@@ -94,6 +97,7 @@
 <script>
 import ArticleCard from '~/components/ArticleCard'
 import blogs from '~/content/blogs.json'
+
 export default {
   components: {
     ArticleCard,
@@ -140,6 +144,23 @@ export default {
 .line {
   text-align: center;
   font-weight: bold;
+}
+
+.calendly {
+  text-transform: uppercase;
+  background: #793000;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 50px;
+  display: inline-block;
+  border: 2px solid #28430a;
+  border-radius: 16px;
+
+  color: white;
+}
+.calendly a {
+  color: White;
 }
 
 h1 {

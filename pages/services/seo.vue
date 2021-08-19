@@ -139,6 +139,7 @@ p {
     color: white;
     text-align: center;
     font-size: 2rem;
+    margin-left: 5%;
   }
   .service__image {
     margin-left: 5%;

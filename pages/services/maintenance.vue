@@ -81,10 +81,12 @@
 .promo {
   color: white;
   text-align: center;
+
   font-size: 2rem;
 }
 p {
   color: black;
+
   text-align: center;
 }
 .services__detailed {
@@ -112,6 +114,9 @@ p {
 }
 
 @media (min-width: 720px) {
+  .text {
+    margin: 0 5% 0 5%;
+  }
   .promo__header {
     display: flex;
     flex-direction: row;
@@ -122,6 +127,7 @@ p {
   .promo {
     color: white;
     text-align: center;
+    margin-left: 5%;
     font-size: 2rem;
   }
   .service__image {
