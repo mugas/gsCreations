@@ -181,7 +181,10 @@ h4 {
   margin-top: 1%;
 }
 .text {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 /*Description*/
 .description {
