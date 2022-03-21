@@ -62,7 +62,7 @@ export default {
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content: '<Blog Name>',
+        content: 'Good Stuff Creations',
       },
       {
         hid: 'og:type',
@@ -84,7 +84,7 @@ export default {
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: '<Blog name> and description',
+        content: 'Good Stuff Creations - websites for local producers and groceries',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }],
@@ -157,8 +157,8 @@ export default {
    * Manifest
    */
   manifest: {
-    name: '<Blog Name>',
-    short_name: '<Blog Name>',
+    name: 'Good Stuff Creations',
+    short_name: 'Good Stuff Creations',
     lang: 'en',
   },
 

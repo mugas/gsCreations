@@ -4,14 +4,13 @@
       <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
       <div class="logo">
         <nuxt-link to="/">
-          <img width="500px" src="~/assets/Svg/logo.svg" />
+          <img width="500px" src="~/assets/logo/logo_1.svg" />
           <!-- <img width="150px" src="~/assets/Svg/gs.svg" /> -->
         </nuxt-link>
       </div>
       <div class="spacer"></div>
       <div class="navigation-items">
         <ul class="nav-list">
-          <SocialMedia />
           <li class="nav-item">
             <nuxt-link to="/services">Services</nuxt-link>
           </li>
@@ -21,7 +20,10 @@
         </ul>
       </div>
       <nuxt-link to="/"
-        ><img width="150px" src="~/assets/Svg/logo.svg" class="right-logo"
+        ><img
+          width="150px"
+          src="~/assets/logo/gscreations_logo.svg"
+          class="right-logo"
       /></nuxt-link>
     </header>
   </div>
