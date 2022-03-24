@@ -1,20 +1,186 @@
 <template>
   <div>
     <section class="home__page">
-      <div class="blob">
-        <!-- This SVG is from https://codepen.io/Ali_Farooq_/pen/gKOJqx -->
-        <svg
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 310 350"
-        >
-          <path
-            d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"
-          />
-        </svg>
-      </div>
-      <h1>look at<br />this go!</h1>
+      <svg class="blobCont">
+        <image
+          xlink:href="https://res.cloudinary.com/mugas/image/upload/v1648096437/back_yjdu73.jpg"
+          mask="url(#mask)"
+          width="100%"
+          height="100%"
+          preserveAspectRatio="xMidYMid slice"
+        />
+        <defs>
+          <filter id="gooey" height="130%">
+            <feGaussianBlur
+              in="SourceGraphic"
+              stdDeviation="15"
+              result="blur"
+            />
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+              result="goo"
+            />
+          </filter>
+        </defs>
+        <mask id="mask" x="0" y="0">
+          <g style="filter: url(#gooey)">
+            <circle
+              class="blob"
+              cx="10%"
+              cy="10%"
+              r="80"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="50%"
+              cy="10%"
+              r="40"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="17%"
+              cy="15%"
+              r="70"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="90%"
+              cy="20%"
+              r="120"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="30%"
+              cy="25%"
+              r="30"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="50%"
+              cy="60%"
+              r="80"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="70%"
+              cy="90%"
+              r="10"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="90%"
+              cy="60%"
+              r="90"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="30%"
+              cy="90%"
+              r="80"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="10%"
+              cy="10%"
+              r="80"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="50%"
+              cy="10%"
+              r="20"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="17%"
+              cy="15%"
+              r="70"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="40%"
+              cy="20%"
+              r="120"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="30%"
+              cy="25%"
+              r="30"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="80%"
+              cy="60%"
+              r="80"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="17%"
+              cy="10%"
+              r="100"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="40%"
+              cy="60%"
+              r="90"
+              fill="white"
+              stroke="white"
+            />
+            <circle
+              class="blob"
+              cx="10%"
+              cy="50%"
+              r="80"
+              fill="white"
+              stroke="white"
+            />
+          </g>
+        </mask>
+      </svg>
+      <h1>Digital solutions for <br />hospitality industry</h1>
+      <p class="tagline_description">
+        Websites, local SEO, logos, menus, booking, consulting, and more. Full
+        service for your hospitality business in the Savo region.
+      </p>
+      <button class="calendly">
+        <a href="https://calendly.com/gscreations"> Book a meeting</a>
+      </button>
     </section>
 
     <section class="description">
@@ -98,6 +264,8 @@ export default {
   components: {
     ArticleCard,
   },
+
+  layout: 'home',
   async asyncData({ app }) {
     async function awaitImport(blog) {
       const wholeMD = await import(`~/content/blog/${blog.slug}.md`)
@@ -119,6 +287,9 @@ export default {
 </script>
 
 <style scoped>
+.tagline_description {
+  color: #f5fbf9;
+}
 .float {
   animation-name: ani-float;
   animation-duration: 3s;
@@ -147,14 +318,255 @@ export default {
 }
 /*Hero*/
 .home__page {
-  margin-top: 5%;
   display: flex;
+  z-index: 1;
+  position: relative;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
   height: 70vh;
   width: 100%;
+  background: rgb(9, 82, 86);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 82, 86, 1) 0%,
+    rgba(90, 170, 149, 1) 100%
+  );
+
+  /*   background-image: url('~assets/images/back.jpg');
+   height: 100%;
+
+   Center and scale the image nicely 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
+
+.blobCont {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.blob:nth-child(1) {
+  animation: move1 20s infinite linear;
+  z-index: -1;
+}
+
+@keyframes move1 {
+  from {
+    transform: rotate(90deg) translate(200px, 0.1px) rotate(-90deg);
+  }
+  to {
+    transform: rotate(450deg) translate(200px, 0.1px) rotate(-450deg);
+  }
+}
+.blob:nth-child(2) {
+  animation: move2 20s infinite linear;
+}
+
+@keyframes move2 {
+  from {
+    transform: rotate(180deg) translate(200px, 0.1px) rotate(-180deg);
+  }
+  to {
+    transform: rotate(540deg) translate(200px, 0.1px) rotate(-540deg);
+  }
+}
+.blob:nth-child(3) {
+  animation: move3 20s infinite linear;
+}
+
+@keyframes move3 {
+  from {
+    transform: rotate(270deg) translate(200px, 0.1px) rotate(-270deg);
+  }
+  to {
+    transform: rotate(630deg) translate(200px, 0.1px) rotate(-630deg);
+  }
+}
+.blob:nth-child(4) {
+  animation: move4 20s infinite linear;
+}
+
+@keyframes move4 {
+  from {
+    transform: rotate(360deg) translate(200px, 0.1px) rotate(-360deg);
+  }
+  to {
+    transform: rotate(720deg) translate(200px, 0.1px) rotate(-720deg);
+  }
+}
+.blob:nth-child(5) {
+  animation: move5 20s infinite linear;
+}
+
+@keyframes move5 {
+  from {
+    transform: rotate(450deg) translate(200px, 0.1px) rotate(-450deg);
+  }
+  to {
+    transform: rotate(810deg) translate(200px, 0.1px) rotate(-810deg);
+  }
+}
+.blob:nth-child(6) {
+  animation: move6 20s infinite linear;
+}
+
+@keyframes move6 {
+  from {
+    transform: rotate(540deg) translate(200px, 0.1px) rotate(-540deg);
+  }
+  to {
+    transform: rotate(900deg) translate(200px, 0.1px) rotate(-900deg);
+  }
+}
+.blob:nth-child(7) {
+  animation: move7 20s infinite linear;
+}
+
+@keyframes move7 {
+  from {
+    transform: rotate(630deg) translate(200px, 0.1px) rotate(-630deg);
+  }
+  to {
+    transform: rotate(990deg) translate(200px, 0.1px) rotate(-990deg);
+  }
+}
+.blob:nth-child(8) {
+  animation: move8 20s infinite linear;
+}
+
+@keyframes move8 {
+  from {
+    transform: rotate(720deg) translate(200px, 0.1px) rotate(-720deg);
+  }
+  to {
+    transform: rotate(1080deg) translate(200px, 0.1px) rotate(-1080deg);
+  }
+}
+.blob:nth-child(9) {
+  animation: move9 20s infinite linear;
+}
+
+@keyframes move9 {
+  from {
+    transform: rotate(810deg) translate(200px, 0.1px) rotate(-810deg);
+  }
+  to {
+    transform: rotate(1170deg) translate(200px, 0.1px) rotate(-1170deg);
+  }
+}
+.blob:nth-child(10) {
+  animation: move10 20s infinite linear;
+}
+
+@keyframes move10 {
+  from {
+    transform: rotate(900deg) translate(200px, 0.1px) rotate(-900deg);
+  }
+  to {
+    transform: rotate(1260deg) translate(200px, 0.1px) rotate(-1260deg);
+  }
+}
+.blob:nth-child(11) {
+  animation: move11 20s infinite linear;
+}
+
+@keyframes move11 {
+  from {
+    transform: rotate(990deg) translate(200px, 0.1px) rotate(-990deg);
+  }
+  to {
+    transform: rotate(1350deg) translate(200px, 0.1px) rotate(-1350deg);
+  }
+}
+.blob:nth-child(12) {
+  animation: move12 20s infinite linear;
+}
+
+@keyframes move12 {
+  from {
+    transform: rotate(1080deg) translate(200px, 0.1px) rotate(-1080deg);
+  }
+  to {
+    transform: rotate(1440deg) translate(200px, 0.1px) rotate(-1440deg);
+  }
+}
+.blob:nth-child(13) {
+  animation: move13 20s infinite linear;
+}
+
+@keyframes move13 {
+  from {
+    transform: rotate(1170deg) translate(200px, 0.1px) rotate(-1170deg);
+  }
+  to {
+    transform: rotate(1530deg) translate(200px, 0.1px) rotate(-1530deg);
+  }
+}
+.blob:nth-child(14) {
+  animation: move14 20s infinite linear;
+}
+
+@keyframes move14 {
+  from {
+    transform: rotate(1260deg) translate(200px, 0.1px) rotate(-1260deg);
+  }
+  to {
+    transform: rotate(1620deg) translate(200px, 0.1px) rotate(-1620deg);
+  }
+}
+.blob:nth-child(15) {
+  animation: move15 20s infinite linear;
+}
+
+@keyframes move15 {
+  from {
+    transform: rotate(1350deg) translate(200px, 0.1px) rotate(-1350deg);
+  }
+  to {
+    transform: rotate(1710deg) translate(200px, 0.1px) rotate(-1710deg);
+  }
+}
+.blob:nth-child(16) {
+  animation: move16 20s infinite linear;
+}
+
+@keyframes move16 {
+  from {
+    transform: rotate(1440deg) translate(200px, 0.1px) rotate(-1440deg);
+  }
+  to {
+    transform: rotate(1800deg) translate(200px, 0.1px) rotate(-1800deg);
+  }
+}
+.blob:nth-child(17) {
+  animation: move17 20s infinite linear;
+}
+
+@keyframes move17 {
+  from {
+    transform: rotate(1530deg) translate(200px, 0.1px) rotate(-1530deg);
+  }
+  to {
+    transform: rotate(1890deg) translate(200px, 0.1px) rotate(-1890deg);
+  }
+}
+.blob:nth-child(18) {
+  animation: move18 20s infinite linear;
+}
+
+@keyframes move18 {
+  from {
+    transform: rotate(1620deg) translate(200px, 0.1px) rotate(-1620deg);
+  }
+  to {
+    transform: rotate(1980deg) translate(200px, 0.1px) rotate(-1980deg);
+  }
+}
+
 .line {
   text-align: center;
   font-weight: bold;
@@ -162,7 +574,7 @@ export default {
 
 .calendly {
   text-transform: uppercase;
-  background: #793000;
+  background: black;
   cursor: pointer;
   text-decoration: none;
   padding: 20px;
@@ -174,11 +586,11 @@ export default {
   color: white;
 }
 .calendly a {
-  color: White;
+  color: #f5fbf9;
 }
 
 h1 {
-  color: #793000;
+  color: #f5fbf9;
   font-size: 2em;
 }
 h2 {
@@ -285,7 +697,7 @@ button {
 
 @media (min-width: 720px) {
   h1 {
-    color: #793000;
+    color: #f5fbf9;
     font-size: 4em;
     margin: 0 20% 0 20%;
   }
@@ -298,7 +710,7 @@ button {
   }
   .home__page {
     height: 100vh;
-    margin-top: 5%;
+
     justify-content: inherit;
   }
 
@@ -361,38 +773,6 @@ button {
   .mywebsites {
     flex-direction: row;
     justify-content: space-around;
-  }
-}
-
-.blob {
-  position: absolute;
-  top: 0;
-  left: 0;
-  fill: #023f92;
-  width: 50vmax;
-  z-index: -1;
-  animation: move 10s ease-in-out infinite;
-  transform-origin: 50% 50%;
-}
-
-@keyframes move {
-  0% {
-    transform: scale(1) translate(10px, -30px);
-  }
-  38% {
-    transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg);
-  }
-  40% {
-    transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg);
-  }
-  78% {
-    transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg);
-  }
-  80% {
-    transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg);
-  }
-  100% {
-    transform: scale(1) translate(10px, -30px);
   }
 }
 </style>

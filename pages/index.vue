@@ -102,6 +102,7 @@ export default {
   components: {
     ArticleCard,
   },
+  layout: 'default',
   async asyncData({ app }) {
     async function awaitImport(blog) {
       const wholeMD = await import(`~/content/blog/${blog.slug}.md`)

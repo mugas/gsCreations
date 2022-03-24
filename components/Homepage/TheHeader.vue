@@ -4,7 +4,7 @@
       <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
       <div class="logo">
         <nuxt-link to="/">
-          <img width="500px" src="~/assets/logo/logo.svg" />
+          <img width="500px" src="~/assets/logo/logo_1.svg" />
           <!-- <img width="150px" src="~/assets/Svg/gs.svg" /> -->
         </nuxt-link>
       </div>
@@ -14,23 +14,20 @@
           <li class="nav-item">
             <nuxt-link to="/services">Services</nuxt-link>
           </li>
-          <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
+          <li class="nav-item"><nuxt-link to="/about">Abouts</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/contact">Contact</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/blog">Blog</nuxt-link></li>
         </ul>
       </div>
       <nuxt-link to="/"
-        ><img
-          width="150px"
-          src="~/assets/logo/gscreations_logo.svg"
-          class="right-logo"
+        ><img width="150px" src="~/assets/logo/logo_1.svg" class="right-logo"
       /></nuxt-link>
     </header>
   </div>
 </template>
 
 <script>
-import TheSideNavToggle from '@/components/Navigation/TheSideNavToggle'
+import TheSideNavToggle from '@/components/Homepage/TheSideNavToggle'
 
 export default {
   name: 'TheHeader',
@@ -43,6 +40,12 @@ export default {
 <style scoped>
 .header-container {
   height: 100px;
+  background: rgb(9, 82, 86);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 82, 86, 1) 0%,
+    rgba(90, 170, 149, 1) 100%
+  );
 }
 
 .the-header {
@@ -53,12 +56,16 @@ export default {
   align-items: center;
   justify-content: space-around;
   /* align-items: center; */
-  background-color: white;
+  background: rgb(9, 82, 86);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 82, 86, 1) 0%,
+    rgba(90, 170, 149, 1) 100%
+  );
   /* z-index: 100; */
   box-sizing: border-box;
   padding: 0 20px;
   margin-top: 10px;
-  z-index: -1;
 }
 
 .logo {
@@ -125,7 +132,7 @@ img {
 
 .nav-item a {
   text-decoration: none;
-  color: #28430a;
+  color: #f5fbf9;
   font-weight: bold;
 }
 

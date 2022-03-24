@@ -114,7 +114,12 @@ export default {
     'nuxt-fontawesome',
     'nuxt-webfontloader',
     'vue-plausible',
+
   ],
+
+
+
+
   plausible: {
     domain: 'gscreations.io',
   },
@@ -123,7 +128,7 @@ export default {
    */
   webfontloader: {
     google: {
-      families: ['Halant:500', 'Nunito+Sans:300'],
+      families: ['Bodoni Moda', 'Open Sans'],
     },
   },
 

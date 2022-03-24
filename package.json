@@ -54,6 +54,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "jest": "^26.4.2",
     "nodemon": "^2.0.4",
+    "nuxt-gsap-module": "^1.6.0",
     "prettier": "^2.1.1",
     "vue-calendly": "0.0.4",
     "vue-jest": "^3.0.3"
