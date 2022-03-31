@@ -1,9 +1,12 @@
 <template>
   <div>
-    <h2 class="form__title">Get in touch</h2>
-    <p>
-      If there an idea for your business that you want to run, I'm happy to help
-    </p>
+    <div class="form_text">
+      <h2>Get in touch</h2>
+      <p>
+        If there an idea for your business that you want to run, I'm happy to
+        help
+      </p>
+    </div>
 
     <form action="">
       <div class="form">
@@ -17,7 +20,7 @@
         </div>
         <div class="textarea_form">
           <label for="message">Message</label>
-          <textarea name="message" required></textarea>
+          <textarea name="message" rows="8" required></textarea>
         </div>
         <button class="form__submit" type="submit" value="Send message">
           Send
@@ -66,6 +69,10 @@ h2 {
 p {
   text-align: center;
 }
+.form_text {
+  display: flex;
+  flex-direction: column;
+}
 
 .form__subtitle {
   font-size: 16px;
@@ -90,7 +97,12 @@ form {
 .textarea_form {
   display: flex;
   flex-direction: column;
-  padding: 5px 14px 5px 14px;
+  /* padding: 5px 14px 5px 14px; */
+  padding: 1.3rem 30px 1rem 30px;
+}
+
+label {
+  padding: 0px 30px 1rem 30px;
 }
 .form__name {
   width: 90%;
