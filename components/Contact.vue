@@ -73,7 +73,7 @@ article img {
   .contact {
     display: flex;
     height: 600px;
-    background-image: url('~/assets/svg/patternpad.svg');
+    background-image: url('~/assets/Svg/patternpad.svg');
   }
 }
 </style>
