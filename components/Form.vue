@@ -8,28 +8,8 @@
       </p>
     </div>
 
-    <form action="">
-      <div class="form">
-        <div class="name_form">
-          <label class="name" for="name">Name</label>
-          <input type="text" name="name" required />
-        </div>
-        <div class="email_form">
-          <label for="email">Email</label>
-          <input type="email" name="email" required />
-        </div>
-        <div class="textarea_form">
-          <label for="message">Message</label>
-          <textarea name="message" rows="8" required></textarea>
-        </div>
-        <button class="form__submit" type="submit" value="Send message">
-          Send
-        </button>
-      </div>
-    </form>
-
-    <!--<form name="contactus" method="post" netlify netlify-honeypot="bot-field">
-       // Hidden input to check for bots 
+    <form name="contactus" method="post" netlify netlify-honeypot="bot-field">
+      <!--  // Hidden input to check for bots -->
       <input type="hidden" name="form-name" value="contactus" />
       <div class="form__name">
         <label class="name" for="name">Name</label>
@@ -53,7 +33,7 @@
       <button class="form__submit" type="submit" value="Send message">
         Send
       </button>
-    </form>-->
+    </form>
   </div>
 </template>
 
@@ -76,7 +56,6 @@ p {
 
 .form__subtitle {
   font-size: 16px;
-  font-family: 'Inknut Antiqua', serif;
   padding: 0;
   margin: 0;
   color: #28430a;
@@ -86,10 +65,9 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*  width: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-  border-radius: 4px; */
+  width: 100%;
+
+  border-radius: 4px;
 }
 
 .name_form,
@@ -101,15 +79,14 @@ form {
   padding: 1.3rem 30px 1rem 30px;
 }
 
-label {
-  padding: 0px 30px 1rem 30px;
-}
 .form__name {
   width: 90%;
   padding-bottom: 15px;
   margin-bottom: 10px;
+  align-self: center;
   border-radius: 4px;
-  background-color: #28430a;
+  border: 2px solid #095256;
+  background-color: #f5fbf9;
 }
 .form__name input {
   width: inherit;
@@ -119,8 +96,8 @@ label {
   border: 0;
   width: 100%;
   font-size: 1rem;
-  background-color: #28430a;
-  color: white;
+  background-color: #f5fbf9;
+  color: black;
   border-radius: 4px;
   padding: 1.3rem 30px 1rem 30px;
   top: 10px;
@@ -133,12 +110,14 @@ label {
   position: relative;
   top: 10px;
   left: 0;
-  color: white;
+  color: black;
 }
 .form__contacts {
   display: flex;
+  align-self: center;
   justify-content: space-between;
   width: 100%;
+
   flex-direction: column;
   margin-bottom: 10px;
 }
@@ -148,7 +127,7 @@ label {
   position: relative;
   top: 10px;
   left: 0;
-  color: white;
+  color: black;
 }
 .form__contacts input {
   width: inherit;
@@ -158,13 +137,15 @@ label {
   border: 0;
   width: 100%;
   font-size: 1rem;
-  background-color: #28430a;
+  background-color: #f5fbf9;
   color: white;
   border-radius: 4px;
 }
 .form__email {
   width: 90%;
-  background-color: #28430a;
+  align-self: center;
+  border: 2px solid #095256;
+  background-color: #f5fbf9;
   border-radius: 4px;
   margin-bottom: 10px;
 }
@@ -174,7 +155,9 @@ label {
 }
 .form__phone {
   width: 90%;
-  background-color: #28430a;
+  align-self: center;
+  border: 2px solid #095256;
+  background-color: #f5fbf9;
   border-radius: 4px;
 }
 .form__phone input {
@@ -185,7 +168,8 @@ label {
   width: 90%;
   margin-bottom: 10px;
   border-radius: 4px;
-  background-color: #28430a;
+  border: 2px solid #095256;
+  background-color: #f5fbf9;
   color: white;
 }
 .form__textarea textarea {
@@ -193,6 +177,7 @@ label {
 
   border: 0;
   margin: 0;
+  align-self: center;
   width: 100%;
   padding: 1.3rem 30px 1rem 30px;
   border: 0;
@@ -200,7 +185,7 @@ label {
   top: 10px;
   left: 0;
   line-height: 20px;
-  background-color: #28430a;
+  background-color: #f5fbf9;
   color: white;
   border-radius: 4px;
 }
@@ -211,6 +196,7 @@ label {
   position: relative;
   top: 10px;
   left: 0;
+  color: black;
 }
 input,
 textarea:focus {
@@ -220,7 +206,7 @@ textarea:focus {
   padding: 7px 35px;
   border-radius: 60px;
   display: inline-block;
-  background-color: #28430a;
+  background-color: #095256;
   align-self: center;
   color: white;
   font-size: 18px;
@@ -233,7 +219,7 @@ textarea:focus {
   transform: translateY(1px);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
 }
-@media (min-width: 945px) {
+@media (min-width: 720px) {
   form {
     display: flex;
     flex-direction: column;
@@ -257,7 +243,8 @@ textarea:focus {
     padding-bottom: 15px;
     margin-bottom: 10px;
     border-radius: 4px;
-    background-color: #28430a;
+
+    background-color: #f5fbf9;
   }
   .form__email {
     margin-bottom: 0px;

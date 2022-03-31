@@ -39,7 +39,7 @@ ul {
 a {
   padding: 1rem;
 
-  color: #28430a;
+  color: #095256;
   text-decoration: none;
 }
 

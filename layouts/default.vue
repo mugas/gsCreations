@@ -37,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Halant', sans-serif;
+  font-family: 'Bodoni Moda', sans-serif;
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 6px;
@@ -46,7 +46,7 @@ h6 {
 }
 body {
   color: #252525;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 // @import '../assets/scss/syntax.scss';
