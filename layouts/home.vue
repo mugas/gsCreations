@@ -1,5 +1,6 @@
 <template>
   <div class="site-wrapper">
+    <Animation />
     <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
     <TheSidenav :show="displaySidenav" @close="displaySidenav = false" />
 
@@ -48,6 +49,7 @@ body {
   color: #252525;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  position: relative;
 }
 // @import '../assets/scss/syntax.scss';
 html {

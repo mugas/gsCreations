@@ -46,13 +46,16 @@ export default {
     rgba(9, 82, 86, 1) 0%,
     rgba(90, 170, 149, 1) 100%
   );
+  position: relative;
+  z-index: 0;
 }
 
 .the-header {
   width: 100%;
-  position: fixed;
+  position: absolute;
   height: 100px;
   display: flex;
+  z-index: 0;
   align-items: center;
   justify-content: space-around;
   /* align-items: center; */
@@ -62,7 +65,7 @@ export default {
     rgba(9, 82, 86, 1) 0%,
     rgba(90, 170, 149, 1) 100%
   );
-  /* z-index: 100; */
+
   box-sizing: border-box;
   padding: 0 20px;
   margin-top: 10px;

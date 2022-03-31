@@ -1,178 +1,7 @@
 <template>
   <div>
     <section class="home__page">
-      <svg class="blobCont">
-        <image
-          xlink:href="https://res.cloudinary.com/mugas/image/upload/v1648096437/back_yjdu73.jpg"
-          mask="url(#mask)"
-          width="100%"
-          height="100%"
-          preserveAspectRatio="xMidYMid slice"
-        />
-        <defs>
-          <filter id="gooey" height="130%">
-            <feGaussianBlur
-              in="SourceGraphic"
-              stdDeviation="15"
-              result="blur"
-            />
-            <feColorMatrix
-              in="blur"
-              mode="matrix"
-              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-              result="goo"
-            />
-          </filter>
-        </defs>
-        <mask id="mask" x="0" y="0">
-          <g style="filter: url(#gooey)">
-            <circle
-              class="blob"
-              cx="10%"
-              cy="10%"
-              r="80"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="50%"
-              cy="10%"
-              r="40"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="17%"
-              cy="15%"
-              r="70"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="90%"
-              cy="20%"
-              r="120"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="30%"
-              cy="25%"
-              r="30"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="50%"
-              cy="60%"
-              r="80"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="70%"
-              cy="90%"
-              r="10"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="90%"
-              cy="60%"
-              r="90"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="30%"
-              cy="90%"
-              r="80"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="10%"
-              cy="10%"
-              r="80"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="50%"
-              cy="10%"
-              r="20"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="17%"
-              cy="15%"
-              r="70"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="40%"
-              cy="20%"
-              r="120"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="30%"
-              cy="25%"
-              r="30"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="80%"
-              cy="60%"
-              r="80"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="17%"
-              cy="10%"
-              r="100"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="40%"
-              cy="60%"
-              r="90"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="10%"
-              cy="50%"
-              r="80"
-              fill="white"
-              stroke="white"
-            />
-          </g>
-        </mask>
-      </svg>
+      <Animation />
       <h1>Digital solutions for <br />hospitality industry</h1>
       <p class="tagline_description">
         Websites, local SEO, logos, menus, booking, consulting, and more. Full
@@ -264,8 +93,7 @@ export default {
   components: {
     ArticleCard,
   },
-
-  layout: 'home',
+  // layout: 'home',
   async asyncData({ app }) {
     async function awaitImport(blog) {
       const wholeMD = await import(`~/content/blog/${blog.slug}.md`)
@@ -577,12 +405,12 @@ export default {
   background: black;
   cursor: pointer;
   text-decoration: none;
-  padding: 25px;
+  padding: 20px;
   border-radius: 50px;
   display: inline-block;
   border: 2px solid #28430a;
   border-radius: 16px;
-  width: 10rem;
+
   color: white;
 }
 .calendly a {
@@ -614,7 +442,7 @@ h4 {
 }
 /*Description*/
 .description {
-  background: #f5fbf9;
+  background: #28430a;
   display: flex;
   margin-bottom: 10%;
   flex-direction: column;

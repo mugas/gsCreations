@@ -155,6 +155,7 @@ export default {
           'faLinkedin',
         ],
       },
+
     ],
   },
 

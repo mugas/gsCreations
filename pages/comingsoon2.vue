@@ -3,7 +3,7 @@
     <section class="home__page">
       <svg class="blobCont">
         <image
-          xlink:href="https://res.cloudinary.com/mugas/image/upload/v1648096437/back_yjdu73.jpg"
+          xlink:href="https://res.cloudinary.com/mugas/image/upload/v1648178725/back_mpnlj3.png"
           mask="url(#mask)"
           width="100%"
           height="100%"
@@ -327,11 +327,11 @@ export default {
   height: 70vh;
   width: 100%;
   background: rgb(9, 82, 86);
-  background: linear-gradient(
+  /*  background: linear-gradient(
     90deg,
     rgba(9, 82, 86, 1) 0%,
     rgba(90, 170, 149, 1) 100%
-  );
+  ); */
 
   /*   background-image: url('~assets/images/back.jpg');
    height: 100%;
@@ -577,12 +577,12 @@ export default {
   background: black;
   cursor: pointer;
   text-decoration: none;
-  padding: 25px;
+  padding: 20px;
   border-radius: 50px;
   display: inline-block;
   border: 2px solid #28430a;
   border-radius: 16px;
-  width: 10rem;
+
   color: white;
 }
 .calendly a {
@@ -614,7 +614,7 @@ h4 {
 }
 /*Description*/
 .description {
-  background: #f5fbf9;
+  background: #28430a;
   display: flex;
   margin-bottom: 10%;
   flex-direction: column;
