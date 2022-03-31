@@ -3,12 +3,12 @@
     <section class="contact">
       <article class="call">
         <h2>Phone</h2>
-        <img class="phone_icon" src="~/assets/svg/phone.svg" alt="" />
+        <img class="phone_icon" src="~/assets/Svg/phone.svg" alt="" />
         <p>303-354395426</p>
       </article>
       <article class="email">
         <h2>Email</h2>
-        <img class="email_icon" src="~/assets/svg/email.svg" alt="" />
+        <img class="email_icon" src="~/assets/Svg/email.svg" alt="" />
         <p class="contact_name">Ricardo Moreira</p>
         <p>firstname.lastname@gscreations.io</p>
       </article>
