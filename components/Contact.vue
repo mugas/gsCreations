@@ -55,17 +55,20 @@ article img {
 }
 
 .call {
-  background-color: rgba(9, 82, 86, 0.8);
+  /* background-color: rgba(9, 82, 86, 0.8); */
+  background-color: rgba(129, 52, 5, 0.8);
   flex: 1 1 0px;
 }
 
 .email {
-  background-color: rgba(8, 127, 140, 0.8);
+  background-color: rgba(212, 81, 19, 0.8);
+  /* background-color: rgba(8, 127, 140, 0.8); */
   flex: 1 1 0px;
 }
 
 .social {
-  background-color: rgba(90, 170, 149, 0.8);
+  background-color: rgba(249, 160, 63, 0.8);
+  /* background-color: rgba(8, 127, 140, 0.8); */
   flex: 1 1 0px;
 }
 
@@ -75,5 +78,9 @@ article img {
     height: 600px;
     background-image: url('~/assets/Svg/patternpad.svg');
   }
+}
+
+.contact {
+  background-image: url('~/assets/Svg/patternpad.svg');
 }
 </style>

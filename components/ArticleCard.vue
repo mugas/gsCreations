@@ -75,6 +75,9 @@ export default {
 </script>
 
 <style lang="scss">
+/* img {
+  width: 50px;
+} */
 .article-card {
   display: flex;
   flex-direction: column;
@@ -85,14 +88,23 @@ export default {
   min-height: 240px;
   position: relative;
   overflow: hidden;
-
+  // -webkit-backdrop-filter: blur(10px) saturate(104%);
+  // backdrop-filter: blur(10px) saturate(104%);
+  // background-color: rgba(9, 82, 86, 0.8);
+  // background-color: rgba(8, 127, 140, 0.86);
+  // background-color: rgba(90, 170, 149, 0.86);
+  // background-image: url('~/assets/Svg/blogpattern.svg');
+  background-image: url('~/assets/Svg/patternpad.svg');
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
   a {
-    position: absolute;
+    // position: absolute;
     height: 100%;
     width: 100%;
     left: 0;
     top: 0;
-    color: #fff;
+    // color: white;
+    color: black;
     box-shadow: none;
     // background: rgba(0, 0, 0, 0);
     transition: 0.2s ease all;
@@ -101,10 +113,12 @@ export default {
       background: rgba(0, 0, 0, 0.05);
     }
     &:hover .type {
-      color: white;
+      // color: white;
+      color: black;
     }
     &:hover h4 {
-      color: white;
+      // color: white;
+      color: black;
     }
   }
 
@@ -133,42 +147,79 @@ export default {
 
   // Types
   &.Sustainability {
-    background-color: #28430a;
-    a {
-      color: white;
+    .card-inner p {
+      background: #f5fbf9;
+      width: fit-content;
+      // color: white;
+      color: black;
     }
   }
   &.SEO {
-    background-color: #0f5298;
-
-    a {
-      color: #252525;
+    .card-inner p {
+      background: #f5fbf9;
+      width: fit-content;
+      // color: white;
+      color: black;
     }
   }
   &.Accessibility {
-    background-color: #edbd54;
+    .card-inner p {
+      background: #f5fbf9;
+      width: fit-content;
+      // color: white;
+      color: black;
+    }
   }
 
   &.Performance {
-    background-color: #793000;
+    .card-inner p {
+      background: #f5fbf9;
+      width: fit-content;
+      // color: white;
+      color: black;
+    }
   }
   &.Mobile {
-    background-color: #562450;
+    .card-inner p {
+      background: #f5fbf9;
+      width: fit-content;
+      // color: white;
+      color: black;
+    }
   }
   &.other {
-    background-color: #ff8c42;
-    a {
-      color: #252525;
+    .card-inner p {
+      background: #f5fbf9;
+      width: fit-content;
+      // color: white;
+      color: black;
     }
   }
 
   .card-inner {
-    position: absolute;
-    bottom: 1rem;
+    // position: absolute;
+    // bottom: 1rem;
     left: 0;
     width: 100%;
     padding: 0 1rem;
 
+    backdrop-filter: blur(5px) saturate(140%);
+    -webkit-backdrop-filter: blur(5px) saturate(140%);
+    background-color: rgba(245, 251, 249, 0.81);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+
+    /*   backdrop-filter: blur(3px) saturate(185%);
+    -webkit-backdrop-filter: blur(3px) saturate(185%);
+    background-color: rgba(129, 52, 5, 0.66);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+ */
+    /* backdrop-filter: blur(6px) saturate(94%);
+    -webkit-backdrop-filter: blur(6px) saturate(94%);
+    background-color: rgba(245, 251, 249, 0.35);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3); */
     .type {
       background: rgba(0, 0, 0, 0.1);
       padding: 0.4rem;
@@ -177,14 +228,17 @@ export default {
       font-size: 0.8rem;
       display: inline-block;
       line-height: 0.8rem;
-      color: white;
+      // color: white;
+      color: black;
     }
     h4 {
       margin-top: 0;
       margin-bottom: 0.25rem;
-      color: white;
+      // color: white;
+      color: black;
       &:hover {
-        color: white;
+        // color: white;
+        color: black;
       }
     }
   }

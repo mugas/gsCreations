@@ -42,7 +42,7 @@
   box-sizing: border-box;
 }
 h2 {
-  color: #28430a;
+  color: #813405;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -58,7 +58,7 @@ p {
   font-size: 16px;
   padding: 0;
   margin: 0;
-  color: #28430a;
+  color: #813405;
   text-align: center;
 }
 form {
@@ -85,7 +85,7 @@ form {
   margin-bottom: 10px;
   align-self: center;
   border-radius: 4px;
-  border: 2px solid #095256;
+  border: 2px solid #d45113;
   background-color: #f5fbf9;
 }
 .form__name input {
@@ -144,7 +144,7 @@ form {
 .form__email {
   width: 90%;
   align-self: center;
-  border: 2px solid #095256;
+  border: 2px solid #d45113;
   background-color: #f5fbf9;
   border-radius: 4px;
   margin-bottom: 10px;
@@ -156,7 +156,7 @@ form {
 .form__phone {
   width: 90%;
   align-self: center;
-  border: 2px solid #095256;
+  border: 2px solid #d45113;
   background-color: #f5fbf9;
   border-radius: 4px;
 }
@@ -168,7 +168,7 @@ form {
   width: 90%;
   margin-bottom: 10px;
   border-radius: 4px;
-  border: 2px solid #095256;
+  border: 2px solid #d45113;
   background-color: #f5fbf9;
   color: white;
 }
@@ -206,7 +206,7 @@ textarea:focus {
   padding: 7px 35px;
   border-radius: 60px;
   display: inline-block;
-  background-color: #095256;
+  background-color: #d45113;
   align-self: center;
   color: white;
   font-size: 18px;

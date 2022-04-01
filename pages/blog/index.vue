@@ -46,13 +46,14 @@ export default {
 
 <style scoped>
 h1 {
-  color: #28430a;
+  color: #813405;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
 .subtitle {
   font-size: 1.5em;
-  color: #28430a;
+  color: #d45113;
+  text-align: center;
 }
 </style>

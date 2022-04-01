@@ -80,19 +80,21 @@ export default {
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
-  background-color: #7f471b;
+  // background-color: #7f471b;
   padding: 1rem;
   margin-bottom: 2rem;
   min-height: 240px;
   position: relative;
   overflow: hidden;
+
   a {
-    position: absolute;
+    // position: absolute;
     height: 100%;
     width: 100%;
     left: 0;
     top: 0;
-    color: #fff;
+    // color: white;
+    color: black;
     box-shadow: none;
 
     transition: 0.2s ease all;
@@ -100,10 +102,12 @@ export default {
       background: rgba(0, 0, 0, 0.05);
     }
     &:hover .type {
-      color: white;
+      // color: white;
+      color: black;
     }
     &:hover h4 {
-      color: white;
+      // color: white;
+      color: black;
     }
   }
   // Sizes
@@ -145,11 +149,14 @@ export default {
     }
   }
   .card-inner {
-    position: absolute;
+    // position: absolute;
     bottom: 1rem;
     left: 0;
+    // display: contents;
+    height: 100%;
     width: 100%;
     padding: 0 1rem;
+
     .type {
       background: rgba(0, 0, 0, 0.1);
       padding: 0.4rem;
@@ -158,17 +165,20 @@ export default {
       font-size: 0.8rem;
       display: inline-block;
       line-height: 0.8rem;
-      color: black;
+      color: #f5fbf9;
       &:hover {
-        color: white;
+        // color: white;
+        color: black;
       }
     }
     h4 {
       margin-top: 0;
       margin-bottom: 0.25rem;
+      // color: white;
       color: black;
       &:hover {
-        color: white;
+        // color: white;
+        color: black;
       }
     }
   }
