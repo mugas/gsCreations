@@ -3,7 +3,7 @@
     <div class="form_text">
       <h2>Get in touch</h2>
       <p>
-        If there an idea for your business that you want to run, I'm happy to
+        If there is an idea for your business that you want to run, I'm happy to
         help
       </p>
     </div>
@@ -224,7 +224,7 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 650px;
+    width: 50%;
     margin-left: 25%;
     border-radius: 4px;
   }

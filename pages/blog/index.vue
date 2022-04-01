@@ -2,10 +2,8 @@
   <section>
     <Container>
       <div class="intro">
-        <h1>Blog</h1>
-        <p class="subtitle">
-          Our toughts and ideas about websites and everything related
-        </p>
+        <h1>Creative writing</h1>
+        <p class="subtitle">The blog you need for your hospitality business</p>
       </div>
     </Container>
     <Container flex>

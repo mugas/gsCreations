@@ -183,7 +183,7 @@ export default {
   animation: share-this 360ms forwards linear;
 
   &::before {
-    border-color: #793000;
+    border-color: #813405;
     border-style: solid;
     border-width: 0.4em 0.4em 0;
     bottom: 100%;
@@ -197,7 +197,6 @@ export default {
   }
 
   ul {
-    background-color: #28430a;
     border-radius: 0.5rem;
     transform: translate(-50%, -110%);
     background: linear-gradient(to bottom, rgba(49, 49, 47, 0.99), blue);
@@ -245,7 +244,7 @@ export default {
     margin-bottom: 2.4rem;
   }
   a {
-    color: red;
+    color: #f9a03f;
   }
 
   .thumbnail {
@@ -262,7 +261,7 @@ export default {
 
     .post-meta {
       margin: 0;
-      color: #d0d1c6;
+      color: black;
       font-weight: 700;
     }
   }
@@ -271,7 +270,7 @@ export default {
     margin-bottom: 2rem;
     display: block;
     width: 100%;
-    color: #28430a;
+    color: #813405;
   }
 }
 

@@ -39,7 +39,7 @@ section article {
 }
 
 .social h2 {
-  margin-bottom: 16%;
+  margin-bottom: 18%;
 }
 
 article h2 {
