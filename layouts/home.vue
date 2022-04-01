@@ -43,7 +43,7 @@ h6 {
   line-height: 1.2;
   margin-bottom: 6px;
   text-align: center;
-  color: white;
+  color: #813405;
 }
 body {
   color: #252525;
@@ -87,6 +87,7 @@ h1 {
 h2 {
   font-size: 1.8rem;
   margin-top: 2rem;
+  color: #813405;
   & + p {
     margin-top: 1rem;
   }

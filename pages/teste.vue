@@ -74,6 +74,7 @@ p {
 
   .text p {
     margin-left: -60px;
+    line-height: inherit;
   }
   .about {
     display: flex;
