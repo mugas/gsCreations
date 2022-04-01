@@ -1,236 +1,100 @@
 <template>
-  <div>
-    <div class="page-wrapper">
-      <aside>
-        <h1>Hi, I'm Ricardo</h1>
-        <p class="bio">
-          Let's <br />
-          <span class="action"> {{ actions[0] }}</span>
-        </p>
-        <p class="name">Ricardo Moreira</p>
-        <p>firstname.lastname@gscreations.io</p>
-        <SocialMedia />
-      </aside>
-      <article>
-        <div class="image">
-          <img src="~/assets/images/me.png" />
-        </div>
-        <div class="text">
-          <p>
-            My name is Ricardo Moreira and I am a Web developer. I was born in
-            Portugal but I live in Finland with my wife and 2 daughters. I
-            create Good Stuff Creations focused in local producers and small
-            groceries.
-          </p>
-          <p>
-            Before I learn web development, I spent many years working for
-            hospitality. From bars, hotel to restaurants, from waiter to kitchen
-            helper, manager, or owner I did a bit of all. Every day more the
-            world is getting more digital and many companies are still lacking
-            in this aspect, only having their digital presence in a Social Media
-            that they can't control or have an old website that doesn't deliver
-            the results it should. I want to help close that gap. With your
-            help, and my knowledge from both sides ( web development and
-            hospitality) I can deliver you a
-            <nuxt-link to="/services">solution</nuxt-link> that helps you
-            business grow.
-          </p>
-          <p>
-            Also, feel free to connect with me
-            <nuxt-link to="/contact">here</nuxt-link> or with the
-            <a href="https://twitter.com/mugas11">bluebird</a>
-            help for any question that may arise you.
-          </p>
-          <p>
-            You can learn more about me and my other projects in my personal
-            <a href="http://ricardomoreira.io/">website</a>
-          </p>
-        </div>
-      </article>
+  <div class="about">
+    <div class="picture">
+      <img class="profile_pic" src="~/assets/Svg/profile.svg" />
+      <!-- <img src="~/assets/images/me.png" /> -->
     </div>
-    <footer></footer>
+    <div class="text">
+      <h2>About</h2>
+      <p>
+        I am partly a developer, partly an entrepreneur, partly a cook, and
+        passionate about learning.
+      </p>
+      <p>
+        I believe that a good recipe needs good ingredients, my experience of
+        hospitality, my knowledge of web development, and my understanding of
+        business and entrepreneurship, not only in Finland but in different
+        countries, make me the perfect solution for your business.
+      </p>
+
+      <p>
+        I am based in Savonlinna and Good Stuff Creations was created to help
+        any hospitality business in the Savo region grow.
+      </p>
+      <p>Your business deserves always more.</p>
+      <SocialMedia class="social_media" />
+    </div>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      actions: ['Talk', 'Work', 'Connect'],
-    }
-  },
-  mounted() {
-    window.setInterval(() => {
-      this.pollPerson()
-    }, 5000)
-  },
-  methods: {
-    pollPerson() {
-      const first = this.actions.shift()
-      this.actions = this.actions.concat(first)
-    },
-  },
-}
-</script>
+<script></script>
 
-<style scoped>
-body {
-  margin: 0;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 18px;
+<style>
+h2 {
+  color: #813405;
+  margin-left: 2%;
 }
-a {
-  box-shadow: inset 0 -1px 0 currentColor;
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
-a:hover {
-  box-shadow: inset 0 0 0 currentcolor, 0 3px 0 currentcolor;
-}
-.name {
+
+p {
   margin-bottom: 0;
 }
-.action {
-  color: #793000;
-  font-size: 3.5vw;
-  filter: brightness(2);
+.text p {
+  margin-left: 2%;
+  line-height: 1.8;
+}
+.social_media {
+  margin-left: 2%;
 }
 
-.page-wrapper {
-  display: block;
-  width: 100%;
-}
-
-@media (min-width: 700px) {
-  .page-wrapper {
-    display: flex;
-  }
-}
-aside {
-  background-color: #28430a;
-  color: white;
+.about {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 20px 0 40px;
+}
+.picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile_pic {
+  width: 100%;
 }
 
 @media (min-width: 700px) {
-  aside {
-    background-color: #28430a;
-    color: white;
+  h2 {
+    color: #813405;
+    text-align: start;
+    margin-left: -60px;
+  }
+
+  .text p {
+    margin-left: -60px;
+    line-height: inherit;
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    margin-top: 5%;
+  }
+  .picture {
+    flex: 1 1 0px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50%;
-    flex: 0 0 50%;
-    padding: 0;
+    height: 450px;
+    width: 80px;
   }
-}
-h1,
-.flourish {
-  font-size: 6vw;
-  margin: 10px 0;
-  font-family: 'Oxygen', sans-serif;
-  text-align: center;
-}
-
-@media (min-width: 700px) {
-  h1,
-  .flourish {
-    font-size: 4.5vw;
-    margin: 20px 0;
-    padding: 0 20px;
+  .text {
+    flex: 1 1 0px;
   }
-}
-h1 {
-  letter-spacing: 10px;
-  text-transform: uppercase;
-}
-
-.flourish {
-  font-weight: bold;
-}
-
-.bio {
-  margin: 0 20px;
-  text-align: center;
-  line-height: 1.5;
-  font-style: italic;
-}
-
-@media (min-width: 1100px) {
-  .bio {
-    text-align: center;
-    line-height: 1.7;
-    margin-bottom: 1.6em;
-    font-size: 1.2em;
+  .social_media {
+    margin-left: -60px;
+    margin-top: 2%;
   }
-}
-article {
-  margin: 0;
-}
-
-@media (min-width: 700px) {
-  article {
-    flex: 0 0 50%;
-    margin-left: 50%;
-    padding-top: 30px;
-  }
-}
-.author,
-.photographer {
-  text-transform: uppercase;
-  font-size: 0.7em;
-  letter-spacing: 1px;
-  color: #777;
-  padding: 0 20px;
-  margin: 0;
-  font-family: 'Oxygen', sans-serif;
-}
-.author span,
-.photographer span {
-  color: rgba(0, 0, 0, 0.4);
-  text-transform: capitalize;
-}
-
-@media (min-width: 700px) {
-  .author,
-  .photographer {
-    padding: 0 60px;
-  }
-}
-.image img {
-  width: 100%;
-  height: 50%;
-  margin: 20px 0;
-}
-
-.text {
-  columns: 2;
-  column-width: 250px;
-  column-gap: 2em;
-  padding: 0 20px;
-  text-align: justify;
-}
-.text p:first-child {
-  margin-top: 0;
-}
-.text p:first-child:first-letter {
-  float: left;
-  color: #793000;
-  font-size: 4em;
-  line-height: 35px;
-  padding: 19px 10px 10px 0;
-}
-
-@media (min-width: 1100px) {
-}
-footer {
-  height: 40px;
 }
 </style>
