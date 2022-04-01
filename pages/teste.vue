@@ -22,7 +22,7 @@
         any hospitality business in the Savo region grow.
       </p>
       <p>Your business deserves always more.</p>
-      <SocialMedia class="test" />
+      <SocialMedia class="social_media" />
     </div>
   </div>
 </template>
@@ -32,6 +32,7 @@
 <style>
 h2 {
   color: #813405;
+  margin-left: 2%;
 }
 img {
   max-width: 100%;
@@ -40,6 +41,13 @@ img {
 
 p {
   margin-bottom: 0;
+}
+.text p {
+  margin-left: 2%;
+  line-height: 1.8;
+}
+.social_media {
+  margin-left: 2%;
 }
 
 .about {
@@ -59,6 +67,7 @@ p {
 
 @media (min-width: 700px) {
   h2 {
+    color: #813405;
     text-align: start;
     margin-left: -60px;
   }
@@ -82,7 +91,7 @@ p {
   .text {
     flex: 1 1 0px;
   }
-  .test {
+  .social_media {
     margin-left: -60px;
     margin-top: 2%;
   }

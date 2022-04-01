@@ -41,11 +41,9 @@ h6 {
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 6px;
-  text-align: center;
-  color: white;
+  color: #813405;
 }
 body {
-  color: #252525;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
