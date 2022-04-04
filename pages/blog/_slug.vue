@@ -179,6 +179,9 @@ export default {
 </script>
 
 <style lang="scss">
+h2 {
+  text-align: center;
+}
 .share-this-popover {
   animation: share-this 360ms forwards linear;
 

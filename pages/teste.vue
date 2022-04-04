@@ -1,9 +1,7 @@
 <template>
   <div class="about">
-    <div class="picture">
-      <img class="profile_pic" src="~/assets/Svg/profile.svg" />
-      <!-- <img src="~/assets/images/me.png" /> -->
-    </div>
+    <img class="profile_pic" src="~/assets/Svg/profile.svg" />
+
     <div class="text">
       <h2>About</h2>
       <p>
@@ -32,7 +30,6 @@
 <style>
 h2 {
   color: #813405;
-  margin-left: 2%;
 }
 img {
   max-width: 100%;
@@ -43,11 +40,7 @@ p {
   margin-bottom: 0;
 }
 .text p {
-  margin-left: 2%;
   line-height: 1.8;
-}
-.social_media {
-  margin-left: 2%;
 }
 
 .about {
@@ -63,37 +56,29 @@ p {
 
 .profile_pic {
   width: 100%;
+  height: 442px;
 }
 
 @media (min-width: 700px) {
+  .profile_pic {
+    flex: 1 1 0px;
+  }
+
   h2 {
     color: #813405;
     text-align: start;
-    margin-left: -60px;
   }
 
-  .text p {
-    margin-left: -60px;
-    line-height: inherit;
-  }
   .about {
     display: flex;
     flex-direction: row;
     height: 80vh;
-    margin-top: 5%;
   }
-  .picture {
-    flex: 1 1 0px;
-    display: flex;
-    flex-direction: column;
-    height: 450px;
-    width: 80px;
-  }
+
   .text {
     flex: 1 1 0px;
   }
   .social_media {
-    margin-left: -60px;
     margin-top: 2%;
   }
 }

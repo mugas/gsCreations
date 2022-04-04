@@ -83,6 +83,7 @@ h1 {
 h2 {
   font-size: 1.8rem;
   margin-top: 2rem;
+  text-align: start;
   & + p {
     margin-top: 1rem;
   }
