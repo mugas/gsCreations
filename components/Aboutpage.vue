@@ -41,6 +41,7 @@ p {
 }
 .text p {
   line-height: 1.8;
+  text-align: center;
 }
 
 .about {
@@ -77,6 +78,9 @@ p {
 
   .text {
     flex: 1 1 0px;
+  }
+  .text p {
+    text-align: start;
   }
   .social_media {
     margin-top: 2%;

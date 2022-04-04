@@ -4,7 +4,7 @@
       <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
       <div class="logo">
         <nuxt-link to="/">
-          <img width="500px" src="~/assets/logo/logo.svg" />
+          <img width="500px" src="~/assets/SVG/logo_one.svg" />
           <!-- <img width="150px" src="~/assets/Svg/gs.svg" /> -->
         </nuxt-link>
       </div>
@@ -20,10 +20,7 @@
         </ul>
       </div>
       <nuxt-link to="/"
-        ><img
-          width="150px"
-          src="~/assets/logo/gscreations_logo.svg"
-          class="right-logo"
+        ><img width="150px" src="~/assets/SVG/logo_one.svg" class="right-logo"
       /></nuxt-link>
     </header>
   </div>
@@ -43,6 +40,8 @@ export default {
 <style scoped>
 .header-container {
   height: 100px;
+  position: relative;
+  z-index: 0;
 }
 
 .the-header {
@@ -53,7 +52,7 @@ export default {
   align-items: center;
   justify-content: space-around;
   /* align-items: center; */
-  background-color: white;
+  /* background-color: white; */
   /* z-index: 100; */
   box-sizing: border-box;
   padding: 0 20px;
@@ -69,7 +68,7 @@ export default {
 
 .logo a {
   text-decoration: none;
-  color: white;
+  color: #f5fbf9;
 }
 
 .spacer {
@@ -93,6 +92,11 @@ img {
 }
 
 @media (min-width: 768px) {
+  .header-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
   .navigation-items {
     display: block;
   }
@@ -125,13 +129,13 @@ img {
 
 .nav-item a {
   text-decoration: none;
-  color: #28430a;
+  color: #f5fbf9;
   font-weight: bold;
 }
 
 .nav-item a:hover,
 .nav-item a:active,
 .nav-item a.nuxt-link-active {
-  color: #793000;
+  color: #d45113;
 }
 </style>

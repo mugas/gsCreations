@@ -1,6 +1,8 @@
 <template>
   <div>
     <section class="home__page">
+      <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
+      <TheSidenav :show="displaySidenav" @close="displaySidenav = false" />
       <svg class="blobCont">
         <image
           xlink:href="https://res.cloudinary.com/mugas/image/upload/v1648096437/back_yjdu73.jpg"
@@ -259,10 +261,14 @@
 <script>
 import ArticleCard from '~/components/ArticleCard'
 import blogs from '~/content/blogs.json'
+import TheHeader from '~/components/Navigation/TheHeader'
+import TheSidenav from '~/components/Navigation/TheSidenav'
 
 export default {
   components: {
     ArticleCard,
+    TheHeader,
+    TheSidenav,
   },
 
   layout: 'empty',
