@@ -86,6 +86,7 @@ h1 {
 }
 h2 {
   font-size: 1.8rem;
+  text-align: start;
   margin-top: 2rem;
   color: #813405;
   & + p {
@@ -108,7 +109,7 @@ h4 {
 }
 p {
   margin-top: 0;
-  margin-bottom: 1.6rem;
+  // margin-bottom: 1.6rem;
   font-size: 1rem;
   line-height: 1.6;
 }
