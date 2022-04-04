@@ -289,10 +289,31 @@ export default {
     })
     return blogList
   },
+  data() {
+    return {
+      displaySidenav: false,
+    }
+  },
 }
 </script>
 
 <style scoped>
+html,
+body {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  widows: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
 .tagline_description {
   color: #f5fbf9;
 }
