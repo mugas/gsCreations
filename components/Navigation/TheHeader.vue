@@ -42,6 +42,7 @@ export default {
   height: 100px;
   position: relative;
   z-index: 0;
+  width: 100%;
 }
 
 .the-header {
@@ -136,6 +137,6 @@ img {
 .nav-item a:hover,
 .nav-item a:active,
 .nav-item a.nuxt-link-active {
-  color: #d45113;
+  color: black;
 }
 </style>

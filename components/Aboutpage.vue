@@ -41,7 +41,7 @@ p {
 }
 .text p {
   line-height: 1.8;
-  text-align: center;
+  text-align: start;
 }
 
 .about {

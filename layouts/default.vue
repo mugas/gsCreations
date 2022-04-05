@@ -105,6 +105,7 @@ h4 {
 p {
   margin-top: 0;
   // margin-bottom: 1.6rem;
+  text-align: start;
   font-size: 1rem;
   // line-height: 1.6;
 }

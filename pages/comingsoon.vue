@@ -5,7 +5,7 @@
       <TheSidenav :show="displaySidenav" @close="displaySidenav = false" />
       <svg class="blobCont">
         <image
-          xlink:href="https://res.cloudinary.com/mugas/image/upload/v1648096437/back_yjdu73.jpg"
+          xlink:href="https://res.cloudinary.com/mugas/image/upload/v1649093387/patternpad_qmkwa9.svg"
           mask="url(#mask)"
           width="100%"
           height="100%"
@@ -30,9 +30,9 @@
           <g style="filter: url(#gooey)">
             <circle
               class="blob"
-              cx="10%"
-              cy="10%"
-              r="80"
+              cx="50%"
+              cy="50%"
+              r="100"
               fill="white"
               stroke="white"
             />
@@ -40,19 +40,20 @@
               class="blob"
               cx="50%"
               cy="10%"
-              r="40"
+              r="80"
               fill="white"
               stroke="white"
             />
+            <!--
             <circle
               class="blob"
-              cx="17%"
+              cx="27%"
               cy="15%"
               r="70"
               fill="white"
               stroke="white"
             />
-            <circle
+              <circle
               class="blob"
               cx="90%"
               cy="20%"
@@ -171,7 +172,7 @@
               r="80"
               fill="white"
               stroke="white"
-            />
+            /> -->
           </g>
         </mask>
       </svg>
@@ -352,22 +353,21 @@ body {
   flex-direction: column;
   align-items: center;
   height: 70vh;
-  width: 100%;
-  background: rgb(9, 82, 86);
+  width: 100vw;
+  background: rgb(129, 52, 5);
   background: linear-gradient(
     90deg,
-    rgba(9, 82, 86, 1) 0%,
-    rgba(90, 170, 149, 1) 100%
+    rgba(129, 52, 5, 1) 0%,
+    rgba(212, 81, 19, 1) 100%
   );
-
-  /*   background-image: url('~assets/images/back.jpg');
+}
+/*   background-image: url('~assets/images/back.jpg');
    height: 100%;
 
-   Center and scale the image nicely 
+   Center and scale the image nicely
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */
-}
 
 .blobCont {
   position: absolute;
