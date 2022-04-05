@@ -352,7 +352,7 @@ body {
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  height: 70vh;
+  height: 90vh;
   width: 100vw;
   background: rgb(129, 52, 5);
   background: linear-gradient(
