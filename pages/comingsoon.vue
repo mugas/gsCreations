@@ -186,15 +186,27 @@
       </button>
     </section>
 
-    <section class="description">
-      <!-- <div class="description__image"> -->
-      <img class="website__image" src="~/assets/images/two.png" alt="" />
-      <!-- </div> -->
-      <div class="description__text">
-        <p>Take your local produce or grocery online</p>
-      </div>
-    </section>
-
+    <div class="second_tagline">
+      <h2>One service for your all needs</h2>
+      <p class="second_tagline_description">
+        Delegate what is necessary and get time to focus on what you know
+        better: Make your business great
+      </p>
+      <section class="description">
+        <article class="list">
+          <img class="icons_image" src="~/assets/gif/check.gif" alt="" />
+          <p>Select one plan and get all you want. Simple and made for you</p>
+        </article>
+        <article class="receive">
+          <img class="icons_image" src="~/assets/gif/diamond.gif" alt="" />
+          <p>Get more time for you and your business with only one service</p>
+        </article>
+        <article class="revise">
+          <img class="icons_image" src="~/assets/gif/revise.gif" alt="" />
+          <p>It's not ready when it's done but when you are happy</p>
+        </article>
+      </section>
+    </div>
     <section>
       <Services />
     </section>
@@ -315,9 +327,7 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
-.tagline_description {
-  color: #f5fbf9;
-}
+
 .float {
   animation-name: ani-float;
   animation-duration: 3s;
@@ -640,23 +650,57 @@ h4 {
   align-items: center;
 }
 /*Description*/
-.description {
-  background: #f5fbf9;
+
+.second_tagline {
+  background-color: #f5fbf9;
   display: flex;
-  margin-bottom: 10%;
   flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
 }
-.website__image {
-  max-width: 100%;
-  width: 540px;
-  margin-top: 6%;
+h2 {
+  max-width: 333px;
 }
-.description__text {
-  font-size: 20px;
-  color: white;
-  font-weight: bold;
-  text-align: center;
+
+.description {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
+
+.second_tagline_description {
+  margin-top: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+}
+
+.receive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+}
+
+.revise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+}
+
+.icons_image {
+  width: 50px;
+}
+.list .receive .revise {
+  flex: 1 1 0;
+}
+
 /*Reviews*/
 
 .reviews {
@@ -747,16 +791,64 @@ button {
     justify-content: center;
     align-items: center;
   }
+
+  /*description*/
+
+  .second_tagline {
+    background-color: #f5fbf9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+  }
   .description {
+    margin-top: 10%;
     display: flex;
     flex-direction: row;
-    height: 58vh;
-    align-items: center;
+    width: 100%;
     justify-content: space-evenly;
   }
-  .description__text {
-    font-size: 35px;
-    line-height: 1.3em;
+  .second_tagline_description {
+    margin-top: 20px;
+    max-width: 600px;
+    text-align: center;
+  }
+  .icons_image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+  }
+  .list .receive .revise {
+    flex: 1 1 0;
+  }
+
+  article p {
+    max-width: 200px;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+  }
+
+  .receive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+  }
+
+  .revise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
   }
   .reviews {
     margin-top: 7%;

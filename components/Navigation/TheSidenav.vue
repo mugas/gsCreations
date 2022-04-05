@@ -53,13 +53,12 @@ export default {
   left: 0;
 }
 li:first-child {
-  margin-top: 0;
   text-decoration: none;
 }
 .sidenav {
   height: 100%;
   width: 300px;
-  background-color: white;
+  background-color: #f5fbf9;
   z-index: 10000;
   position: fixed;
   top: 0;
@@ -97,6 +96,6 @@ li:first-child {
 
 .nav-item a:hover,
 .nav-item a:active {
-  color: #793000;
+  color: #f9a03f;
 }
 </style>
