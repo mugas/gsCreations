@@ -187,18 +187,18 @@
     </section>
 
     <div class="second_tagline">
-      <h2>One service for your all needs</h2>
+      <h2>One service for all your needs</h2>
       <p class="second_tagline_description">
         Delegate what is necessary and get time to focus on what you know
         better: Make your business great
       </p>
       <section class="description">
         <article class="list">
-          <img class="icons_image" src="~/assets/gif/check.gif" alt="" />
+          <img class="icons_image" src="~/assets/gif/second.gif" alt="" />
           <p>Select one plan and get all you want. Simple and made for you</p>
         </article>
         <article class="receive">
-          <img class="icons_image" src="~/assets/gif/diamond.gif" alt="" />
+          <img class="icons_image" src="~/assets/gif/second.gif" alt="" />
           <p>Get more time for you and your business with only one service</p>
         </article>
         <article class="revise">
@@ -652,7 +652,7 @@ h4 {
 /*Description*/
 
 .second_tagline {
-  background-color: #f5fbf9;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -660,6 +660,8 @@ h4 {
 }
 h2 {
   max-width: 333px;
+  font-size: 2.2rem;
+  margin-bottom: 12px;
 }
 
 .description {
@@ -669,8 +671,16 @@ h2 {
   justify-content: space-evenly;
 }
 
+article p {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
 .second_tagline_description {
   margin-top: 20px;
+  max-width: 349px;
+  text-align: center;
+  margin-bottom: 12px;
 }
 
 .list {
@@ -678,6 +688,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   flex: 1 1 0;
+  margin-bottom: 10%;
 }
 
 .receive {
@@ -685,6 +696,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   flex: 1 1 0;
+  margin-bottom: 10%;
 }
 
 .revise {
@@ -692,10 +704,12 @@ h2 {
   flex-direction: column;
   align-items: center;
   flex: 1 1 0;
+  margin-bottom: 10%;
 }
 
 .icons_image {
-  width: 50px;
+  width: 80px;
+  margin-bottom: 5%;
 }
 .list .receive .revise {
   flex: 1 1 0;
@@ -803,8 +817,9 @@ button {
   }
 
   h2 {
-    font-size: 2.8rem;
+    font-size: 3.1rem;
     margin-bottom: 10px;
+    max-width: 667px;
   }
   .description {
     margin-top: 10%;
@@ -817,6 +832,7 @@ button {
     margin-top: 20px;
     max-width: 600px;
     text-align: center;
+    font-size: 24px;
   }
   .icons_image {
     width: 80px;
