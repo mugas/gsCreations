@@ -3,179 +3,7 @@
     <section class="home__page">
       <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
       <TheSidenav :show="displaySidenav" @close="displaySidenav = false" />
-      <svg class="blobCont">
-        <image
-          xlink:href="https://res.cloudinary.com/mugas/image/upload/v1649093387/patternpad_qmkwa9.svg"
-          mask="url(#mask)"
-          width="100%"
-          height="100%"
-          preserveAspectRatio="xMidYMid slice"
-        />
-        <defs>
-          <filter id="gooey" height="130%">
-            <feGaussianBlur
-              in="SourceGraphic"
-              stdDeviation="15"
-              result="blur"
-            />
-            <feColorMatrix
-              in="blur"
-              mode="matrix"
-              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-              result="goo"
-            />
-          </filter>
-        </defs>
-        <mask id="mask" x="0" y="0">
-          <g style="filter: url(#gooey)">
-            <circle
-              class="blob"
-              cx="50%"
-              cy="50%"
-              r="100"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="50%"
-              cy="10%"
-              r="80"
-              fill="white"
-              stroke="white"
-            />
-            <!--
-            <circle
-              class="blob"
-              cx="27%"
-              cy="15%"
-              r="70"
-              fill="white"
-              stroke="white"
-            />
-              <circle
-              class="blob"
-              cx="90%"
-              cy="20%"
-              r="120"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="30%"
-              cy="25%"
-              r="30"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="50%"
-              cy="60%"
-              r="80"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="70%"
-              cy="90%"
-              r="10"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="90%"
-              cy="60%"
-              r="90"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="30%"
-              cy="90%"
-              r="80"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="10%"
-              cy="10%"
-              r="80"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="50%"
-              cy="10%"
-              r="20"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="17%"
-              cy="15%"
-              r="70"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="40%"
-              cy="20%"
-              r="120"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="30%"
-              cy="25%"
-              r="30"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="80%"
-              cy="60%"
-              r="80"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="17%"
-              cy="10%"
-              r="100"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="40%"
-              cy="60%"
-              r="90"
-              fill="white"
-              stroke="white"
-            />
-            <circle
-              class="blob"
-              cx="10%"
-              cy="50%"
-              r="80"
-              fill="white"
-              stroke="white"
-            /> -->
-          </g>
-        </mask>
-      </svg>
+      <Blob />
       <h1>Digital solutions for <br />hospitality industry</h1>
       <p class="tagline_description">
         Websites, local SEO, logos, menus, booking, consulting, and more. Full
@@ -194,11 +22,11 @@
       </p>
       <section class="description">
         <article class="list">
-          <img class="icons_image" src="~/assets/gif/second.gif" alt="" />
+          <img class="icons_image" src="~/assets/gif/check.gif" alt="" />
           <p>Select one plan and get all you want. Simple and made for you</p>
         </article>
         <article class="receive">
-          <img class="icons_image" src="~/assets/gif/second.gif" alt="" />
+          <img class="icons_image" src="~/assets/gif/diamond.gif" alt="" />
           <p>Get more time for you and your business with only one service</p>
         </article>
         <article class="revise">
@@ -207,79 +35,101 @@
         </article>
       </section>
     </div>
-    <section>
-      <Services />
+
+    <section class="banner">
+      <div class="banner_quote">
+        <h3>
+          <q>Hospitality is simply an opportunity to show love and care</q>
+        </h3>
+      </div>
     </section>
-    <section class="reviews">
-      <article class="review__article">
-        <img class="review__image" src="~/assets/images/Tukka.jpg" alt="" />
-        <h3>Tuukka Saukkonen</h3>
-        <h4>Coopza</h4>
-        <p>
-          "Ricardo built very smoothly functioning landing page for my project.
-          Ricardo had great "can do" attitude and his commitment was hugely
-          appreciated."
-        </p>
-      </article>
-      <article class="review__article">
-        <img class="review__image" src="~/assets/images/goncalo.jpg" alt="" />
-        <h3>Gonçalo Jesus</h3>
-        <h4>BundAsliga</h4>
-        <p>
-          "He has the ability to both think & plan long term and to deliver
-          short term results. Very action oriented so you could always count on
-          Ricardo to get things done. Committed and with a strategic vision."
-        </p>
+    <section class="explanation">
+      <h2>Get more for less</h2>
+      <p class="explanation_text">
+        Good Stuff creations helps you save money and focus on your business, by
+        having all services in one place. Pay monthly, cancel anytime
+      </p>
+      <div class="explanation_detailed">
+        <div class="explanation_detailed_text explanation_detailed_text_one">
+          <div class="shape"></div>
+          <h4>Websites</h4>
+          <p>
+            I make your a beautifull website that speaks your brand and get you
+            sell more
+          </p>
+        </div>
+        <div class="explanation_detailed_text explanation_detailed_text_two">
+          <div class="shape"></div>
+          <h4>SEO</h4>
+          <p>
+            Optimize your website to reach the customers that you want but also
+            the ones you need
+          </p>
+        </div>
+        <div class="explanation_detailed_text explanation_detailed_text_three">
+          <div class="shape"></div>
+          <h4>Inventory</h4>
+          <p>
+            Need help with your inventory or finance? Need a new productive
+            tool? I can help
+          </p>
+        </div>
+        <div class="explanation_detailed_text explanation_detailed_text_four">
+          <div class="shape"></div>
+          <h4>Menus</h4>
+          <p>
+            A appealing and beautifull menu is half way to get your customers
+            inside.
+          </p>
+        </div>
+        <div class="explanation_detailed_text explanation_detailed_text_five">
+          <div class="shape"></div>
+          <h4>Recipe Search</h4>
+          <p>
+            New foods, menus, events. Engage your customers with what is trendy
+            on the business
+          </p>
+        </div>
+        <div class="explanation_detailed_text explanation_detailed_text_six">
+          <div class="shape"></div>
+          <h4>Bookings</h4>
+          <p>
+            Welcome the guest, manage the booking - Focus on your business and I
+            focus on your customer.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <h3 class="services_title">Websites, landing pages, bookings and more</h3>
+      <article class="services_description">
+        <div class="services_description_text">Websites</div>
+        <div class="services_description_text">Landing pages</div>
+        <div class="services_description_text">E commerce</div>
+        <div class="services_description_text">SEO</div>
+        <div class="services_description_text">Logos</div>
+        <div class="services_description_text">Menus</div>
+        <div class="services_description_text">Slide Decks</div>
+        <div class="services_description_text">Pitch Decks</div>
+        <div class="services_description_text">Brochures</div>
+        <div class="services_description_text">Recipes</div>
+        <div class="services_description_text">Website maintenance</div>
+        <div class="services_description_text">Bookings</div>
+        <div class="services_description_text">Inventory</div>
+        <div class="services_description_text">Content creation</div>
+        <div class="services_description_text">Productive tools</div>
       </article>
     </section>
-    <h2 class="blog__menu">News from the Blog</h2>
-    <Container>
-      <section class="blog">
-        <ArticleCard
-          v-for="(blog, index) in blogList"
-          :key="index"
-          class="test"
-          :index="index"
-          :article-info="blog"
-        />
-        <!-- <nuxt-link to="/blog"
-          ><p class="posts">See all of ours posts</p></nuxt-link
-        > -->
-      </section>
-      <nuxt-link to="/blog"
-        ><p class="posts">See all of ours posts</p></nuxt-link
-      >
-    </Container>
-    <Container>
-      <h2 class="blog__menu">Get inspired</h2>
-      <section class="mywebsites">
-        <article class="mywebsites__card">
-          <div class="mywebsites__text">
-            <h3 class="mywebsites__farming">Farming in Family</h3>
-            <button>
-              <a href="https://gscsite1.netlify.app/"> See the website</a>
-            </button>
-          </div>
-          <img
-            class="mywebsites__image"
-            src="~assets/images/gsimage.jpg"
-            alt=""
-          />
-        </article>
-      </section>
-    </Container>
   </div>
 </template>
 
 <script>
-import ArticleCard from '~/components/ArticleCard'
 import blogs from '~/content/blogs.json'
 import TheHeader from '~/components/Navigation/TheHeader'
 import TheSidenav from '~/components/Navigation/TheSidenav'
 
 export default {
   components: {
-    ArticleCard,
     TheHeader,
     TheSidenav,
   },
@@ -379,231 +229,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover; */
 
-.blobCont {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-}
-
-.blob:nth-child(1) {
-  animation: move1 20s infinite linear;
-  z-index: -1;
-}
-
-@keyframes move1 {
-  from {
-    transform: rotate(90deg) translate(200px, 0.1px) rotate(-90deg);
-  }
-  to {
-    transform: rotate(450deg) translate(200px, 0.1px) rotate(-450deg);
-  }
-}
-.blob:nth-child(2) {
-  animation: move2 20s infinite linear;
-}
-
-@keyframes move2 {
-  from {
-    transform: rotate(180deg) translate(200px, 0.1px) rotate(-180deg);
-  }
-  to {
-    transform: rotate(540deg) translate(200px, 0.1px) rotate(-540deg);
-  }
-}
-.blob:nth-child(3) {
-  animation: move3 20s infinite linear;
-}
-
-@keyframes move3 {
-  from {
-    transform: rotate(270deg) translate(200px, 0.1px) rotate(-270deg);
-  }
-  to {
-    transform: rotate(630deg) translate(200px, 0.1px) rotate(-630deg);
-  }
-}
-.blob:nth-child(4) {
-  animation: move4 20s infinite linear;
-}
-
-@keyframes move4 {
-  from {
-    transform: rotate(360deg) translate(200px, 0.1px) rotate(-360deg);
-  }
-  to {
-    transform: rotate(720deg) translate(200px, 0.1px) rotate(-720deg);
-  }
-}
-.blob:nth-child(5) {
-  animation: move5 20s infinite linear;
-}
-
-@keyframes move5 {
-  from {
-    transform: rotate(450deg) translate(200px, 0.1px) rotate(-450deg);
-  }
-  to {
-    transform: rotate(810deg) translate(200px, 0.1px) rotate(-810deg);
-  }
-}
-.blob:nth-child(6) {
-  animation: move6 20s infinite linear;
-}
-
-@keyframes move6 {
-  from {
-    transform: rotate(540deg) translate(200px, 0.1px) rotate(-540deg);
-  }
-  to {
-    transform: rotate(900deg) translate(200px, 0.1px) rotate(-900deg);
-  }
-}
-.blob:nth-child(7) {
-  animation: move7 20s infinite linear;
-}
-
-@keyframes move7 {
-  from {
-    transform: rotate(630deg) translate(200px, 0.1px) rotate(-630deg);
-  }
-  to {
-    transform: rotate(990deg) translate(200px, 0.1px) rotate(-990deg);
-  }
-}
-.blob:nth-child(8) {
-  animation: move8 20s infinite linear;
-}
-
-@keyframes move8 {
-  from {
-    transform: rotate(720deg) translate(200px, 0.1px) rotate(-720deg);
-  }
-  to {
-    transform: rotate(1080deg) translate(200px, 0.1px) rotate(-1080deg);
-  }
-}
-.blob:nth-child(9) {
-  animation: move9 20s infinite linear;
-}
-
-@keyframes move9 {
-  from {
-    transform: rotate(810deg) translate(200px, 0.1px) rotate(-810deg);
-  }
-  to {
-    transform: rotate(1170deg) translate(200px, 0.1px) rotate(-1170deg);
-  }
-}
-.blob:nth-child(10) {
-  animation: move10 20s infinite linear;
-}
-
-@keyframes move10 {
-  from {
-    transform: rotate(900deg) translate(200px, 0.1px) rotate(-900deg);
-  }
-  to {
-    transform: rotate(1260deg) translate(200px, 0.1px) rotate(-1260deg);
-  }
-}
-.blob:nth-child(11) {
-  animation: move11 20s infinite linear;
-}
-
-@keyframes move11 {
-  from {
-    transform: rotate(990deg) translate(200px, 0.1px) rotate(-990deg);
-  }
-  to {
-    transform: rotate(1350deg) translate(200px, 0.1px) rotate(-1350deg);
-  }
-}
-.blob:nth-child(12) {
-  animation: move12 20s infinite linear;
-}
-
-@keyframes move12 {
-  from {
-    transform: rotate(1080deg) translate(200px, 0.1px) rotate(-1080deg);
-  }
-  to {
-    transform: rotate(1440deg) translate(200px, 0.1px) rotate(-1440deg);
-  }
-}
-.blob:nth-child(13) {
-  animation: move13 20s infinite linear;
-}
-
-@keyframes move13 {
-  from {
-    transform: rotate(1170deg) translate(200px, 0.1px) rotate(-1170deg);
-  }
-  to {
-    transform: rotate(1530deg) translate(200px, 0.1px) rotate(-1530deg);
-  }
-}
-.blob:nth-child(14) {
-  animation: move14 20s infinite linear;
-}
-
-@keyframes move14 {
-  from {
-    transform: rotate(1260deg) translate(200px, 0.1px) rotate(-1260deg);
-  }
-  to {
-    transform: rotate(1620deg) translate(200px, 0.1px) rotate(-1620deg);
-  }
-}
-.blob:nth-child(15) {
-  animation: move15 20s infinite linear;
-}
-
-@keyframes move15 {
-  from {
-    transform: rotate(1350deg) translate(200px, 0.1px) rotate(-1350deg);
-  }
-  to {
-    transform: rotate(1710deg) translate(200px, 0.1px) rotate(-1710deg);
-  }
-}
-.blob:nth-child(16) {
-  animation: move16 20s infinite linear;
-}
-
-@keyframes move16 {
-  from {
-    transform: rotate(1440deg) translate(200px, 0.1px) rotate(-1440deg);
-  }
-  to {
-    transform: rotate(1800deg) translate(200px, 0.1px) rotate(-1800deg);
-  }
-}
-.blob:nth-child(17) {
-  animation: move17 20s infinite linear;
-}
-
-@keyframes move17 {
-  from {
-    transform: rotate(1530deg) translate(200px, 0.1px) rotate(-1530deg);
-  }
-  to {
-    transform: rotate(1890deg) translate(200px, 0.1px) rotate(-1890deg);
-  }
-}
-.blob:nth-child(18) {
-  animation: move18 20s infinite linear;
-}
-
-@keyframes move18 {
-  from {
-    transform: rotate(1620deg) translate(200px, 0.1px) rotate(-1620deg);
-  }
-  to {
-    transform: rotate(1980deg) translate(200px, 0.1px) rotate(-1980deg);
-  }
-}
-
 .line {
   text-align: center;
   font-weight: bold;
@@ -625,9 +250,22 @@ body {
 .calendly a {
   color: #f5fbf9;
 }
+button {
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  width: 40%;
+  margin-bottom: 2%;
+  border-radius: 50px;
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  color: black;
+}
 
 h1 {
-  color: #f5fbf9;
+  color: black;
   font-size: 2em;
 }
 h2 {
@@ -639,10 +277,7 @@ h3 {
   color: black;
   margin-top: 3%;
 }
-h4 {
-  color: #793000;
-  margin-top: 1%;
-}
+
 .text {
   display: flex;
   flex-direction: column;
@@ -714,75 +349,108 @@ article p {
 .list .receive .revise {
   flex: 1 1 0;
 }
+/*Description End*/
 
-/*Reviews*/
+/*Banner*/
 
-.reviews {
+.banner {
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  margin-top: 20%;
-  align-items: center;
-}
-.review__image {
-  border-radius: 50%;
-  height: 100px;
-  width: 25%;
-}
-.review__article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 5%;
-}
-
-.review__article p {
-  text-align: center;
-  font-style: italic;
-}
-/*website*/
-.mywebsites {
-  display: flex;
-  flex-direction: column;
-}
-.mywebsites__text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.mywebsites__card {
-  background: #793000;
-  border-radius: 0.5rem;
-  margin-bottom: 5%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-bottom: 5%;
-}
-.mywebsites__image {
+  justify-content: center;
+  background-color: #f9a03f;
   width: 80%;
+  margin-bottom: 30%;
+  background-image: linear-gradient(232deg, #f9a03f 0%, #d45113 57%);
+}
+.banner_quote {
+  display: flex;
+  width: 80%;
+  height: 200px;
+
+  align-items: center;
 }
 
-button {
-  text-transform: uppercase;
-  background: transparent;
-  cursor: pointer;
-  text-decoration: none;
-  width: 40%;
-  margin-bottom: 2%;
-  border-radius: 50px;
-  display: inline-block;
-  border: 2px solid #fff;
-  border-radius: 16px;
+q {
+  color: #f5fbf9;
+}
+
+/*Banner end*/
+
+/*Explanation*/
+
+.explanation {
+  background-color: #f5fbf9;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.explanation_text {
+  margin-bottom: 7%;
+  max-width: 349px;
+  text-align: center;
+}
+.explanation_detailed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
   color: black;
 }
-.mywebsites__farming {
-  color: #fff;
+.explanation_detailed_text {
+  min-height: 250px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
 }
 
+.shape {
+  width: 50px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: #813405;
+}
+
+/*Explanation end*/
+
+/*Services*/
+
+.services {
+  min-width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.services_description {
+  border: 5px solid #d45113;
+  padding: 20px;
+  justify-content: space-around;
+}
+.services_description_text {
+  margin-bottom: 30px;
+  padding-bottom: 16px;
+  border-bottom: 3px solid #d45113;
+}
+
+.services_title {
+  margin-bottom: 18%;
+  color: black;
+  margin-top: 18%;
+  padding-bottom: 4%;
+  font-weight: 700;
+  line-height: 2rem;
+}
 @media (min-width: 720px) {
   h1 {
-    color: #f5fbf9;
+    color: black;
     font-size: 4em;
     margin: 0 20% 0 20%;
   }
@@ -809,7 +477,7 @@ button {
   /*description*/
 
   .second_tagline {
-    background-color: #f5fbf9;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -866,48 +534,91 @@ button {
     align-items: center;
     flex: 1 1 0;
   }
-  .reviews {
-    margin-top: 7%;
-    display: flex;
-    flex-direction: row;
-  }
-  .review__image {
-    width: 100px;
-    height: 100px;
-  }
-  .review__article {
-    flex: 1;
-  }
-  .blog {
-    display: flex;
-    flex-direction: row;
 
-    justify-content: space-around;
+  /*Description end*/
+
+  /*Banner*/
+
+  h3 {
+    font-size: 2rem;
   }
-  .article-card.two-thirds {
-    width: 30%;
+
+  .banner {
+    margin: 0 auto;
+    height: 300px;
+
+    background-color: #f9a03f;
+    margin-bottom: 10%;
+    background-image: linear-gradient(232deg, #f9a03f 0%, #d45113 57%);
   }
-  .test {
-    width: 30%;
+
+  .banner_quote {
+    align-self: center;
+    max-width: 40%;
   }
-  .blog__menu {
-    margin-top: 7%;
-    margin-bottom: 7%;
-  }
-  .posts {
-    margin-left: 2%;
-  }
-  /* .websites {
+  /*Banner end*/
+  /*explanation*/
+  .explanation {
     display: flex;
-    margin-left: 2%;
-    margin-right: 2%;
-    background-color: #edbd54;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+  }
+  .explanation_detailed {
+    display: flex;
+    align-self: center;
     flex-direction: row;
-  } */
-  /*mywebsites*/
-  .mywebsites {
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .explanation_detailed_text {
+    width: 50%;
+    height: 50%;
+    min-height: 250px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    min-height: 250px;
+  }
+  .explanation_detailed_text_one {
+    flex: 1 1 0;
+  }
+  .explanation_text {
+    margin-bottom: 7%;
+    max-width: 600px;
+    text-align: center;
+  }
+  /*explanation end*/
+  /*Services*/
+
+  .services_title {
+    margin-bottom: 10%;
+    margin-top: 10%;
+    padding-bottom: 0;
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
+    min-width: auto;
+    padding-left: 20px;
+    font-weight: 700;
+    padding-right: 20px;
+  }
+  .services_description {
+    display: flex;
+    align-self: center;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .services_description_text {
+    width: 30%;
   }
 }
 </style>
