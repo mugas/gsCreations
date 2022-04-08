@@ -497,6 +497,7 @@ h4 {
 }
 .client_groups_each img {
   flex: 1 1 0;
+  width: auto;
 }
 .client_groups_each div {
   margin-bottom: 20px;
@@ -565,12 +566,20 @@ h4 {
   .client_groups_each_text {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
     flex: 1 1 0;
+  }
+
+  .client_groups_each_text p {
+    width: initial;
+    max-width: initial;
   }
 
   .client_groups_each img {
     flex: 1 1 0;
-
+    width: 300px;
     height: inherit;
   }
   .clients {
@@ -581,6 +590,14 @@ h4 {
     max-width: 1200px;
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  .restaurants {
+    flex-direction: row-reverse;
+  }
+
+  .hotel {
+    flex-direction: row-reverse;
   }
   /*client end*/
 
