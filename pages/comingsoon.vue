@@ -102,57 +102,59 @@
     </section>
 
     <section class="client_groups">
-      <h3>Who are you?</h3>
-      <article class="coffee client_groups_each">
-        <div class="coffee_text">
-          <h4>Coffees and bakeries</h4>
-          <p>
-            Outstand the competition with a modern website or get back on track
-            with your products and sales.
-          </p>
-        </div>
-        <img class="icons_image" src="~/assets/Svg/coffee.svg" alt="" />
-      </article>
-      <article class="restaurants client_groups_each">
-        <div class="restaurants_text">
-          <h4>Restaurants</h4>
-          <p>
-            Outstand the competition with a modern website or get back on track
-            with your products and sales.
-          </p>
-        </div>
-        <img class="icons_image" src="~/assets/Svg/restaurant.svg" alt="" />
-      </article>
-      <article class="grocery client_groups_each">
-        <div class="grocery_text">
-          <h4>Groceries</h4>
-          <p>
-            Outstand the competition with a modern website or get back on track
-            with your products and sales.
-          </p>
-        </div>
-        <img class="icons_image" src="~/assets/Svg/grocery.svg" alt="" />
-      </article>
-      <article class="hotel client_groups_each">
-        <div class="hotel_text">
-          <h4>Local Rentals</h4>
-          <p>
-            Outstand the competition with a modern website or get back on track
-            with your products and sales.
-          </p>
-        </div>
-        <img class="icons_image" src="~/assets/Svg/hotel.svg" alt="" />
-      </article>
-      <article class="farmer client_groups_each">
-        <div class="farmer_text">
-          <h4>Farmers</h4>
-          <p>
-            Outstand the competition with a modern website or get back on track
-            with your products and sales.
-          </p>
-        </div>
-        <img class="icons_image" src="~/assets/Svg/farmer.svg" alt="" />
-      </article>
+      <h2>Who are you?</h2>
+      <div class="clients">
+        <article class="coffee client_groups_each">
+          <div class="client_groups_each_text">
+            <h4>Coffees and bakeries</h4>
+            <p>
+              Outstand the competition with a modern website or get back on
+              track with your products and sales.
+            </p>
+          </div>
+          <img class="icons_image" src="~/assets/Svg/coffee.svg" alt="" />
+        </article>
+        <article class="restaurants client_groups_each">
+          <div class="client_groups_each_text">
+            <h4>Restaurants</h4>
+            <p>
+              Outstand the competition with a modern website or get back on
+              track with your products and sales.
+            </p>
+          </div>
+          <img class="icons_image" src="~/assets/Svg/restaurant.svg" alt="" />
+        </article>
+        <article class="grocery client_groups_each">
+          <div class="client_groups_each_text">
+            <h4>Groceries</h4>
+            <p>
+              Outstand the competition with a modern website or get back on
+              track with your products and sales.
+            </p>
+          </div>
+          <img class="icons_image" src="~/assets/Svg/grocery.svg" alt="" />
+        </article>
+        <article class="hotel client_groups_each">
+          <div class="client_groups_each_text">
+            <h4>Local Rentals</h4>
+            <p>
+              Outstand the competition with a modern website or get back on
+              track with your products and sales.
+            </p>
+          </div>
+          <img class="icons_image" src="~/assets/Svg/hotel.svg" alt="" />
+        </article>
+        <article class="farmer client_groups_each">
+          <div class="client_groups_each_text">
+            <h4>Farmers</h4>
+            <p>
+              Outstand the competition with a modern website or get back on
+              track with your products and sales.
+            </p>
+          </div>
+          <img class="icons_image" src="~/assets/Svg/farmer.svg" alt="" />
+        </article>
+      </div>
     </section>
     <section class="services">
       <h3 class="services_title">Websites, landing pages, bookings and more</h3>
@@ -474,6 +476,34 @@ h4 {
   background-color: #813405;
 }
 
+/*clients*/
+
+.client_groups {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+.client_groups_each {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.client_groups_each_text {
+  flex: 1 1 0;
+}
+.client_groups_each img {
+  flex: 1 1 0;
+}
+.client_groups_each div {
+  margin-bottom: 20px;
+}
+
+/*clients end*/
+
 /*Explanation end*/
 
 /*Services*/
@@ -528,23 +558,30 @@ h4 {
   }
   /*services end*/
   /*client*/
-  .client_groups {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
   .client_groups_each {
+    flex-direction: row;
+    width: 100%;
+  }
+  .client_groups_each_text {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex: 1 1 0;
   }
 
   .client_groups_each img {
-    width: 80%;
-  }
+    flex: 1 1 0;
 
+    height: inherit;
+  }
+  .clients {
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   /*client end*/
 
   /*description*/
