@@ -100,6 +100,60 @@
         </div>
       </div>
     </section>
+
+    <section class="client_groups">
+      <h3>Who are you?</h3>
+      <article class="coffee client_groups_each">
+        <div class="coffee_text">
+          <h4>Coffees and bakeries</h4>
+          <p>
+            Outstand the competition with a modern website or get back on track
+            with your products and sales.
+          </p>
+        </div>
+        <img class="icons_image" src="~/assets/Svg/coffee.svg" alt="" />
+      </article>
+      <article class="restaurants client_groups_each">
+        <div class="restaurants_text">
+          <h4>Restaurants</h4>
+          <p>
+            Outstand the competition with a modern website or get back on track
+            with your products and sales.
+          </p>
+        </div>
+        <img class="icons_image" src="~/assets/Svg/restaurant.svg" alt="" />
+      </article>
+      <article class="grocery client_groups_each">
+        <div class="grocery_text">
+          <h4>Groceries</h4>
+          <p>
+            Outstand the competition with a modern website or get back on track
+            with your products and sales.
+          </p>
+        </div>
+        <img class="icons_image" src="~/assets/Svg/grocery.svg" alt="" />
+      </article>
+      <article class="hotel client_groups_each">
+        <div class="hotel_text">
+          <h4>Local Rentals</h4>
+          <p>
+            Outstand the competition with a modern website or get back on track
+            with your products and sales.
+          </p>
+        </div>
+        <img class="icons_image" src="~/assets/Svg/hotel.svg" alt="" />
+      </article>
+      <article class="farmer client_groups_each">
+        <div class="farmer_text">
+          <h4>Farmers</h4>
+          <p>
+            Outstand the competition with a modern website or get back on track
+            with your products and sales.
+          </p>
+        </div>
+        <img class="icons_image" src="~/assets/Svg/farmer.svg" alt="" />
+      </article>
+    </section>
     <section class="services">
       <h3 class="services_title">Websites, landing pages, bookings and more</h3>
       <article class="services_description">
@@ -430,7 +484,6 @@ h4 {
   padding-right: 20px;
 }
 .services_description {
-  border: 5px solid #d45113;
   padding: 20px;
   justify-content: space-around;
 }
@@ -473,6 +526,26 @@ h4 {
     justify-content: center;
     align-items: center;
   }
+  /*services end*/
+  /*client*/
+  .client_groups {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .client_groups_each {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .client_groups_each img {
+    width: 80%;
+  }
+
+  /*client end*/
 
   /*description*/
 
