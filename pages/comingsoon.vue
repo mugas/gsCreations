@@ -513,6 +513,7 @@ h4 {
   min-width: auto;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: #f5fbf9;
 }
 .services_description {
   padding: 20px;
@@ -568,8 +569,9 @@ h4 {
     flex-direction: column;
     height: 100%;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: self-end;
     flex: 1 1 0;
+    gap: 10%;
   }
 
   .client_groups_each_text p {
