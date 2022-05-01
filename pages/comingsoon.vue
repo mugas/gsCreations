@@ -176,6 +176,48 @@
         <div class="services_description_text">Productive tools</div>
       </article>
     </section>
+
+    <section class="pricing-panel">
+      <h3 class="services_title">Websites, landing pages, bookings and more</h3>
+      <div class="pricing">
+        <div class="pricing-plan">
+          <img src="icons/icon1.png" alt="" class="pricing-img" />
+          <h4 class="pricing-header">Personal</h4>
+          <ul class="pricing-features">
+            <li class="pricing-features-item">Custom domains</li>
+            <li class="pricing-features-item">
+              Sleeps after 30 mins of inactivity
+            </li>
+          </ul>
+          <span class="pricing-price">Free</span>
+          <a href="#/" class="pricing-button">Sign up</a>
+        </div>
+
+        <div class="pricing-plan">
+          <img src="icons/icon2.png" alt="" class="pricing-img" />
+          <h4 class="pricing-header">Small team</h4>
+          <ul class="pricing-features">
+            <li class="pricing-features-item">Never sleeps</li>
+            <li class="pricing-features-item">
+              Multiple workers for more powerful apps
+            </li>
+          </ul>
+          <span class="pricing-price">$150</span>
+          <a href="#/" class="pricing-button is-featured">Free trial</a>
+        </div>
+
+        <div class="pricing-plan">
+          <img src="icons/icon3.png" alt="" class="pricing-img" />
+          <h4 class="pricing-header">Enterprise</h4>
+          <ul class="pricing-features">
+            <li class="pricing-features-item">Dedicated</li>
+            <li class="pricing-features-item">Simple horizontal scalability</li>
+          </ul>
+          <span class="pricing-price">$400</span>
+          <a href="#/" class="pricing-button">Free trial</a>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -226,6 +268,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+ol,
+ul {
+  list-style: none;
 }
 *,
 *:before,
@@ -311,7 +363,7 @@ button {
   background: transparent;
   cursor: pointer;
   text-decoration: none;
-  width: 40%;
+  /* width: 40%; */
   margin-bottom: 2%;
   border-radius: 50px;
   display: inline-block;
@@ -533,6 +585,104 @@ h4 {
   font-weight: 700;
   line-height: 2rem;
 }
+/*Services*/
+/*Pricing*/
+
+.pricing-panel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+.pricing {
+  background-color: #f5fbf9;
+  border-radius: 10px;
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid #d45113;
+  margin-bottom: 85px;
+}
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: #813405;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  margin: 50px 0 25px;
+  color: #000;
+}
+
+.pricing-features-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid #d45113;
+}
+
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #d45113;
+}
+
+.pricing-price {
+  color: #813405;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #d45113;
+  border-radius: 10px;
+  color: #000;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+  background-color: #d45113;
+  color: #fff;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+  background-color: #000;
+  color: fff;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Pricing*/
 @media (min-width: 720px) {
   h1 {
     color: black;
@@ -542,6 +692,7 @@ h4 {
 
   h2 {
     color: black;
+    margin-bottom: 14%;
   }
   .vector__image {
     padding-bottom: 50%;
@@ -754,5 +905,20 @@ h4 {
   .services_description_text {
     width: 30%;
   }
+  /*Services*/
+  /*Pricing*/
+  .pricing {
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+    margin-bottom: 0px;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+  /*Pricing*/
 }
 </style>
