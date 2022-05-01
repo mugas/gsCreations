@@ -483,7 +483,7 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 60px;
+  padding-top: 100px;
 }
 .client_groups_each {
   display: flex;
@@ -563,13 +563,18 @@ h4 {
   .client_groups_each {
     flex-direction: row;
     width: 100%;
+    gap: 10%;
+  }
+
+  .client_groups h2 {
+    margin-bottom: 7%;
   }
   .client_groups_each_text {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-evenly;
-    align-items: self-end;
+    align-items: center;
     flex: 1 1 0;
     gap: 10%;
   }
@@ -582,7 +587,7 @@ h4 {
   .client_groups_each img {
     flex: 1 1 0;
     width: 300px;
-    height: inherit;
+    height: 330px;
   }
   .clients {
     display: flex;
