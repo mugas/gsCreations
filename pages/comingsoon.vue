@@ -178,11 +178,10 @@
     </section>
 
     <section class="pricing-panel">
-      <h3 class="services_title">Websites, landing pages, bookings and more</h3>
+      <h2 class="services_title">The right plan for you</h2>
       <div class="pricing">
         <div class="pricing-plan">
-          <img src="icons/icon1.png" alt="" class="pricing-img" />
-          <h4 class="pricing-header">Personal</h4>
+          <h4 class="pricing-header">On-Line</h4>
           <ul class="pricing-features">
             <li class="pricing-features-item">Custom domains</li>
             <li class="pricing-features-item">
@@ -190,12 +189,32 @@
             </li>
           </ul>
           <span class="pricing-price">Free</span>
-          <a href="#/" class="pricing-button">Sign up</a>
+          <a href="#/" class="pricing-button">Let's start</a>
         </div>
 
         <div class="pricing-plan">
-          <img src="icons/icon2.png" alt="" class="pricing-img" />
-          <h4 class="pricing-header">Small team</h4>
+          <h4 class="pricing-header">Maintenance</h4>
+          <ul class="pricing-features">
+            <li class="pricing-features-item">Never sleeps</li>
+            <li class="pricing-features-item">
+              Multiple workers for more powerful apps
+            </li>
+          </ul>
+          <span class="pricing-price">$150</span>
+          <a href="#/" class="pricing-button">Let's start</a>
+        </div>
+
+        <div class="pricing-plan">
+          <h4 class="pricing-header">Concierge</h4>
+          <ul class="pricing-features">
+            <li class="pricing-features-item">Dedicated</li>
+            <li class="pricing-features-item">Simple horizontal scalability</li>
+          </ul>
+          <span class="pricing-price">$400</span>
+          <a href="#/" class="pricing-button">Free trial</a>
+        </div>
+        <div class="pricing-plan">
+          <h4 class="pricing-header">Maintenance</h4>
           <ul class="pricing-features">
             <li class="pricing-features-item">Never sleeps</li>
             <li class="pricing-features-item">
@@ -204,17 +223,6 @@
           </ul>
           <span class="pricing-price">$150</span>
           <a href="#/" class="pricing-button is-featured">Free trial</a>
-        </div>
-
-        <div class="pricing-plan">
-          <img src="icons/icon3.png" alt="" class="pricing-img" />
-          <h4 class="pricing-header">Enterprise</h4>
-          <ul class="pricing-features">
-            <li class="pricing-features-item">Dedicated</li>
-            <li class="pricing-features-item">Simple horizontal scalability</li>
-          </ul>
-          <span class="pricing-price">$400</span>
-          <a href="#/" class="pricing-button">Free trial</a>
         </div>
       </div>
     </section>
@@ -600,7 +608,7 @@ h4 {
   border-radius: 10px;
   padding: 15px 20px;
   width: 100%;
-  max-width: 960px;
+  max-width: 1260px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -915,6 +923,7 @@ table {
     border-right: 1px solid #e1f1ff;
     padding: 25px 50px;
     margin-bottom: 0px;
+    flex: 1 1 0;
   }
   .pricing-plan:last-child {
     border-right: none;
