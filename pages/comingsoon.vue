@@ -182,47 +182,78 @@
       <div class="pricing">
         <div class="pricing-plan">
           <h4 class="pricing-header">On-Line</h4>
+          <h5 class="services_title">One payment, full service</h5>
           <ul class="pricing-features">
-            <li class="pricing-features-item">Custom domains</li>
+            <li class="pricing-features-item">Website</li>
+            <li class="pricing-features-item">Newsletter</li>
+            <li class="pricing-features-item">SEO Optimized</li>
+            <li class="pricing-features-item">Social Media Integration</li>
+            <li class="pricing-features-item">Logo</li>
+            <li class="pricing-features-item">CMS</li>
             <li class="pricing-features-item">
-              Sleeps after 30 mins of inactivity
+              Get in touch to discover all that is included in this plan
             </li>
           </ul>
-          <span class="pricing-price">Free</span>
+          <span class="pricing-price">3395€</span>
+          <li class="pricing-features-item">Paid once</li>
           <a href="#/" class="pricing-button">Let's start</a>
         </div>
 
         <div class="pricing-plan">
           <h4 class="pricing-header">Maintenance</h4>
+          <h5 class="services_title">Every month there, to help you succeed</h5>
           <ul class="pricing-features">
-            <li class="pricing-features-item">Never sleeps</li>
+            <li class="pricing-features-item">SEO Optimization</li>
+            <li class="pricing-features-item">Code and design fixes</li>
+            <li class="pricing-features-item">Newsletter Management</li>
             <li class="pricing-features-item">
-              Multiple workers for more powerful apps
+              Content Creation and management
+            </li>
+            <li class="pricing-features-item">Booking Management</li>
+            <li class="pricing-features-item">CMS</li>
+            <li class="pricing-features-item">
+              Get in touch to discover all that is included in this plan
             </li>
           </ul>
-          <span class="pricing-price">$150</span>
+          <span class="pricing-price">895€</span>
+          <li class="pricing-features-item">Monthly</li>
           <a href="#/" class="pricing-button">Let's start</a>
         </div>
 
         <div class="pricing-plan">
           <h4 class="pricing-header">Concierge</h4>
+          <h5 class="services_title">You dream it and it will be created</h5>
           <ul class="pricing-features">
-            <li class="pricing-features-item">Dedicated</li>
-            <li class="pricing-features-item">Simple horizontal scalability</li>
-          </ul>
-          <span class="pricing-price">$400</span>
-          <a href="#/" class="pricing-button">Free trial</a>
-        </div>
-        <div class="pricing-plan">
-          <h4 class="pricing-header">Maintenance</h4>
-          <ul class="pricing-features">
-            <li class="pricing-features-item">Never sleeps</li>
+            <li class="pricing-features-item">On line plan</li>
+            <li class="pricing-features-item">Maintenance plan</li>
+            <li class="pricing-features-item">Bookings</li>
+            <li class="pricing-features-item">Menu creation and search</li>
+            <li class="pricing-features-item">Inventory</li>
+            <li class="pricing-features-item">Cancel Anytime</li>
             <li class="pricing-features-item">
-              Multiple workers for more powerful apps
+              Get in touch to discover all that is included in this plan
             </li>
           </ul>
-          <span class="pricing-price">$150</span>
-          <a href="#/" class="pricing-button is-featured">Free trial</a>
+          <span class="pricing-price">1495€</span>
+          <li class="pricing-features-item">Monthly</li>
+          <a href="#/" class="pricing-button">Let's start</a>
+        </div>
+        <div class="pricing-plan">
+          <h4 class="pricing-header">Custom meal</h4>
+          <h5 class="services_title">Sometimes is just a small snack</h5>
+          <ul class="pricing-features">
+            <li class="pricing-features-item">
+              Want only one item of the list?
+            </li>
+            <li class="pricing-features-item">
+              Want more that there is on the list?
+            </li>
+            <li class="pricing-features-item">
+              Get in touch and let's make it happen
+            </li>
+          </ul>
+
+          <a href="#/" class="pricing-button is-featured">Let's talk</a>
         </div>
       </div>
     </section>
@@ -928,6 +959,7 @@ table {
   .pricing-plan:last-child {
     border-right: none;
   }
+
   /*Pricing*/
 }
 </style>
