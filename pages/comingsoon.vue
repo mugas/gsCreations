@@ -270,6 +270,7 @@
           <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/contact">Contact</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/blog">Blog</nuxt-link></li>
+          <li class="nav-item"><nuxt-link to="/blog">Blog</nuxt-link></li>
         </ul>
       </div>
 
@@ -1088,7 +1089,8 @@ footer h3 {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5%;
     flex-direction: row;
   }
 
@@ -1109,6 +1111,8 @@ footer h3 {
   .website-links {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: center;
   }
 
   .website-links ul {
