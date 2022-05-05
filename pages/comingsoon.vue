@@ -54,8 +54,8 @@
           <div class="shape"></div>
           <h4>Websites</h4>
           <p>
-            I make your a beautifull website that speaks your brand and get you
-            sell more
+            I can build you xa beautifull website that speaks your brand and get
+            you sell more
           </p>
         </div>
         <div class="explanation_detailed_text explanation_detailed_text_two">
@@ -265,6 +265,14 @@
       <button class="calendly">
         <a href="https://calendly.com/gscreations"> Book a meeting</a>
       </button>
+      <div class="website-links">
+        <ul>
+          <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
+          <li class="nav-item"><nuxt-link to="/contact">Contact</nuxt-link></li>
+          <li class="nav-item"><nuxt-link to="/blog">Blog</nuxt-link></li>
+        </ul>
+      </div>
+
       <div class="footer_links">
         <SocialMedia />
         <nuxt-link to="/">
@@ -679,6 +687,10 @@ h4 {
   border-bottom: none;
 }
 
+.pricing-plan li {
+  list-style: none;
+}
+
 .pricing-img {
   margin-bottom: 25px;
   max-width: 100%;
@@ -794,6 +806,17 @@ footer h3 {
 
 .footer_based {
   margin-top: 20px;
+}
+
+.nav-item a {
+  color: #f5fbf9;
+  padding-top: 20px;
+}
+
+.website-links {
+  text-align: center;
+  padding-top: 40px;
+  margin-top: 40px;
 }
 /*Footer*/
 @media (min-width: 720px) {
@@ -1081,6 +1104,16 @@ footer h3 {
 
   footer img {
     width: 300px;
+  }
+
+  .website-links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .website-links ul {
+    display: flex;
+    flex-direction: row;
   }
   /*Footer*/
 }

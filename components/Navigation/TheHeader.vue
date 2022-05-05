@@ -58,6 +58,13 @@ export default {
   box-sizing: border-box;
   padding: 0 20px;
   margin-top: 10px;
+
+  background: rgb(129, 52, 5);
+  background: linear-gradient(
+    90deg,
+    rgba(129, 52, 5, 1) 0%,
+    rgba(212, 81, 19, 1) 100%
+  );
   z-index: -1;
 }
 
