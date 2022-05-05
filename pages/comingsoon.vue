@@ -182,7 +182,9 @@
       <div class="pricing">
         <div class="pricing-plan">
           <h4 class="pricing-header">On-Line</h4>
-          <h5 class="services_title">One payment, full service</h5>
+          <h5 class="services_title">
+            One payment, full service. Fully customized
+          </h5>
           <ul class="pricing-features">
             <li class="pricing-features-item">Website</li>
             <li class="pricing-features-item">Newsletter</li>
@@ -194,7 +196,7 @@
               Get in touch to discover all that is included in this plan
             </li>
           </ul>
-          <span class="pricing-price">3395€</span>
+          <span class="pricing-price">2395€</span>
           <li class="pricing-features-item">Paid once</li>
           <a href="#/" class="pricing-button">Let's start</a>
         </div>
@@ -215,12 +217,12 @@
               Get in touch to discover all that is included in this plan
             </li>
           </ul>
-          <span class="pricing-price">895€</span>
+          <span class="pricing-price">195€</span>
           <li class="pricing-features-item">Monthly</li>
           <a href="#/" class="pricing-button">Let's start</a>
         </div>
 
-        <div class="pricing-plan">
+        <!--    <div class="pricing-plan">
           <h4 class="pricing-header">Concierge</h4>
           <h5 class="services_title">You dream it and it will be created</h5>
           <ul class="pricing-features">
@@ -237,10 +239,10 @@
           <span class="pricing-price">1495€</span>
           <li class="pricing-features-item">Monthly</li>
           <a href="#/" class="pricing-button">Let's start</a>
-        </div>
+        </div> -->
         <div class="pricing-plan">
-          <h4 class="pricing-header">Custom meal</h4>
-          <h5 class="services_title">Sometimes is just a small snack</h5>
+          <h4 class="pricing-header">Custom</h4>
+          <h5 class="services_title">It's ok to want more or just a bit</h5>
           <ul class="pricing-features">
             <li class="pricing-features-item">
               Want only one item of the list?
@@ -257,6 +259,25 @@
         </div>
       </div>
     </section>
+    <footer>
+      <h3>Good Stuff Creations help your business grow</h3>
+      <p>Get in touch and find out how</p>
+      <button class="calendly">
+        <a href="https://calendly.com/gscreations"> Book a meeting</a>
+      </button>
+      <div class="footer_links">
+        <SocialMedia />
+        <nuxt-link to="/">
+          <img
+            class="footer_logo"
+            width="200px"
+            src="~/assets/Svg/logo_one.svg"
+          />
+          <!-- <img width="150px" src="~/assets/Svg/gs.svg" /> -->
+        </nuxt-link>
+        <p class="footer_based">Based in Savonlinna, Finland</p>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -385,13 +406,16 @@ ul {
   text-transform: uppercase;
   background: black;
   cursor: pointer;
+  margin-top: 40px;
   text-decoration: none;
-  padding: 25px;
+  padding: 60px;
   border-radius: 50px;
   display: inline-block;
-  border: 2px solid #28430a;
-  border-radius: 16px;
-  width: 10rem;
+  border: 2px solid #f5fbf9;
+  border-radius: 20px;
+  /* width: 10rem; */
+  font-size: 28px;
+  letter-spacing: 0;
   color: white;
 }
 .calendly a {
@@ -633,6 +657,7 @@ h4 {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  margin-bottom: 100px;
 }
 .pricing {
   background-color: #f5fbf9;
@@ -722,6 +747,55 @@ table {
 }
 
 /*Pricing*/
+
+/*Footer*/
+
+footer {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 5% 100px;
+}
+
+footer h3 {
+  color: #e1f1ff;
+  text-align: center;
+}
+
+footer p {
+  font-size: 24px;
+  line-height: 36px;
+  color: #e1f1ff;
+  text-align: center;
+}
+
+footer h3 {
+  margin-bottom: 18%;
+  margin-top: 18%;
+  padding-bottom: 4%;
+  font-size: 42px;
+  line-height: 44px;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding: 40px 0 40px;
+}
+
+.footer_logo {
+  margin-top: 20px;
+}
+
+.footer_based {
+  margin-top: 20px;
+}
+/*Footer*/
 @media (min-width: 720px) {
   h1 {
     color: black;
@@ -961,5 +1035,53 @@ table {
   }
 
   /*Pricing*/
+
+  /*Footer*/
+  footer {
+    padding-top: 150px;
+    align-items: center;
+  }
+
+  footer h3 {
+    font-size: 50px;
+    margin-top: 0;
+    line-height: 60px;
+    margin-bottom: 10px;
+    max-width: 667px;
+  }
+
+  footer p {
+    margin-top: 20px;
+    font-size: 24px;
+    max-width: 667px;
+    line-height: 36px;
+  }
+
+  footer button {
+    width: 667px;
+  }
+
+  .footer_links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .footer_links :nth-child(1) {
+    order: 2;
+  }
+  .footer_links :nth-child(2) {
+    order: 1;
+  }
+  .footer_links :nth-child(3) {
+    order: 3;
+  }
+
+  footer img {
+    width: 300px;
+  }
+  /*Footer*/
 }
 </style>

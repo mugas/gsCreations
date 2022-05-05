@@ -34,12 +34,13 @@ li {
 ul {
   list-style: none;
   text-decoration: none;
+  margin-bottom: 0;
 }
 
 a {
   padding: 1rem;
 
-  color: black;
+  color: #e1f1ff;
   text-decoration: none;
 }
 
@@ -50,5 +51,12 @@ li :first-child {
 .social-media {
   display: flex;
   padding-left: 0;
+  margin-top: 20px;
+}
+
+@media (min-width: 720px) {
+  ul {
+    font-size: 2rem;
+  }
 }
 </style>
