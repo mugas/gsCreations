@@ -817,6 +817,10 @@ footer h3 {
 }
 
 .website-links {
+  display: flex;
+  display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
   text-align: center;
   padding-top: 40px;
   margin-top: 40px;
@@ -826,9 +830,7 @@ footer h3 {
   padding-left: 0;
 }
 
-.website-links_webpage{
-  padding-left: 20px;
-}
+
 /*Footer*/
 @media (min-width: 720px) {
   h1 {
