@@ -264,7 +264,7 @@
       </div>
     </section>
     <footer>
-      <h3>Good Stuff Creations help your business grow</h3>
+      <h3>I invite you to try it</h3>
       <p>Get in touch and find out how</p>
       <button class="calendly">
         <a
@@ -487,9 +487,13 @@ h1 {
   color: black;
   /* font-size: 2em; */
 
-  font-size: 80px;
+  font-size: 3rem;
   line-height: 90px;
   font-weight: 200;
+}
+
+.second_tagline {
+  text-align: center;
 }
 h2 {
   color: black;
