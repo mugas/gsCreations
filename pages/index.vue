@@ -417,6 +417,34 @@ ul {
   background-repeat: no-repeat;
   background-size: cover; */
 
+.home__page button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px 30px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #000;
+  box-shadow: 6px 6px 0 0 rgb(0 0 0 / 20%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-family: Grifter, sans-serif;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
 .line {
   text-align: center;
   font-weight: bold;
