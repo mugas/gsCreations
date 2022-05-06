@@ -482,7 +482,9 @@ button {
   border-radius: 16px;
   color: black;
 }
-
+.home__page button{
+  margin-bottom: 8%;
+}
 h1 {
   color: black;
   /* font-size: 2em; */
@@ -492,7 +494,7 @@ h1 {
   font-weight: 200;
 }
 
-.second_tagline {
+.tagline_description {
   text-align: center;
 }
 h2 {
