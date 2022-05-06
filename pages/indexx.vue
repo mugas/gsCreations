@@ -1,15 +1,24 @@
 <template>
   <div>
     <section class="home__page">
-      <Animation />
-      <h1>Digital solutions for <br />hospitality industry</h1>
-      <p class="tagline_description">
-        Websites, local SEO, logos, menus, booking, consulting, and more. Full
-        service for your hospitality business in the Savo region.
-      </p>
-      <button class="calendly">
-        <a href="https://calendly.com/gscreations"> Book a meeting</a>
-      </button>
+      <div class="vector">
+        <img
+          width="100px"
+          class="vector__image"
+          src="~/assets/test/five.svg"
+          alt=""
+        />
+      </div>
+      <div class="text">
+        <!-- <h1 class="title">Good Stuff Creations</h1> -->
+        <h1 class="title">Share your product with the world</h1>
+        <p class="line">
+          I create websites and store onlines for local producers and groceries
+        </p>
+        <button class="calendly">
+          <a href="https://calendly.com/gscreations"> Book a meeting</a>
+        </button>
+      </div>
     </section>
 
     <section class="description">
@@ -93,7 +102,7 @@ export default {
   components: {
     ArticleCard,
   },
-  // layout: 'home',
+  layout: 'default',
   async asyncData({ app }) {
     async function awaitImport(blog) {
       const wholeMD = await import(`~/content/blog/${blog.slug}.md`)
@@ -115,27 +124,6 @@ export default {
 </script>
 
 <style scoped>
-.tagline_description {
-  color: #f5fbf9;
-}
-.float {
-  animation-name: ani-float;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes ani-float {
-  0% {
-    transform: translate(0, 0px);
-  }
-  50% {
-    transform: translate(0, 15px);
-  }
-  100% {
-    transform: translate(0, -0px);
-  }
-}
 .blog {
   display: flex;
   flex-direction: column;
@@ -146,255 +134,14 @@ export default {
 }
 /*Hero*/
 .home__page {
+  margin-top: 5%;
   display: flex;
-  z-index: 1;
-  position: relative;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
   height: 70vh;
   width: 100%;
-  background: rgb(9, 82, 86);
-  background: linear-gradient(
-    90deg,
-    rgba(9, 82, 86, 1) 0%,
-    rgba(90, 170, 149, 1) 100%
-  );
-
-  /*   background-image: url('~assets/images/back.jpg');
-   height: 100%;
-
-   Center and scale the image nicely 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
-
-.blobCont {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-}
-
-.blob:nth-child(1) {
-  animation: move1 20s infinite linear;
-  z-index: -1;
-}
-
-@keyframes move1 {
-  from {
-    transform: rotate(90deg) translate(200px, 0.1px) rotate(-90deg);
-  }
-  to {
-    transform: rotate(450deg) translate(200px, 0.1px) rotate(-450deg);
-  }
-}
-.blob:nth-child(2) {
-  animation: move2 20s infinite linear;
-}
-
-@keyframes move2 {
-  from {
-    transform: rotate(180deg) translate(200px, 0.1px) rotate(-180deg);
-  }
-  to {
-    transform: rotate(540deg) translate(200px, 0.1px) rotate(-540deg);
-  }
-}
-.blob:nth-child(3) {
-  animation: move3 20s infinite linear;
-}
-
-@keyframes move3 {
-  from {
-    transform: rotate(270deg) translate(200px, 0.1px) rotate(-270deg);
-  }
-  to {
-    transform: rotate(630deg) translate(200px, 0.1px) rotate(-630deg);
-  }
-}
-.blob:nth-child(4) {
-  animation: move4 20s infinite linear;
-}
-
-@keyframes move4 {
-  from {
-    transform: rotate(360deg) translate(200px, 0.1px) rotate(-360deg);
-  }
-  to {
-    transform: rotate(720deg) translate(200px, 0.1px) rotate(-720deg);
-  }
-}
-.blob:nth-child(5) {
-  animation: move5 20s infinite linear;
-}
-
-@keyframes move5 {
-  from {
-    transform: rotate(450deg) translate(200px, 0.1px) rotate(-450deg);
-  }
-  to {
-    transform: rotate(810deg) translate(200px, 0.1px) rotate(-810deg);
-  }
-}
-.blob:nth-child(6) {
-  animation: move6 20s infinite linear;
-}
-
-@keyframes move6 {
-  from {
-    transform: rotate(540deg) translate(200px, 0.1px) rotate(-540deg);
-  }
-  to {
-    transform: rotate(900deg) translate(200px, 0.1px) rotate(-900deg);
-  }
-}
-.blob:nth-child(7) {
-  animation: move7 20s infinite linear;
-}
-
-@keyframes move7 {
-  from {
-    transform: rotate(630deg) translate(200px, 0.1px) rotate(-630deg);
-  }
-  to {
-    transform: rotate(990deg) translate(200px, 0.1px) rotate(-990deg);
-  }
-}
-.blob:nth-child(8) {
-  animation: move8 20s infinite linear;
-}
-
-@keyframes move8 {
-  from {
-    transform: rotate(720deg) translate(200px, 0.1px) rotate(-720deg);
-  }
-  to {
-    transform: rotate(1080deg) translate(200px, 0.1px) rotate(-1080deg);
-  }
-}
-.blob:nth-child(9) {
-  animation: move9 20s infinite linear;
-}
-
-@keyframes move9 {
-  from {
-    transform: rotate(810deg) translate(200px, 0.1px) rotate(-810deg);
-  }
-  to {
-    transform: rotate(1170deg) translate(200px, 0.1px) rotate(-1170deg);
-  }
-}
-.blob:nth-child(10) {
-  animation: move10 20s infinite linear;
-}
-
-@keyframes move10 {
-  from {
-    transform: rotate(900deg) translate(200px, 0.1px) rotate(-900deg);
-  }
-  to {
-    transform: rotate(1260deg) translate(200px, 0.1px) rotate(-1260deg);
-  }
-}
-.blob:nth-child(11) {
-  animation: move11 20s infinite linear;
-}
-
-@keyframes move11 {
-  from {
-    transform: rotate(990deg) translate(200px, 0.1px) rotate(-990deg);
-  }
-  to {
-    transform: rotate(1350deg) translate(200px, 0.1px) rotate(-1350deg);
-  }
-}
-.blob:nth-child(12) {
-  animation: move12 20s infinite linear;
-}
-
-@keyframes move12 {
-  from {
-    transform: rotate(1080deg) translate(200px, 0.1px) rotate(-1080deg);
-  }
-  to {
-    transform: rotate(1440deg) translate(200px, 0.1px) rotate(-1440deg);
-  }
-}
-.blob:nth-child(13) {
-  animation: move13 20s infinite linear;
-}
-
-@keyframes move13 {
-  from {
-    transform: rotate(1170deg) translate(200px, 0.1px) rotate(-1170deg);
-  }
-  to {
-    transform: rotate(1530deg) translate(200px, 0.1px) rotate(-1530deg);
-  }
-}
-.blob:nth-child(14) {
-  animation: move14 20s infinite linear;
-}
-
-@keyframes move14 {
-  from {
-    transform: rotate(1260deg) translate(200px, 0.1px) rotate(-1260deg);
-  }
-  to {
-    transform: rotate(1620deg) translate(200px, 0.1px) rotate(-1620deg);
-  }
-}
-.blob:nth-child(15) {
-  animation: move15 20s infinite linear;
-}
-
-@keyframes move15 {
-  from {
-    transform: rotate(1350deg) translate(200px, 0.1px) rotate(-1350deg);
-  }
-  to {
-    transform: rotate(1710deg) translate(200px, 0.1px) rotate(-1710deg);
-  }
-}
-.blob:nth-child(16) {
-  animation: move16 20s infinite linear;
-}
-
-@keyframes move16 {
-  from {
-    transform: rotate(1440deg) translate(200px, 0.1px) rotate(-1440deg);
-  }
-  to {
-    transform: rotate(1800deg) translate(200px, 0.1px) rotate(-1800deg);
-  }
-}
-.blob:nth-child(17) {
-  animation: move17 20s infinite linear;
-}
-
-@keyframes move17 {
-  from {
-    transform: rotate(1530deg) translate(200px, 0.1px) rotate(-1530deg);
-  }
-  to {
-    transform: rotate(1890deg) translate(200px, 0.1px) rotate(-1890deg);
-  }
-}
-.blob:nth-child(18) {
-  animation: move18 20s infinite linear;
-}
-
-@keyframes move18 {
-  from {
-    transform: rotate(1620deg) translate(200px, 0.1px) rotate(-1620deg);
-  }
-  to {
-    transform: rotate(1980deg) translate(200px, 0.1px) rotate(-1980deg);
-  }
-}
-
 .line {
   text-align: center;
   font-weight: bold;
@@ -402,7 +149,7 @@ export default {
 
 .calendly {
   text-transform: uppercase;
-  background: black;
+  background: #793000;
   cursor: pointer;
   text-decoration: none;
   padding: 20px;
@@ -414,11 +161,11 @@ export default {
   color: white;
 }
 .calendly a {
-  color: #f5fbf9;
+  color: White;
 }
 
 h1 {
-  color: #f5fbf9;
+  color: #793000;
   font-size: 2em;
 }
 h2 {
@@ -525,7 +272,7 @@ button {
 
 @media (min-width: 720px) {
   h1 {
-    color: #f5fbf9;
+    color: #793000;
     font-size: 4em;
     margin: 0 20% 0 20%;
   }
@@ -538,7 +285,7 @@ button {
   }
   .home__page {
     height: 100vh;
-
+    margin-top: 5%;
     justify-content: inherit;
   }
 

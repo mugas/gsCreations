@@ -20,7 +20,6 @@
         any hospitality business in the Savo region grow.
       </p>
       <p>Your business deserves always more.</p>
-      <SocialMedia class="social_media" />
     </div>
   </div>
 </template>

@@ -3,7 +3,7 @@
     <section class="name">
       &copy; Good Stuff Creations {{ new Date().getFullYear() }}
     </section>
-    <SocialMedia />
+    <SocialMedia class="social_media" />
   </footer>
 </template>
 
@@ -28,7 +28,15 @@
 @media (min-width: 720px) {
   .footer {
     flex-direction: row;
-    align-items: inherit;
+    align-items: baseline;
+  }
+
+  footer li {
+    color: red;
+  }
+
+  .social_media ul li a {
+    color: #813405;
   }
 }
 </style>

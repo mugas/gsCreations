@@ -1,108 +1,318 @@
 <template>
   <div>
     <section class="home__page">
-      <div class="vector">
-        <img
-          width="100px"
-          class="vector__image"
-          src="~/assets/test/five.svg"
-          alt=""
-        />
-      </div>
-      <div class="text">
-        <!-- <h1 class="title">Good Stuff Creations</h1> -->
-        <h1 class="title">Share your product with the world</h1>
-        <p class="line">
-          I create websites and store onlines for local producers and groceries
-        </p>
-        <button class="calendly">
-          <a href="https://calendly.com/gscreations"> Book a meeting</a>
-        </button>
-      </div>
+      <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
+      <TheSidenav :show="displaySidenav" @close="displaySidenav = false" />
+      <Blob />
+      <h1>Your creative <br />concierge</h1>
+      <p class="tagline_description">
+        Websites, local SEO, logos, menus, booking, consulting, and more.<br />
+        Full service for your hospitality business.
+      </p>
+      <button class="calendly">
+        <a
+          href="https://calendly.com/gscreations/good-stuff-creations-your-creative-concierge"
+        >
+          Book a meeting</a
+        >
+      </button>
     </section>
 
-    <section class="description">
-      <!-- <div class="description__image"> -->
-      <img class="website__image" src="~/assets/images/two.png" alt="" />
-      <!-- </div> -->
-      <div class="description__text">
-        <p>Take your local produce or grocery online</p>
-      </div>
-    </section>
-
-    <section>
-      <Services />
-    </section>
-    <section class="reviews">
-      <article class="review__article">
-        <img class="review__image" src="~/assets/images/Tukka.jpg" alt="" />
-        <h3>Tuukka Saukkonen</h3>
-        <h4>Coopza</h4>
-        <p>
-          "Ricardo built very smoothly functioning landing page for my project.
-          Ricardo had great "can do" attitude and his commitment was hugely
-          appreciated."
-        </p>
-      </article>
-      <article class="review__article">
-        <img class="review__image" src="~/assets/images/goncalo.jpg" alt="" />
-        <h3>Gonçalo Jesus</h3>
-        <h4>BundAsliga</h4>
-        <p>
-          "He has the ability to both think & plan long term and to deliver
-          short term results. Very action oriented so you could always count on
-          Ricardo to get things done. Committed and with a strategic vision."
-        </p>
-      </article>
-    </section>
-    <h2 class="blog__menu">News from the Blog</h2>
-    <Container>
-      <section class="blog">
-        <ArticleCard
-          v-for="(blog, index) in blogList"
-          :key="index"
-          class="test"
-          :index="index"
-          :article-info="blog"
-        />
-        <!-- <nuxt-link to="/blog"
-          ><p class="posts">See all of ours posts</p></nuxt-link
-        > -->
-      </section>
-      <nuxt-link to="/blog"
-        ><p class="posts">See all of ours posts</p></nuxt-link
-      >
-    </Container>
-    <Container>
-      <h2 class="blog__menu">Get inspired</h2>
-      <section class="mywebsites">
-        <article class="mywebsites__card">
-          <div class="mywebsites__text">
-            <h3 class="mywebsites__farming">Farming in Family</h3>
-            <button>
-              <a href="https://gscsite1.netlify.app/"> See the website</a>
-            </button>
-          </div>
-          <img
-            class="mywebsites__image"
-            src="~assets/images/gsimage.jpg"
-            alt=""
-          />
+    <div class="second_tagline">
+      <h2>One service for all your needs</h2>
+      <p class="second_tagline_description">
+        Delegate what is necessary and get time to focus on what you know
+        better: Make your business great
+      </p>
+      <section class="description">
+        <article class="list">
+          <img class="icons_image" src="~/assets/gif/check.gif" alt="" />
+          <p>Select one plan and get all you want. Simple and made for you</p>
+        </article>
+        <article class="receive">
+          <img class="icons_image" src="~/assets/gif/diamond.gif" alt="" />
+          <p>Get more time for you and your business with only one service</p>
+        </article>
+        <article class="revise">
+          <img class="icons_image" src="~/assets/gif/revise.gif" alt="" />
+          <p>It's not ready when it's done but when you are happy</p>
         </article>
       </section>
-    </Container>
+    </div>
+
+    <section class="banner">
+      <div class="banner_quote">
+        <h3>
+          <q>Hospitality is simply an opportunity to show love and care</q>
+        </h3>
+      </div>
+    </section>
+    <section class="explanation">
+      <h2>Get more for less</h2>
+      <p class="explanation_text">
+        Good Stuff creations helps you save money and focus on your business, by
+        having all services in one place. Pay monthly, cancel anytime
+      </p>
+      <div class="explanation_detailed">
+        <div class="explanation_detailed_text explanation_detailed_text_one">
+          <div class="shape"></div>
+          <h4>Websites</h4>
+          <p>
+            I can build you a beautifull website that speaks your brand and get
+            you sell more
+          </p>
+        </div>
+        <div class="explanation_detailed_text explanation_detailed_text_two">
+          <div class="shape"></div>
+          <h4>SEO</h4>
+          <p>
+            Optimize your website to reach the customers that you want but also
+            the ones you need
+          </p>
+        </div>
+        <div class="explanation_detailed_text explanation_detailed_text_three">
+          <div class="shape"></div>
+          <h4>Inventory</h4>
+          <p>
+            Need help with your inventory or finance? Need a new productive
+            tool? I can help
+          </p>
+        </div>
+        <div class="explanation_detailed_text explanation_detailed_text_four">
+          <div class="shape"></div>
+          <h4>Menus</h4>
+          <p>
+            A appealing and beautifull menu is half way to get your customers
+            inside.
+          </p>
+        </div>
+        <div class="explanation_detailed_text explanation_detailed_text_five">
+          <div class="shape"></div>
+          <h4>Recipe Search</h4>
+          <p>
+            New foods, menus, events. Engage your customers with what is trendy
+            on the business
+          </p>
+        </div>
+        <div class="explanation_detailed_text explanation_detailed_text_six">
+          <div class="shape"></div>
+          <h4>Bookings</h4>
+          <p>
+            Welcome the guest, manage the booking - Focus on your business and I
+            focus on your customer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="client_groups">
+      <h2>Who are you?</h2>
+      <div class="clients">
+        <article class="coffee client_groups_each">
+          <div class="client_groups_each_text">
+            <h4>Coffees and bakeries</h4>
+            <p>
+              Outstand the competition with a modern website or get back on
+              track with your products and sales.
+            </p>
+          </div>
+          <img class="icons_image" src="~/assets/Svg/coffee.svg" alt="" />
+        </article>
+        <article class="restaurants client_groups_each">
+          <div class="client_groups_each_text">
+            <h4>Restaurants</h4>
+            <p>
+              Your restaurant needs to be online.Online bookings and
+              reservations get you more customers.
+            </p>
+          </div>
+          <img class="icons_image" src="~/assets/Svg/restaurant.svg" alt="" />
+        </article>
+        <article class="grocery client_groups_each">
+          <div class="client_groups_each_text">
+            <h4>Groceries</h4>
+            <p>
+              Customers buy with their eyes. Let's showcase your products and
+              take care of your inventory.
+            </p>
+          </div>
+          <img class="icons_image" src="~/assets/Svg/grocery.svg" alt="" />
+        </article>
+        <article class="hotel client_groups_each">
+          <div class="client_groups_each_text">
+            <h4>Local Rentals</h4>
+            <p>
+              I can help you manage the bookings and make a website that shows
+              the quality of your rooms.
+            </p>
+          </div>
+          <img class="icons_image" src="~/assets/Svg/hotel.svg" alt="" />
+        </article>
+        <article class="farmer client_groups_each">
+          <div class="client_groups_each_text">
+            <h4>Farmers</h4>
+            <p>
+              let me help you show your products to more people. Create a store
+              online or get stronger in the social media.
+            </p>
+          </div>
+          <img class="icons_image" src="~/assets/Svg/farmer.svg" alt="" />
+        </article>
+      </div>
+    </section>
+    <section class="services">
+      <h3 class="services_title">Websites, landing pages, bookings and more</h3>
+      <article class="services_description">
+        <div class="services_description_text">Websites</div>
+        <div class="services_description_text">Landing pages</div>
+        <div class="services_description_text">E commerce</div>
+        <div class="services_description_text">SEO</div>
+        <div class="services_description_text">Logos</div>
+        <div class="services_description_text">Menus</div>
+        <div class="services_description_text">Slide Decks</div>
+        <div class="services_description_text">Pitch Decks</div>
+        <div class="services_description_text">Brochures</div>
+        <div class="services_description_text">Recipes</div>
+        <div class="services_description_text">Website maintenance</div>
+        <div class="services_description_text">Bookings</div>
+        <div class="services_description_text">Inventory</div>
+        <div class="services_description_text">Content creation</div>
+        <div class="services_description_text">Productive tools</div>
+      </article>
+    </section>
+
+    <section id="pricing" class="pricing-panel">
+      <h2 class="services_title">The right plan for you</h2>
+      <div class="pricing">
+        <div class="pricing-plan">
+          <h4 class="pricing-header">On-Line</h4>
+          <h5 class="services_title">
+            One payment, full service. Fully customized
+          </h5>
+          <ul class="pricing-features">
+            <li class="pricing-features-item">Website</li>
+            <li class="pricing-features-item">Newsletter</li>
+            <li class="pricing-features-item">SEO Optimized</li>
+            <li class="pricing-features-item">Social Media Integration</li>
+            <li class="pricing-features-item">Logo</li>
+            <li class="pricing-features-item">CMS</li>
+            <li class="pricing-features-item">
+              Get in touch to discover all that is included in this plan
+            </li>
+          </ul>
+          <span class="pricing-price">2395€</span>
+          <li class="pricing-features-item">Paid once</li>
+          <a href="contact" class="pricing-button">Let's start</a>
+        </div>
+
+        <div class="pricing-plan">
+          <h4 class="pricing-header">Maintenance</h4>
+          <h5 class="services_title">Every month there, to help you succeed</h5>
+          <ul class="pricing-features">
+            <li class="pricing-features-item">SEO Optimization</li>
+            <li class="pricing-features-item">Code and design fixes</li>
+            <li class="pricing-features-item">Newsletter Management</li>
+            <li class="pricing-features-item">
+              Content Creation and management
+            </li>
+            <li class="pricing-features-item">Booking Management</li>
+            <li class="pricing-features-item">CMS</li>
+            <li class="pricing-features-item">
+              Get in touch to discover all that is included in this plan
+            </li>
+          </ul>
+          <span class="pricing-price">195€</span>
+          <li class="pricing-features-item">Monthly</li>
+          <a href="contact" class="pricing-button">Let's start</a>
+        </div>
+
+        <!--    <div class="pricing-plan">
+          <h4 class="pricing-header">Concierge</h4>
+          <h5 class="services_title">You dream it and it will be created</h5>
+          <ul class="pricing-features">
+            <li class="pricing-features-item">On line plan</li>
+            <li class="pricing-features-item">Maintenance plan</li>
+            <li class="pricing-features-item">Bookings</li>
+            <li class="pricing-features-item">Menu creation and search</li>
+            <li class="pricing-features-item">Inventory</li>
+            <li class="pricing-features-item">Cancel Anytime</li>
+            <li class="pricing-features-item">
+              Get in touch to discover all that is included in this plan
+            </li>
+          </ul>
+          <span class="pricing-price">1495€</span>
+          <li class="pricing-features-item">Monthly</li>
+          <a href="#/" class="pricing-button">Let's start</a>
+        </div> -->
+        <div class="pricing-plan">
+          <h4 class="pricing-header">Custom</h4>
+          <h5 class="services_title">It's ok to want more or just a bit</h5>
+          <ul class="pricing-features">
+            <li class="pricing-features-item">
+              Want only one item of the list?
+            </li>
+            <li class="pricing-features-item">
+              Want more that there is on the list?
+            </li>
+            <li class="pricing-features-item">
+              Get in touch and let's make it happen
+            </li>
+          </ul>
+
+          <a href="/contact" class="pricing-button is-featured">Let's talk</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h3>Good Stuff Creations help your business grow</h3>
+      <p>Get in touch and find out how</p>
+      <button class="calendly">
+        <a
+          href="https://calendly.com/gscreations/good-stuff-creations-your-creative-concierge"
+        >
+          Book a meeting</a
+        >
+      </button>
+      <div class="website-links">
+        <div class="website-links_webpage">
+          <ul>
+            <li class="nav-item"><a href="#pricing">Prices</a></li>
+            <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
+            <li class="nav-item">
+              <nuxt-link to="/contact">Contact</nuxt-link>
+            </li>
+            <li class="nav-item"><nuxt-link to="/blog">Blog</nuxt-link></li>
+          </ul>
+        </div>
+        <SocialMedia />
+      </div>
+
+      <div class="footer_links">
+        <nuxt-link to="/">
+          <img
+            class="footer_logo"
+            width="200px"
+            src="~/assets/Svg/logo_one.svg"
+          />
+        </nuxt-link>
+        <p class="footer_based">Based in Savonlinna, Finland</p>
+      </div>
+    </footer>
   </div>
 </template>
 
 <script>
-import ArticleCard from '~/components/ArticleCard'
 import blogs from '~/content/blogs.json'
+import TheHeader from '~/components/Navigation/TheHeader'
+import TheSidenav from '~/components/Navigation/TheSidenav'
 
 export default {
   components: {
-    ArticleCard,
+    TheHeader,
+    TheSidenav,
   },
-  layout: 'default',
+
+  layout: 'empty',
   async asyncData({ app }) {
     async function awaitImport(blog) {
       const wholeMD = await import(`~/content/blog/${blog.slug}.md`)
@@ -120,28 +330,93 @@ export default {
     })
     return blogList
   },
+  data() {
+    return {
+      displaySidenav: false,
+    }
+  },
 }
 </script>
 
 <style scoped>
+html,
+body {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  widows: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.float {
+  animation-name: ani-float;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes ani-float {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
 .blog {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+
   /* margin-top: 30px; */
   align-items: center;
+  margin-right: 0;
   align-content: space-between;
 }
 /*Hero*/
 .home__page {
-  margin-top: 5%;
   display: flex;
+  z-index: 1;
+  position: relative;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  height: 70vh;
-  width: 100%;
+  height: 90vh;
+  width: 100vw;
+  background: rgb(129, 52, 5);
+  background: linear-gradient(
+    90deg,
+    rgba(129, 52, 5, 1) 0%,
+    rgba(212, 81, 19, 1) 100%
+  );
 }
+/*   background-image: url('~assets/images/back.jpg');
+   height: 100%;
+
+   Center and scale the image nicely
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+
 .line {
   text-align: center;
   font-weight: bold;
@@ -149,24 +424,44 @@ export default {
 
 .calendly {
   text-transform: uppercase;
-  background: #793000;
+  background: black;
   cursor: pointer;
+  margin-top: 75px;
   text-decoration: none;
-  padding: 20px;
+  padding: 60px;
   border-radius: 50px;
   display: inline-block;
-  border: 2px solid #28430a;
-  border-radius: 16px;
-
+  border: 2px solid #f5fbf9;
+  border-radius: 20px;
+  /* width: 10rem; */
+  font-size: 28px;
+  letter-spacing: 0;
   color: white;
 }
 .calendly a {
-  color: White;
+  color: #f5fbf9;
+}
+button {
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  /* width: 40%; */
+  margin-bottom: 2%;
+  border-radius: 50px;
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  color: black;
 }
 
 h1 {
-  color: #793000;
-  font-size: 2em;
+  color: black;
+  /* font-size: 2em; */
+
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 200;
 }
 h2 {
   color: black;
@@ -177,10 +472,7 @@ h3 {
   color: black;
   margin-top: 3%;
 }
-h4 {
-  color: #793000;
-  margin-top: 1%;
-}
+
 .text {
   display: flex;
   flex-direction: column;
@@ -188,105 +480,429 @@ h4 {
   align-items: center;
 }
 /*Description*/
+
+.second_tagline {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+h2 {
+  max-width: 333px;
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
 .description {
-  background: #28430a;
+  margin-top: 10%;
   display: flex;
-  margin-bottom: 10%;
   flex-direction: column;
+  justify-content: space-evenly;
 }
-.website__image {
-  max-width: 100%;
-  width: 540px;
-  margin-top: 6%;
-}
-.description__text {
-  font-size: 20px;
-  color: white;
-  font-weight: bold;
+
+article p {
   text-align: center;
-}
-/*Reviews*/
-
-.reviews {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20%;
-  align-items: center;
-}
-.review__image {
-  border-radius: 50%;
-  height: 100px;
-  width: 25%;
-}
-.review__article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 5%;
-}
-
-.review__article p {
-  text-align: center;
-  font-style: italic;
-}
-/*website*/
-.mywebsites {
-  display: flex;
-  flex-direction: column;
-}
-.mywebsites__text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.mywebsites__card {
-  background: #793000;
-  border-radius: 0.5rem;
   margin-bottom: 5%;
+}
+
+.second_tagline_description {
+  margin-top: 20px;
+  max-width: 349px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+  margin-bottom: 10%;
+}
+
+.receive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+  margin-bottom: 10%;
+}
+
+.revise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+  margin-bottom: 10%;
+}
+
+.icons_image {
+  width: 80px;
+  margin-bottom: 5%;
+}
+.list .receive .revise {
+  flex: 1 1 0;
+}
+/*Description End*/
+
+/*Banner*/
+
+.banner {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: #f9a03f;
+  width: 80%;
+  margin-bottom: 30%;
+  background-image: linear-gradient(232deg, #f9a03f 0%, #d45113 57%);
+}
+.banner_quote {
+  display: flex;
+  width: 80%;
+  height: 200px;
+
+  align-items: center;
+}
+
+q {
+  color: #f5fbf9;
+}
+
+/*Banner end*/
+
+/*Explanation*/
+
+.explanation {
+  background-color: #f5fbf9;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 5%;
-}
-.mywebsites__image {
-  width: 80%;
+  padding-top: 60px;
 }
 
-button {
-  text-transform: uppercase;
-  background: transparent;
-  cursor: pointer;
-  text-decoration: none;
-  width: 40%;
-  margin-bottom: 2%;
-  border-radius: 50px;
-  display: inline-block;
-  border: 2px solid #fff;
-  border-radius: 16px;
+.explanation_text {
+  margin-bottom: 7%;
+  max-width: 349px;
+  text-align: center;
+}
+.explanation_detailed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
   color: black;
 }
-.mywebsites__farming {
+.explanation_detailed_text {
+  min-height: 250px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.shape {
+  width: 50px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: #813405;
+}
+
+/*clients*/
+
+.client_groups {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+.client_groups_each {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.client_groups_each_text {
+  flex: 1 1 0;
+}
+.client_groups_each img {
+  flex: 1 1 0;
+  width: auto;
+}
+.client_groups_each div {
+  margin-bottom: 20px;
+}
+
+/*clients end*/
+
+/*Explanation end*/
+
+/*Services*/
+
+.services {
+  min-width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f5fbf9;
+}
+.services_description {
+  padding: 20px;
+  justify-content: space-around;
+}
+.services_description_text {
+  margin-bottom: 30px;
+  padding-bottom: 16px;
+  border-bottom: 3px solid #d45113;
+}
+
+.services_title {
+  margin-bottom: 18%;
+  color: black;
+  margin-top: 18%;
+  padding-bottom: 4%;
+  font-weight: 700;
+  line-height: 2rem;
+}
+/*Services*/
+/*Pricing*/
+
+.pricing-panel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin-bottom: 100px;
+}
+.pricing {
+  background-color: #f5fbf9;
+  border-radius: 10px;
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 1260px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid #d45113;
+  margin-bottom: 85px;
+}
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+.pricing-plan li {
+  list-style: none;
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: #813405;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  margin: 50px 0 25px;
+  color: #000;
+}
+
+.pricing-features-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid #d45113;
+}
+
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #d45113;
+}
+
+.pricing-price {
+  color: #813405;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #d45113;
+  border-radius: 10px;
+  color: #000;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+  background-color: #d45113;
   color: #fff;
 }
 
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+  background-color: #000;
+  color: fff;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Pricing*/
+
+/*Footer*/
+
+footer {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 5% 100px;
+}
+
+footer h3 {
+  color: #e1f1ff;
+  text-align: center;
+}
+
+footer p {
+  font-size: 24px;
+  line-height: 36px;
+  color: #e1f1ff;
+  text-align: center;
+}
+
+footer h3 {
+  margin-bottom: 18%;
+  margin-top: 18%;
+  padding-bottom: 4%;
+  font-size: 42px;
+  line-height: 44px;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding: 40px 0 40px;
+}
+
+.footer_logo {
+  margin-top: 20px;
+}
+
+.footer_based {
+  margin-top: 20px;
+}
+
+.nav-item a {
+  color: #f5fbf9;
+  padding-top: 20px;
+}
+
+.website-links {
+  display: flex;
+  display: flex;
+  justify-content: space-evenly;
+
+  text-align: center;
+  padding-top: 40px;
+  margin-top: 40px;
+}
+
+.website-links ul {
+  padding-left: 0;
+}
+
+/*Footer*/
 @media (min-width: 720px) {
+  .tagline_description {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 800px;
+    color: #f5fbf9;
+  }
   h1 {
-    color: #793000;
-    font-size: 4em;
+    color: black;
+    /* font-size: 4em; */
     margin: 0 20% 0 20%;
+
+    font-size: 6rem;
+    line-height: 129px;
+    font-weight: 200;
+    margin-top: -52%;
   }
 
   h2 {
     color: black;
+    margin-bottom: 14%;
   }
   .vector__image {
     padding-bottom: 50%;
   }
   .home__page {
     height: 100vh;
-    margin-top: 5%;
+
     justify-content: inherit;
+  }
+
+  .home__page button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 24px 30px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #000;
+    box-shadow: 6px 6px 0 0 rgb(0 0 0 / 20%);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    font-family: Grifter, sans-serif;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-decoration: none;
   }
 
   .text {
@@ -295,59 +911,288 @@ button {
     justify-content: center;
     align-items: center;
   }
-  .description {
-    display: flex;
+  /*services end*/
+  /*client*/
+  .client_groups_each {
     flex-direction: row;
-    height: 58vh;
-    align-items: center;
-    justify-content: space-evenly;
+    width: 100%;
+    gap: 10%;
   }
-  .description__text {
-    font-size: 35px;
-    line-height: 1.3em;
-  }
-  .reviews {
-    margin-top: 7%;
-    display: flex;
-    flex-direction: row;
-  }
-  .review__image {
-    width: 100px;
-    height: 100px;
-  }
-  .review__article {
-    flex: 1;
-  }
-  .blog {
-    display: flex;
-    flex-direction: row;
 
-    justify-content: space-around;
-  }
-  .article-card.two-thirds {
-    width: 30%;
-  }
-  .test {
-    width: 30%;
-  }
-  .blog__menu {
-    margin-top: 7%;
+  .client_groups h2 {
     margin-bottom: 7%;
   }
-  .posts {
-    margin-left: 2%;
-  }
-  /* .websites {
+  .client_groups_each_text {
     display: flex;
-    margin-left: 2%;
-    margin-right: 2%;
-    background-color: #edbd54;
-    flex-direction: row;
-  } */
-  /*mywebsites*/
-  .mywebsites {
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1 1 0;
+    gap: 10%;
   }
+
+  .client_groups_each_text p {
+    width: initial;
+    max-width: initial;
+  }
+
+  .client_groups_each img {
+    flex: 1 1 0;
+    width: 300px;
+    height: 330px;
+  }
+  .clients {
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .restaurants {
+    flex-direction: row-reverse;
+  }
+
+  .hotel {
+    flex-direction: row-reverse;
+  }
+  /*client end*/
+
+  /*description*/
+
+  .second_tagline {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+  }
+
+  h2 {
+    font-size: 3.1rem;
+    margin-bottom: 10px;
+    max-width: 667px;
+  }
+  .description {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .second_tagline_description {
+    margin-top: 20px;
+    max-width: 600px;
+    text-align: center;
+    font-size: 24px;
+  }
+  .icons_image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+  }
+  .list .receive .revise {
+    flex: 1 1 0;
+  }
+
+  article p {
+    max-width: 200px;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+  }
+
+  .receive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+  }
+
+  .revise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+  }
+
+  /*Description end*/
+
+  /*Banner*/
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .banner {
+    margin: 0 auto;
+    height: 300px;
+
+    background-color: #f9a03f;
+    margin-bottom: 10%;
+    background-image: linear-gradient(232deg, #f9a03f 0%, #d45113 57%);
+  }
+
+  .banner_quote {
+    align-self: center;
+    max-width: 40%;
+  }
+  /*Banner end*/
+  /*explanation*/
+  .explanation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+  }
+  .explanation_detailed {
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .explanation_detailed_text {
+    width: 50%;
+    height: 50%;
+    min-height: 250px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    min-height: 250px;
+  }
+  .explanation_detailed_text_one {
+    flex: 1 1 0;
+  }
+  .explanation_text {
+    margin-bottom: 7%;
+    max-width: 600px;
+    text-align: center;
+  }
+  /*explanation end*/
+  /*Services*/
+
+  .services_title {
+    margin-bottom: 10%;
+    margin-top: 10%;
+    padding-bottom: 0;
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
+    min-width: auto;
+    padding-left: 20px;
+    font-weight: 700;
+    padding-right: 20px;
+  }
+  .services_description {
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .services_description_text {
+    width: 30%;
+  }
+  /*Services*/
+  /*Pricing*/
+  .pricing {
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+    margin-bottom: 0px;
+    flex: 1 1 0;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+
+  /*Pricing*/
+
+  /*Footer*/
+  footer {
+    padding-top: 150px;
+    align-items: center;
+  }
+
+  footer h3 {
+    font-size: 50px;
+    margin-top: 0;
+    line-height: 60px;
+    margin-bottom: 10px;
+    max-width: 667px;
+  }
+
+  footer p {
+    margin-top: 20px;
+    font-size: 24px;
+    max-width: 667px;
+    line-height: 36px;
+  }
+
+  footer button {
+    width: 667px;
+  }
+
+  .footer_links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 5%;
+    flex-direction: row;
+  }
+
+  .footer_links :nth-child(1) {
+    order: 2;
+  }
+  .footer_links :nth-child(2) {
+    order: 1;
+  }
+  .footer_links :nth-child(3) {
+    order: 3;
+  }
+
+  footer img {
+    width: 300px;
+  }
+
+  .website-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .website-links ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5rem;
+    gap: 20px;
+  }
+  .website-links_webpage {
+    display: flex;
+  }
+  /*Footer*/
 }
 </style>

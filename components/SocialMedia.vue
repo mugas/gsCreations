@@ -56,7 +56,7 @@ li :first-child {
 } */
 
 @media (min-width: 720px) {
-  .social-media{
+  .social-media {
     flex-direction: row;
   }
   ul {

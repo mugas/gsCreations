@@ -25,7 +25,7 @@
           cx="50%"
           cy="50%"
           r="100"
-          fill="white"
+          fill="#d45113"
           stroke="white"
         />
         <circle
@@ -36,15 +36,16 @@
           fill="white"
           stroke="white"
         />
+
+        <circle
+          class="blob"
+          cx="27%"
+          cy="15%"
+          r="70"
+          fill="white"
+          stroke="white"
+        />
         <!--
-            <circle
-              class="blob"
-              cx="27%"
-              cy="15%"
-              r="70"
-              fill="white"
-              stroke="white"
-            />
               <circle
               class="blob"
               cx="90%"

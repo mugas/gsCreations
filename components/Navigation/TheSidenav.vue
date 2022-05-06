@@ -9,9 +9,7 @@
               ><img src="~/assets/Svg/logo.svg" class="side-logo"
             /></nuxt-link>
           </li>
-          <li class="nav-item">
-            <nuxt-link to="/services">Services</nuxt-link>
-          </li>
+
           <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/contact">Contact</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/blog">Blog</nuxt-link></li>
