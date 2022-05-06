@@ -8,9 +8,12 @@
 </template>
 
 <style lang="scss">
+.social_media ul li a {
+    color: #813405;
+  }
 .footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 100%;
   width: 100%;
   justify-content: space-between;
