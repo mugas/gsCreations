@@ -822,8 +822,12 @@ footer h3 {
   margin-top: 40px;
 }
 
-.website-links ul {
+.website-links ul{
   padding-left: 0;
+}
+
+.website-links_webpage{
+  padding-left: 20px;
 }
 /*Footer*/
 @media (min-width: 720px) {
@@ -1119,7 +1123,7 @@ footer h3 {
     flex-direction: row;
     width: 100%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .website-links ul {
