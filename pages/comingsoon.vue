@@ -266,23 +266,25 @@
         <a href="https://calendly.com/gscreations"> Book a meeting</a>
       </button>
       <div class="website-links">
-        <ul>
-          <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
-          <li class="nav-item"><nuxt-link to="/contact">Contact</nuxt-link></li>
-          <li class="nav-item"><nuxt-link to="/blog">Blog</nuxt-link></li>
-          <li class="nav-item"><nuxt-link to="/blog">Blog</nuxt-link></li>
-        </ul>
+        <div class="website-links_webpage">
+          <ul>
+            <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
+            <li class="nav-item">
+              <nuxt-link to="/contact">Contact</nuxt-link>
+            </li>
+            <li class="nav-item"><nuxt-link to="/blog">Blog</nuxt-link></li>
+          </ul>
+        </div>
+        <SocialMedia />
       </div>
 
       <div class="footer_links">
-        <SocialMedia />
         <nuxt-link to="/">
           <img
             class="footer_logo"
             width="200px"
             src="~/assets/Svg/logo_one.svg"
           />
-          <!-- <img width="150px" src="~/assets/Svg/gs.svg" /> -->
         </nuxt-link>
         <p class="footer_based">Based in Savonlinna, Finland</p>
       </div>
@@ -819,6 +821,10 @@ footer h3 {
   padding-top: 40px;
   margin-top: 40px;
 }
+
+.website-links ul {
+  padding-left: 0;
+}
 /*Footer*/
 @media (min-width: 720px) {
   h1 {
@@ -1089,7 +1095,7 @@ footer h3 {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 5%;
     flex-direction: row;
   }
@@ -1112,12 +1118,21 @@ footer h3 {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   .website-links ul {
     display: flex;
     flex-direction: row;
+    padding-left: 0;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5rem;
+    gap: 20px;
+  }
+  .website-links_webpage {
+    display: flex;
   }
   /*Footer*/
 }

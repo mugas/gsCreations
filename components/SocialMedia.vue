@@ -16,11 +16,6 @@
           <font-awesome-icon :icon="['fab', 'facebook']" />
         </a>
       </li>
-      <li>
-        <a href="https://www.linkedin.com/in/ricardodmoreira/" target="_blank">
-          <font-awesome-icon :icon="['fab', 'linkedin']" />
-        </a>
-      </li>
     </ul>
   </nav>
 </template>
@@ -52,7 +47,12 @@ li :first-child {
   display: flex;
   padding-left: 0;
   margin-top: 20px;
+  justify-content: center;
 }
+
+/* .social-media ul {
+  padding-left: 0;
+} */
 
 @media (min-width: 720px) {
   ul {

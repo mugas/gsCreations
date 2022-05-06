@@ -115,12 +115,6 @@ img {
   }
   .the-header {
     align-items: inherit;
-    background: rgb(129, 52, 5);
-    background: linear-gradient(
-      90deg,
-      rgba(129, 52, 5, 1) 0%,
-      rgba(212, 81, 19, 1) 100%
-    );
   }
 }
 
