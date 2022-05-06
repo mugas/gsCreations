@@ -45,6 +45,7 @@ li :first-child {
 
 .social-media {
   display: flex;
+  flex-direction: column;
   padding-left: 0;
   margin-top: 20px;
   justify-content: center;
@@ -55,6 +56,9 @@ li :first-child {
 } */
 
 @media (min-width: 720px) {
+  .social-media{
+    flex-direction: row;
+  }
   ul {
     font-size: 2rem;
   }
