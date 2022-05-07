@@ -9,8 +9,8 @@
 
 <style lang="scss">
 .social_media ul li a {
-    color: #813405;
-  }
+  color: #813405;
+}
 .footer {
   display: flex;
   flex-direction: row;

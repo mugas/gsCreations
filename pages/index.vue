@@ -4,7 +4,7 @@
       <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
       <TheSidenav :show="displaySidenav" @close="displaySidenav = false" />
       <Blob />
-      <h1>Your creative <br />concierge</h1>
+      <h1 class="home__page-title">Your creative <br />concierge</h1>
       <p class="tagline_description">
         Websites, local SEO, logos, menus, booking, consulting, and more.<br />
         Full service for your hospitality business.
@@ -265,7 +265,7 @@
     </section>
     <footer>
       <h3>I invite you to try it</h3>
-      <p>Get in touch and find out how</p>
+      <p>Get in touch and let's make your business grow</p>
       <button class="calendly">
         <a
           href="https://calendly.com/gscreations/good-stuff-creations-your-creative-concierge"
@@ -383,6 +383,10 @@ ul {
     transform: translate(0, -0px);
   }
 }
+
+.home__page-title {
+  color: #f5fbf9;
+}
 .blog {
   display: flex;
   flex-direction: row;
@@ -482,7 +486,7 @@ button {
   border-radius: 16px;
   color: black;
 }
-.home__page button{
+.home__page button {
   margin-bottom: 8%;
 }
 h1 {
@@ -490,13 +494,15 @@ h1 {
   /* font-size: 2em; */
 
   font-size: 3rem;
-  line-height: 90px;
+  line-height: 64px;
   font-weight: 200;
 }
 
 .tagline_description {
   text-align: center;
+  color: #f5fbf9;
 }
+
 h2 {
   color: black;
   font-size: 1.8em;
@@ -880,7 +886,7 @@ footer h3 {
 /*Footer*/
 @media (min-width: 720px) {
   .tagline_description {
-    margin-top: 25px;
+    margin-top: 68px;
     text-align: center;
     font-size: 24px;
     line-height: 36px;

@@ -108,7 +108,7 @@ img {
   }
 
   img {
-    width: 200px;
+    width: 300px;
   }
   .the-header {
     align-items: inherit;

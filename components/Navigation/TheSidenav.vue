@@ -14,7 +14,7 @@
           <li class="nav-item"><nuxt-link to="/contact">Contact</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/blog">Blog</nuxt-link></li>
         </ul>
-        <SocialMedia />
+        <SocialMedia class="social_media" />
       </div>
     </transition>
   </div>
@@ -95,5 +95,14 @@ li:first-child {
 .nav-item a:hover,
 .nav-item a:active {
   color: #f9a03f;
+}
+
+.social_media ul li a {
+  color: #813405;
+}
+
+.social_media {
+  flex-direction: row;
+  justify-content: flex-start;
 }
 </style>
