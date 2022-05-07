@@ -886,12 +886,13 @@ footer h3 {
 
 .website-links_webpage {
   display: flex;
-  flex-direction: column;
+ 
   width: 100%;
 }
 
 .website-links_webpage ul {
   justify-content: space-around;
+  flex-direction: row;
 }
 
 /*Footer*/
