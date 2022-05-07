@@ -871,7 +871,7 @@ footer h3 {
 }
 
 .website-links {
-  display: flex;
+  flex-direction: column;
   display: flex;
   justify-content: space-evenly;
 
@@ -882,6 +882,16 @@ footer h3 {
 
 .website-links ul {
   padding-left: 0;
+}
+
+.website-links_webpage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.website-links_webpage ul {
+  justify-content: space-around;
 }
 
 /*Footer*/
@@ -1218,7 +1228,7 @@ footer h3 {
     display: flex;
     flex-direction: row;
     width: 100%;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
   }
 
@@ -1233,6 +1243,10 @@ footer h3 {
   }
   .website-links_webpage {
     display: flex;
+  }
+
+  .website-links_webpage ul {
+    justify-content: start;
   }
   /*Footer*/
 }

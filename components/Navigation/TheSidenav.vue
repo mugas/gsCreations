@@ -14,7 +14,7 @@
           <li class="nav-item"><nuxt-link to="/contact">Contact</nuxt-link></li>
           <li class="nav-item"><nuxt-link to="/blog">Blog</nuxt-link></li>
         </ul>
-        <SocialMedia class="social_media" />
+        <SocialMedia class="social_media_sidenav" />
       </div>
     </transition>
   </div>
@@ -101,7 +101,7 @@ li:first-child {
   color: #813405;
 }
 
-.social_media {
+.social_media_sidenav {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
