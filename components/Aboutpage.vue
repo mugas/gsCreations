@@ -40,6 +40,7 @@ p {
 }
 .text p {
   line-height: 1.8;
+  padding-left: 6%;
 }
 
 .about {
@@ -79,6 +80,7 @@ p {
   }
   .text p {
     text-align: start;
+    padding-left: 0;
   }
   .social_media {
     margin-top: 2%;

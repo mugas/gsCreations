@@ -35,7 +35,7 @@ ul {
 a {
   padding: 1rem;
 
-  color: #813405;;
+  color: #813405;
   text-decoration: none;
 }
 
@@ -48,7 +48,7 @@ li :first-child {
   flex-direction: row;
   padding-left: 0;
   margin-top: 20px;
-  justify-content: center;
+  justify-content: start;
 }
 
 /* .social-media ul {
@@ -59,7 +59,11 @@ li :first-child {
   .social-media ul li a {
     display: flex;
     flex-direction: row;
-    color:#f5fbf9
+    color: #f5fbf9;
+  }
+
+  a {
+    color: #f5fbf9;
   }
   ul {
     font-size: 2rem;

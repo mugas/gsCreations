@@ -284,7 +284,7 @@
             <li class="nav-item"><nuxt-link to="/blog">Blog</nuxt-link></li>
           </ul>
         </div>
-        <SocialMedia />
+        <SocialMedia class="social_media-home-page" />
       </div>
 
       <div class="footer_links">
@@ -886,13 +886,19 @@ footer h3 {
 
 .website-links_webpage {
   display: flex;
- 
+  flex-direction: column;
   width: 100%;
 }
 
 .website-links_webpage ul {
+  display: flex;
   justify-content: space-around;
   flex-direction: row;
+  width: 100%;
+}
+
+.social_media-home-page ul li a {
+  color: #e1f1ff;
 }
 
 /*Footer*/
