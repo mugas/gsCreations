@@ -40,7 +40,6 @@ p {
 }
 .text p {
   line-height: 1.8;
-  text-align: start;
 }
 
 .about {

@@ -35,7 +35,7 @@ ul {
 a {
   padding: 1rem;
 
-  color: #e1f1ff;
+  color: #813405;;
   text-decoration: none;
 }
 
@@ -59,6 +59,7 @@ li :first-child {
   .social-media ul li a {
     display: flex;
     flex-direction: row;
+    color:#f5fbf9
   }
   ul {
     font-size: 2rem;

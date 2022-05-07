@@ -101,9 +101,10 @@ li:first-child {
   color: #813405;
 }
 
-.social_media_sidenav {
+.social_media_sidenav ul li a {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  color: #813405;
 }
 </style>

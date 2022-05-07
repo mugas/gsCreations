@@ -17,7 +17,7 @@
   height: 100%;
   width: 100%;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   padding: 2rem 0;
   color: black;
   @media (max-width: 567px) {
