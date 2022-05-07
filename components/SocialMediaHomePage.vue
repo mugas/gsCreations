@@ -35,7 +35,7 @@ ul {
 a {
   padding: 1rem;
 
-  color: #813405;
+  color: #f5fbf9;
   text-decoration: none;
 }
 

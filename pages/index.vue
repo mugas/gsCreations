@@ -284,7 +284,7 @@
             <li class="nav-item"><nuxt-link to="/blog">Blog</nuxt-link></li>
           </ul>
         </div>
-        <SocialMedia class="social_media-home-page" />
+        <SocialMediaHomePage class="social_media-home-page" />
       </div>
 
       <div class="footer_links">
@@ -302,6 +302,7 @@
 </template>
 
 <script>
+import SocialMediaHomePage from '../components/SocialMediaHomePage.vue'
 import blogs from '~/content/blogs.json'
 import TheHeader from '~/components/Navigation/TheHeader'
 import TheSidenav from '~/components/Navigation/TheSidenav'
@@ -310,6 +311,7 @@ export default {
   components: {
     TheHeader,
     TheSidenav,
+    SocialMediaHomePage,
   },
 
   layout: 'empty',
@@ -1245,7 +1247,7 @@ footer h3 {
     padding-left: 0;
     justify-content: center;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     gap: 20px;
   }
   .website-links_webpage {
@@ -1255,6 +1257,7 @@ footer h3 {
   .website-links_webpage ul {
     justify-content: start;
   }
+
   /*Footer*/
 }
 </style>
