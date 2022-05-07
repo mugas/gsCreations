@@ -501,6 +501,7 @@ h1 {
 .tagline_description {
   text-align: center;
   color: #f5fbf9;
+  margin-top: 20px;
 }
 
 h2 {

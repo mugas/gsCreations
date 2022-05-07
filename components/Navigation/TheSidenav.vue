@@ -102,6 +102,7 @@ li:first-child {
 }
 
 .social_media {
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
