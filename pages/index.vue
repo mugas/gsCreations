@@ -50,8 +50,8 @@
     <section class="explanation">
       <h2>Get more for less</h2>
       <p class="explanation_text">
-        Good Stuff creations helps you save money and focus on your business, by
-        having all services in one place. Pay monthly, cancel anytime
+        Good Stuff creations help you save money and focus on your business, by
+        having all services in one place.
       </p>
       <div class="explanation_detailed">
         <div class="explanation_detailed_text explanation_detailed_text_one">
