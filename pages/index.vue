@@ -848,7 +848,7 @@ footer h3 {
 }
 
 footer p {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 36px;
   color: #e1f1ff;
   text-align: center;
@@ -916,6 +916,14 @@ footer h3 {
 
 .policies a {
   color: #f5fbf9;
+}
+
+.policies {
+  display: flex;
+  gap: 5%;
+  width: 100%;
+  justify-content: center;
+  align-self: center;
 }
 
 /*Footer*/
@@ -1216,7 +1224,7 @@ footer h3 {
 
   footer p {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 20px;
     max-width: 667px;
     line-height: 36px;
   }
