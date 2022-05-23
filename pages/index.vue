@@ -297,6 +297,17 @@
         </nuxt-link>
         <p class="footer_based">Based in Savonlinna, Finland</p>
       </div>
+
+      <div class="policies">
+        <a
+          href="https://www.termsofservicegenerator.net/live.php?token=bqwXuQfnjf9P2c5TgjFwsSycf3NcIkXD"
+          >Privacy Policy</a
+        >
+        <a
+          href="https://www.termsofservicegenerator.net/live.php?token=bqwXuQfnjf9P2c5TgjFwsSycf3NcIkXD"
+          >Terms of Service</a
+        >
+      </div>
     </footer>
   </div>
 </template>
@@ -903,6 +914,10 @@ footer h3 {
   color: #e1f1ff;
 }
 
+.policies a {
+  color: #f5fbf9;
+}
+
 /*Footer*/
 @media (min-width: 720px) {
   .tagline_description {
@@ -1216,7 +1231,7 @@ footer h3 {
     width: 100%;
     justify-content: space-evenly;
     gap: 5%;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .footer_links :nth-child(1) {
@@ -1247,7 +1262,7 @@ footer h3 {
     padding-left: 0;
     justify-content: center;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     gap: 20px;
   }
   .website-links_webpage {
@@ -1256,6 +1271,13 @@ footer h3 {
 
   .website-links_webpage ul {
     justify-content: start;
+  }
+
+  .policies {
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    justify-content: center;
   }
 
   /*Footer*/

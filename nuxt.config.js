@@ -16,6 +16,15 @@ export default {
         async: 'async',
       },
     ],
+    script: [
+      {
+        type: 'text/javascript',
+        src:
+          'https://cmp.osano.com/Azz7t5T6Qh5qDAVb/0a0a6c25-b5ee-4aa7-a040-bf75060eab7d/osano.js',
+        async: 'async',
+      },
+    ],
+
 
     title: 'Good Stuff Creations –  Websites for local producers and groceries',
     meta: [
