@@ -1278,6 +1278,7 @@ footer h3 {
     gap: 5%;
     width: 100%;
     justify-content: center;
+    align-self: center;
   }
 
   /*Footer*/
