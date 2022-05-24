@@ -26,7 +26,7 @@ export default {
       ], */
 
 
-    title: 'Good Stuff Creations –  Websites for local producers and groceries',
+    title: 'Good Stuff Creations –  Your private concierge',
     meta: [
       {
         charset: 'utf-8',
@@ -44,7 +44,7 @@ export default {
         hid: 'og:title',
         property: 'og:title',
         content:
-          'Good Stuff Creations - Websites for local producers and groceries',
+          'Good Stuff Creations - Your private concierge',
       },
       {
         hid: 'description',
@@ -56,12 +56,12 @@ export default {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'Good stuff creations helps local producers sharing their product with the world ',
+          'A full service for the hospitality business. Websites, templates, logo and more ',
       },
       {
-        hid: 'og:image:alt',
-        property: 'og:image:alt',
-        content: '~/assets/Svg/gs.svg',
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://res.cloudinary.com/mugas/image/upload/v1653361109/logo_ssrdk0.png',
       },
       {
         hid: 'og:article:author',
