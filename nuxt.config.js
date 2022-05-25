@@ -26,7 +26,7 @@ export default {
       ], */
 
 
-    title: 'Good Stuff Creations –  Your private concierge',
+    title: 'Good Stuff Creations – Your creative concierge',
     meta: [
       {
         charset: 'utf-8',
@@ -44,7 +44,7 @@ export default {
         hid: 'og:title',
         property: 'og:title',
         content:
-          'Good Stuff Creations - Your private concierge',
+          'Good Stuff Creations - Your creative concierge',
       },
       {
         hid: 'description',
@@ -88,12 +88,12 @@ export default {
         hid: 'twitter:title',
         name: 'twitter:title',
         content:
-          'Good Stuff Creations - websites for local producers and groceries',
+          'Good Stuff Creations - Your creative concierge',
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: 'Good Stuff Creations - websites for local producers and groceries',
+        content: 'Good Stuff Creations - Your creative concierge',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }],
