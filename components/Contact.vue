@@ -4,7 +4,8 @@
       <article class="call">
         <h2>Phone</h2>
         <img class="phone_icon" src="~/assets/Svg/phone.svg" alt="" />
-        <p>358-443420035</p>
+        <p>+358</p>
+        <p>443420035</p>
       </article>
       <article class="email">
         <h2>Email</h2>

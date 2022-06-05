@@ -6,8 +6,8 @@
       <Blob />
       <h1 class="home__page-title">Your creative <br />concierge</h1>
       <p class="tagline_description">
-        Websites, local SEO, logos, menus, booking, consulting, and more.<br />
-        Full service for your hospitality business.
+        Websites, local SEO, logos, booking, CRM, and more.<br />
+        Full service for your real state business.
       </p>
       <button class="calendly">
         <a
@@ -43,15 +43,18 @@
     <section class="banner">
       <div class="banner_quote">
         <h3>
-          <q>Hospitality is simply an opportunity to show love and care</q>
+          <q
+            >Success in real estate starts when you believe you are worthy of
+            it.</q
+          >
         </h3>
       </div>
     </section>
     <section class="explanation">
       <h2>Get more for less</h2>
       <p class="explanation_text">
-        Good Stuff creations help you save money and focus on your business, by
-        having all services in one place.
+        Good Stuff creations helps you focus on your business and bring more
+        customers, by having all services in one place.
       </p>
       <div class="explanation_detailed">
         <div class="explanation_detailed_text explanation_detailed_text_one">
@@ -59,7 +62,7 @@
           <h4>Websites</h4>
           <p>
             I can build you a beautifull website that speaks your brand and get
-            you sell more
+            you sell more.
           </p>
         </div>
         <div class="explanation_detailed_text explanation_detailed_text_two">
@@ -67,31 +70,27 @@
           <h4>SEO</h4>
           <p>
             Optimize your website to reach the customers that you want but also
-            the ones you need
+            the ones you need.
           </p>
         </div>
         <div class="explanation_detailed_text explanation_detailed_text_three">
           <div class="shape"></div>
-          <h4>Inventory</h4>
+          <h4>CRM</h4>
           <p>
-            Need help with your inventory or finance? Need a new productive
-            tool? I can help
+            Manage your clients, agents, leads with a simple but effective
+            dashboard CRM.
           </p>
         </div>
         <div class="explanation_detailed_text explanation_detailed_text_four">
           <div class="shape"></div>
-          <h4>Menus</h4>
-          <p>
-            A appealing and beautifull menu is half way to get your customers
-            inside.
-          </p>
+          <h4>Tools</h4>
+          <p>Increase your productivity with tools made for you.</p>
         </div>
         <div class="explanation_detailed_text explanation_detailed_text_five">
           <div class="shape"></div>
-          <h4>Recipe Search</h4>
+          <h4>Blogging and content</h4>
           <p>
-            New foods, menus, events. Engage your customers with what is trendy
-            on the business
+            Create awareness about your business with usefull posts and content.
           </p>
         </div>
         <div class="explanation_detailed_text explanation_detailed_text_six">
@@ -108,35 +107,25 @@
     <section class="client_groups">
       <h2>Who are you?</h2>
       <div class="clients">
-        <article class="coffee client_groups_each">
+        <article class="agencies client_groups_each">
           <div class="client_groups_each_text">
-            <h4>Coffees and bakeries</h4>
+            <h4>Agencies</h4>
             <p>
-              Outstand the competition with a modern website or get back on
-              track with your products and sales.
+              Track your agents portfolio, expand your services with a new
+              website. Prepare courses with a tool made for your business.
             </p>
           </div>
-          <img class="icons_image" src="~/assets/Svg/coffee.svg" alt="" />
+          <img class="icons_image" src="~/assets/Svg/agencies.svg" alt="" />
         </article>
-        <article class="restaurants client_groups_each">
+        <article class="agents client_groups_each">
           <div class="client_groups_each_text">
-            <h4>Restaurants</h4>
+            <h4>Real Estate Agents</h4>
             <p>
-              Your restaurant needs to be online.Online bookings and
-              reservations get you more customers.
+              A CRM made for you, a website that show your house listings and
+              more
             </p>
           </div>
-          <img class="icons_image" src="~/assets/Svg/restaurant.svg" alt="" />
-        </article>
-        <article class="grocery client_groups_each">
-          <div class="client_groups_each_text">
-            <h4>Groceries</h4>
-            <p>
-              Customers buy with their eyes. Let's showcase your products and
-              take care of your inventory.
-            </p>
-          </div>
-          <img class="icons_image" src="~/assets/Svg/grocery.svg" alt="" />
+          <img class="icons_image" src="~/assets/Svg/saler.svg" alt="" />
         </article>
         <article class="hotel client_groups_each">
           <div class="client_groups_each_text">
@@ -147,16 +136,6 @@
             </p>
           </div>
           <img class="icons_image" src="~/assets/Svg/hotel.svg" alt="" />
-        </article>
-        <article class="farmer client_groups_each">
-          <div class="client_groups_each_text">
-            <h4>Farmers</h4>
-            <p>
-              let me help you show your products to more people. Create a store
-              online or get stronger in the social media.
-            </p>
-          </div>
-          <img class="icons_image" src="~/assets/Svg/farmer.svg" alt="" />
         </article>
       </div>
     </section>
@@ -172,10 +151,10 @@
         <div class="services_description_text">Slide Decks</div>
         <div class="services_description_text">Pitch Decks</div>
         <div class="services_description_text">Brochures</div>
-        <div class="services_description_text">Recipes</div>
+        <div class="services_description_text">CRM</div>
         <div class="services_description_text">Website maintenance</div>
         <div class="services_description_text">Bookings</div>
-        <div class="services_description_text">Inventory</div>
+        <div class="services_description_text">Course platforms</div>
         <div class="services_description_text">Content creation</div>
         <div class="services_description_text">Productive tools</div>
       </article>
@@ -1035,13 +1014,10 @@ footer h3 {
     padding-right: 50px;
   }
 
-  .restaurants {
+  .agents {
     flex-direction: row-reverse;
   }
 
-  .hotel {
-    flex-direction: row-reverse;
-  }
   /*client end*/
 
   /*description*/

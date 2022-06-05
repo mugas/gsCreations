@@ -3,21 +3,28 @@
     <img class="profile_pic" src="~/assets/Svg/profile.svg" />
 
     <div class="text">
-      <h2>About</h2>
+      <h2>Bulding your success</h2>
       <p>
-        I am partly a developer, partly an entrepreneur, partly a cook, and
-        passionate about learning.
+        I am partly a developer, partly an entrepreneur, and passionate about
+        learning.
       </p>
       <p>
-        I believe that a good recipe needs good ingredients, my experience of
-        hospitality, my knowledge of web development, and my understanding of
-        business and entrepreneurship, not only in Finland but in different
-        countries, make me the perfect solution for your business.
+        After many years of learning and trying and testing where my skills can
+        be better used, I have been working with some real estate business
+        agency and agents. After that, I realized that I like this market, I had
+        plenty ideas to implement on it and it seemed the market liked me also.
+        So Good Stuff Creations is made for the real estate business.
+      </p>
+      <p>
+        Don't matter if you are a real estate agent, an agency or you have a
+        local rental business, the plan is always to get more leads trough your
+        website, market better your listings, get your agents better listings
+        and more.
       </p>
 
       <p>
         I am based in Savonlinna and Good Stuff Creations was created to help
-        any hospitality business in the Savo region grow.
+        any real estate business .
       </p>
       <p>Your business deserves always more.</p>
     </div>
@@ -72,6 +79,7 @@ p {
   .about {
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
     height: 80vh;
   }
 
