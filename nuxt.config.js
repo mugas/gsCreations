@@ -56,7 +56,7 @@ export default {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'A full service for the hospitality business. Websites, templates, logo and more ',
+          'A full service for the real estate business. Websites, templates, logo and more ',
       },
       {
         hid: 'og:image',
