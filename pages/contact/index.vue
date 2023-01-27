@@ -5,6 +5,8 @@
   </div>
 </template>
 
-<script></script>
-
-<style scoped></style>
+<script>
+export default {
+  layout: 'home',
+}
+</script>

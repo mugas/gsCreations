@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="blog_slug">
     <Container>
       <div class="intro">
         <h1>Creative writing</h1>
@@ -39,10 +39,28 @@ export default {
     })
     return blogList
   },
+
+  layout: 'home',
 }
 </script>
 
 <style scoped>
+body,
+html {
+  background: none;
+}
+
+.blog_slug {
+  display: flex;
+  z-index: 1;
+  position: relative;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+}
+
 h1 {
   color: #813405;
   margin-bottom: 2rem;

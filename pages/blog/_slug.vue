@@ -30,6 +30,7 @@ import * as redditSharer from 'share-this/dist/sharers/reddit'
 import Container from '~/components/Container'
 
 export default {
+  layout: 'home',
   name: 'App',
   components: {
     Container,
@@ -179,6 +180,19 @@ export default {
 </script>
 
 <style lang="scss">
+.post-content p {
+  line-height: 2rem;
+}
+.post {
+  display: flex;
+  z-index: 1;
+  position: relative;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+}
 h2 {
   text-align: center;
 }
@@ -253,9 +267,6 @@ h2 {
   .thumbnail {
     width: 100%;
     height: auto;
-  }
-  img {
-    width: 100%;
   }
 
   .meta-section {

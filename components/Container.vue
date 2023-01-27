@@ -38,7 +38,7 @@ export default {
   }
 
   &.narrow {
-    max-width: 760px;
+    max-width: 980px;
   }
 }
 </style>

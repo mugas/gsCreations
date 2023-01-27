@@ -4,8 +4,7 @@
       <article class="call">
         <h2>Phone</h2>
         <img class="phone_icon" src="~/assets/Svg/phone.svg" alt="" />
-        <p>+358</p>
-        <p>443420035</p>
+        <p>+358 443420035</p>
       </article>
       <article class="email">
         <h2>Email</h2>
@@ -76,8 +75,15 @@ article img {
 @media (min-width: 720px) {
   .contact {
     display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+
     height: 600px;
     background-image: url('~/assets/Svg/patternpad.svg');
+  }
+  .contact_form {
+    padding: 5% 15% 5% 15%;
   }
 }
 

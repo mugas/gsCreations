@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="form_down">
     <div class="form_text">
       <h2>Get in touch</h2>
       <p>
@@ -252,6 +252,10 @@ textarea:focus {
   }
   .form__phone {
     width: 48%;
+  }
+
+  .form_down {
+    margin-bottom: 5%;
   }
 }
 </style>

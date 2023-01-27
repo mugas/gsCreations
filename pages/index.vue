@@ -278,14 +278,8 @@
       </div>
 
       <div class="policies">
-        <a
-          href="https://www.termsofservicegenerator.net/live.php?token=bqwXuQfnjf9P2c5TgjFwsSycf3NcIkXD"
-          >Privacy Policy</a
-        >
-        <a
-          href="https://www.termsofservicegenerator.net/live.php?token=bqwXuQfnjf9P2c5TgjFwsSycf3NcIkXD"
-          >Terms of Service</a
-        >
+        <a href="https://www.bizbox.club/">Good Stuff Foods</a>
+        <a href="https://goodstuffoods.com/">BizBox</a>
       </div>
     </footer>
   </div>

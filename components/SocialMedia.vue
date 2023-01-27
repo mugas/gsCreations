@@ -2,7 +2,7 @@
   <nav>
     <ul class="social-media">
       <li>
-        <a href="https://twitter.com/g_s_creations" target="_blank">
+        <a href="https://twitter.com/moreira_creates" target="_blank">
           <font-awesome-icon :icon="['fab', 'twitter']" />
         </a>
       </li>
@@ -12,8 +12,11 @@
         </a>
       </li>
       <li>
-        <a href="https://www.facebook.com/goodstuffcodes/" target="_blank">
-          <font-awesome-icon :icon="['fab', 'facebook']" />
+        <a
+          href="https://www.linkedin.com/company/good-stuff-creations"
+          target="_blank"
+        >
+          <font-awesome-icon :icon="['fab', 'linkedin']" />
         </a>
       </li>
     </ul>

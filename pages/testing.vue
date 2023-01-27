@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="first_page">
     <section class="home__page">
       <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
       <TheSidenav :show="displaySidenav" @close="displaySidenav = false" />
@@ -13,57 +13,25 @@
         >
       </button>
     </section>
-
-    <footer>
-      <h3>I invite you to try it</h3>
-      <p>Get in touch and let's make your business grow</p>
-      <button class="calendly">
-        <a
-          href="https://calendly.com/gscreations/good-stuff-creations-your-creative-concierge"
-        >
-          Book a meeting</a
-        >
-      </button>
-      <div class="website-links">
-        <div class="website-links_webpage">
-          <ul>
-            <li class="nav-item"><a href="#pricing">Prices</a></li>
-            <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
-            <li class="nav-item">
-              <nuxt-link to="/contact">Contact</nuxt-link>
-            </li>
-            <li class="nav-item"><nuxt-link to="/blog">Blog</nuxt-link></li>
-          </ul>
-        </div>
-      </div>
-      <SocialMediaHomePage class="social_media-home-page" />
-      <div class="footer_links">
-        <nuxt-link to="/">
-          <img
-            class="footer_logo"
-            width="200px"
-            src="~/assets/Svg/logo_one.svg"
-          />
-        </nuxt-link>
-        <p class="footer_based">Based in Savonlinna, Finland</p>
-      </div>
-
-      <div class="policies">
-        <a
-          href="https://www.termsofservicegenerator.net/live.php?token=bqwXuQfnjf9P2c5TgjFwsSycf3NcIkXD"
-          >Privacy Policy</a
-        >
-        <a
-          href="https://www.termsofservicegenerator.net/live.php?token=bqwXuQfnjf9P2c5TgjFwsSycf3NcIkXD"
-          >Terms of Service</a
-        >
-      </div>
-    </footer>
+    <section class="form">
+      <div
+        data-tf-sidetab="pb9fzIHv"
+        data-tf-custom-icon="https://images.typeform.com/images/bb3BPtxAL2Ls"
+        data-tf-opacity="100"
+        data-tf-iframe-props="title=Tell me your goals"
+        data-tf-auto-close="3000"
+        data-tf-transitive-search-params
+        data-tf-button-color="#FA6B05"
+        data-tf-button-text="Need a website"
+        data-tf-medium="snippet"
+        style="all: unset"
+      ></div>
+      <script src="//embed.typeform.com/next/embed.js"></script>
+    </section>
   </div>
 </template>
 
 <script>
-import SocialMediaHomePage from '../components/SocialMediaHomePage.vue'
 import TheHeader from '~/components/Navigation/TheHeader'
 import TheSidenav from '~/components/Navigation/TheSidenav'
 
@@ -71,14 +39,120 @@ export default {
   components: {
     TheHeader,
     TheSidenav,
-    SocialMediaHomePage,
   },
-
-  layout: 'empty',
 }
 </script>
 
 <style scoped>
+.first_page {
+  overflow: hidden;
+  background: linear-gradient(
+    65deg,
+    hsl(31deg 94% 61%) 0%,
+    hsl(30deg 76% 55%) 7%,
+    hsl(28deg 67% 48%) 14%,
+    hsl(27deg 72% 41%) 20%,
+    hsl(25deg 79% 35%) 26%,
+    hsl(23deg 89% 28%) 31%,
+    hsl(21deg 61% 36%) 36%,
+    hsl(21deg 38% 50%) 40%,
+    hsl(20deg 41% 64%) 44%,
+    hsl(20deg 44% 77%) 47%,
+    hsl(19deg 47% 91%) 51%,
+    hsl(183deg 14% 95%) 55%,
+    hsl(183deg 14% 79%) 60%,
+    hsl(183deg 14% 64%) 67%,
+    hsl(184deg 15% 50%) 77%,
+    hsl(184deg 28% 35%) 88%,
+    hsl(183deg 81% 19%) 100%
+  );
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 14s ease infinite;
+  -moz-animation: AnimationName 14s ease infinite;
+  animation: AnimationName 14s ease infinite;
+
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  widows: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 14% 0%;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 14% 0%;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 14% 0%;
+  }
+  50% {
+    background-position: 87% 100%;
+  }
+  100% {
+    background-position: 14% 0%;
+  }
+}
+.banner_section h2 {
+  padding-top: 6%;
+}
+.banner_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 200px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin: 0 10px;
+}
+#about {
+  background-color: white;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
 ol,
 ul {
   list-style: none;
@@ -300,23 +374,6 @@ article p {
 /*Description End*/
 
 /*Banner*/
-
-.banner {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  background-color: #f9a03f;
-  width: 80%;
-  margin-bottom: 30%;
-  background-image: linear-gradient(232deg, #f9a03f 0%, #d45113 57%);
-}
-.banner_quote {
-  display: flex;
-  width: 80%;
-  height: 200px;
-
-  align-items: center;
-}
 
 q {
   color: black;
@@ -813,19 +870,6 @@ footer h3 {
     font-size: 2rem;
   }
 
-  .banner {
-    margin: 0 auto;
-    height: 300px;
-
-    background-color: #f9a03f;
-    margin-bottom: 10%;
-    background-image: linear-gradient(232deg, #f9a03f 0%, #d45113 57%);
-  }
-
-  .banner_quote {
-    align-self: center;
-    max-width: 40%;
-  }
   /*Banner end*/
   /*explanation*/
   .explanation {

@@ -1,41 +1,48 @@
 <template>
   <div class="about">
-    <img class="profile_pic" src="~/assets/Svg/profile.svg" />
+    <img class="profile_pic" src="~/assets/SVG/mw_logo.svg" />
 
     <div class="text">
-      <h2>Bulding your success</h2>
-      <p>
-        I am partly a developer, partly an entrepreneur, and passionate about
-        learning.
-      </p>
-      <p>
-        After many years of learning and trying and testing where my skills can
-        be better used, I have been working with some real estate business
-        agency and agents. After that, I realized that I like this market, I had
-        plenty ideas to implement on it and it seemed the market liked me also.
-        So Good Stuff Creations is made for the real estate business.
-      </p>
-      <p>
-        Don't matter if you are a real estate agent, an agency or you have a
-        local rental business, the plan is always to get more leads trough your
-        website, market better your listings, get your agents better listings
-        and more.
+      <p class="text_first">
+        I am a developer, entrepreneur, and lifelong learner based in
+        Savonlinna. Good Stuff Creations is my one-man company that specializes
+        in creating websites and landing pages for small businesses and
+        freelancers.
       </p>
 
       <p>
-        I am based in Savonlinna and Good Stuff Creations was created to help
-        any real estate business .
+        With a passion for technology and a drive for innovation, I strive to
+        help businesses of all sizes reach their full potential online. I
+        understand the unique challenges that small businesses and freelancers
+        face and am dedicated to providing the tools and support they need to
+        succeed.
+      </p>
+      <p>
+        My goal is to empower businesses to achieve more, and I achieve this by
+        creating custom websites and landing pages that are tailored to their
+        specific needs. Whether you're looking to increase conversions,
+        streamline your online presence, or simply create a more engaging user
+        experience, I have the expertise and experience to help you achieve your
+        goals.
       </p>
       <p>Your business deserves always more.</p>
     </div>
   </div>
 </template>
 
-<script></script>
-
 <style>
+body,
+html {
+  background-color: white;
+}
+
+p {
+  line-height: 4rem;
+  padding-bottom: 3%;
+}
 h2 {
   color: #813405;
+  text-align: center;
 }
 img {
   max-width: 100%;
@@ -45,6 +52,9 @@ img {
 p {
   margin-bottom: 0;
 }
+.text_first {
+  margin-top: 10%;
+}
 .text p {
   line-height: 1.8;
   padding-left: 6%;
@@ -52,6 +62,7 @@ p {
 
 .about {
   display: flex;
+  background-color: white;
   flex-direction: column;
   align-items: center;
 }
@@ -71,6 +82,10 @@ p {
     flex: 1 1 0px;
   }
 
+  .text {
+    padding: 10px 30px 10px 30px;
+  }
+
   h2 {
     color: #813405;
     text-align: start;
@@ -79,7 +94,7 @@ p {
   .about {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+
     height: 80vh;
   }
 
