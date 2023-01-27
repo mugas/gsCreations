@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <img class="profile_pic" src="~/assets/SVG/mw_logo.svg" />
+    <img class="profile_pic" src="~/assets/Svg/mw_logo.svg" />
 
     <div class="text">
       <p class="text_first">
